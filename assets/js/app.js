@@ -367,16 +367,29 @@ document.addEventListener('DOMContentLoaded', () => {
         await runRoundTurns();
     }
 
+    let cardsPool = null;
+
+    async function loadCardsPool() {
+        if (cardsPool) return cardsPool;
+        const res = await fetch('assets/data/cards.json');
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        cardsPool = await res.json();
+        return cardsPool;
+    }
+
+    function drawRandom(pool) {
+        return pool[Math.floor(Math.random() * pool.length)];
+    }
+
     async function loadCards() {
         const area = document.getElementById('cards-area');
         area.innerHTML = '<p class="cards-loading">Robando cartas…</p>';
         try {
-            const res = await fetch('api/cards.php');
-            const data = await res.json();
-            if (!res.ok || data.error) {
-                throw new Error(data.error || `HTTP ${res.status}`);
+            const pool = await loadCardsPool();
+            if (!pool || !Array.isArray(pool.A) || !Array.isArray(pool.B) || !pool.A.length || !pool.B.length) {
+                throw new Error('Pool de cartas vacío o inválido');
             }
-            renderCards(data);
+            renderCards({ A: drawRandom(pool.A), B: drawRandom(pool.B) });
         } catch (err) {
             area.innerHTML = `<p class="cards-error">Error cargando cartas: ${err.message}</p>`;
         }
