@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -sS http://localhost/codigo/sintomas/api/cards.php)",
+      "Bash(curl -sS http://localhost/codigo/sintomas/setup.php)",
+      "Bash(sed -i.bak -e '/'\\\\''Mediar'\\\\'',/d' -e '/'\\\\''Transparentar'\\\\'',/d' -e 's/'\\\\''Verificar'\\\\''/'\\\\''Contrastar'\\\\''/g' -e 's/'\\\\''Participar'\\\\''/'\\\\''Consultar'\\\\''/g' -e 's/'\\\\''Proteger'\\\\''/'\\\\''Blindar'\\\\''/g' -e 's/'\\\\''Decidir'\\\\''/'\\\\''Decretar'\\\\''/g' -e 's/60 efectos para cartas B \\(10 × 6 decisiones\\)/40 efectos para cartas B \\(10 × 4 decisiones\\)/' -e 's/60 efectos para cartas C \\(10 × 6 decisiones\\)/40 efectos para cartas C \\(10 × 4 decisiones\\)/' -e 's/EFECTOS DE LAS CARTAS B POR DECISIÓN \\(60 filas\\)/EFECTOS DE LAS CARTAS B POR DECISIÓN \\(40 filas\\)/' -e 's/EFECTOS DE LAS CARTAS C POR DECISIÓN \\(60 filas\\)/EFECTOS DE LAS CARTAS C POR DECISIÓN \\(40 filas\\)/' seed.sql)",
+      "Bash(rm seed.sql.bak)",
+      "Bash(awk -F'[\\(,]' '{print $2}')",
+      "Bash(gh --version)",
+      "Bash(gh auth *)",
+      "Bash(git init *)",
+      "Bash(git commit -m ' *)"
+    ]
+  }
+}

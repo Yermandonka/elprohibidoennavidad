@@ -1169,7 +1169,6 @@ button {
     position: absolute;
     top: 20px;
     right: 20px;
-    z-index: 100;
     background: var(--paper);
     color: var(--ink-blue);
     font-size: 2rem;

@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.getElementById('screen-rules').addEventListener('click', (e) => {
-        if (e.target !== e.currentTarget) return;
+        if (e.target.closest('.rules-card, .rules-nav-btn, .btn-close, .rules-scroll-down, .rules-counter')) return;
         collapseRulesToButton();
     });
 
@@ -193,21 +193,6 @@ document.addEventListener('DOMContentLoaded', () => {
             else if (card.classList.contains('next')) goToRuleCard(currentRuleIndex + 1);
         });
     });
-
-    // Zonas táctiles laterales para navegar en móvil (cubre la zona detrás de la carta activa)
-    if (rulesDeckEl) {
-        rulesDeckEl.addEventListener('click', (e) => {
-            if (window.innerWidth > 720) return;
-            const targetCard = e.target.closest('.rules-card');
-            if (targetCard && (targetCard.classList.contains('prev') || targetCard.classList.contains('next'))) return;
-            if (e.target.closest('.rules-scroll-down')) return;
-            const rect = rulesDeckEl.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const w = rect.width;
-            if (x < w * 0.22) goToRuleCard(currentRuleIndex - 1);
-            else if (x > w * 0.78) goToRuleCard(currentRuleIndex + 1);
-        });
-    }
 
     document.addEventListener('keydown', (e) => {
         if (!screens.rules.classList.contains('active')) return;
@@ -382,30 +367,16 @@ document.addEventListener('DOMContentLoaded', () => {
         await runRoundTurns();
     }
 
-    let cardsDeck = null;
-
-    async function ensureCardsDeck() {
-        if (cardsDeck) return cardsDeck;
-        const res = await fetch('assets/data/cards.json');
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        cardsDeck = await res.json();
-        return cardsDeck;
-    }
-
-    function pickRandom(arr) {
-        return arr[Math.floor(Math.random() * arr.length)];
-    }
-
     async function loadCards() {
         const area = document.getElementById('cards-area');
         area.innerHTML = '<p class="cards-loading">Robando cartas…</p>';
         try {
-            const deck = await ensureCardsDeck();
-            if (!deck.A || !deck.A.length || !deck.B || !deck.B.length) {
-                throw new Error('No hay cartas en los mazos.');
+            const res = await fetch('api/cards.php');
+            const data = await res.json();
+            if (!res.ok || data.error) {
+                throw new Error(data.error || `HTTP ${res.status}`);
             }
-            const hand = { A: pickRandom(deck.A), B: pickRandom(deck.B) };
-            renderCards(hand);
+            renderCards(data);
         } catch (err) {
             area.innerHTML = `<p class="cards-error">Error cargando cartas: ${err.message}</p>`;
         }
