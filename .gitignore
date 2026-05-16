@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Backup local de la versión PHP+MySQL (no se sube)
+_backup-php/
+
+# Claude Code (memoria/configuración local)
+.claude/
