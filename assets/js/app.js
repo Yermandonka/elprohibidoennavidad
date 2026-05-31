@@ -643,6 +643,47 @@ document.addEventListener('DOMContentLoaded', () => {
         return pool[Math.floor(Math.random() * pool.length)];
     }
 
+    // === Selección compatible A → B ===========================================
+    // Las cartas A pueden traer (opcional):  { family: string, tags: string[] }
+    // Las cartas B pueden traer (opcional):  { families: string[], tags: string[] }
+    // Si A no tiene family/tags, o si no hay ninguna B compatible, se cae a
+    // selección aleatoria — el JSON antiguo sigue funcionando igual que antes.
+    const DEV_LOG_CARDS = false;
+
+    function shareTags(tagsA, tagsB) {
+        if (!Array.isArray(tagsA) || !Array.isArray(tagsB)) return false;
+        return tagsA.some(tag => tagsB.includes(tag));
+    }
+
+    function isCompatibleCard(cardA, cardB) {
+        if (!cardA || !cardB) return false;
+        const familyMatch =
+            !!cardA.family &&
+            Array.isArray(cardB.families) &&
+            cardB.families.includes(cardA.family);
+        const tagMatch =
+            Array.isArray(cardA.tags) &&
+            Array.isArray(cardB.tags) &&
+            shareTags(cardA.tags, cardB.tags);
+        return familyMatch || tagMatch;
+    }
+
+    function getCompatibleBCards(cardA, deckB) {
+        if (!Array.isArray(deckB)) return [];
+        return deckB.filter(cardB => isCompatibleCard(cardA, cardB));
+    }
+
+    function drawCardBForA(cardA, deckB) {
+        const compatible = getCompatibleBCards(cardA, deckB);
+        const pool = compatible.length > 0 ? compatible : deckB;
+        if (DEV_LOG_CARDS) {
+            console.log('[cards] A:', cardA && cardA.text);
+            console.log('[cards] B compatibles:', compatible.length, '/', deckB.length);
+            if (compatible.length) console.log('[cards] B candidatas:', compatible.map(c => c.text));
+        }
+        return drawRandom(pool);
+    }
+
     async function loadCards() {
         const area = document.getElementById('cards-area');
         area.innerHTML = '<p class="cards-loading">Robando cartas…</p>';
@@ -651,7 +692,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!pool || !Array.isArray(pool.A) || !Array.isArray(pool.B) || !pool.A.length || !pool.B.length) {
                 throw new Error('Pool de cartas vacío o inválido');
             }
-            renderCards({ A: drawRandom(pool.A), B: drawRandom(pool.B) });
+            const cardA = drawRandom(pool.A);
+            const cardB = drawCardBForA(cardA, pool.B);
+            if (DEV_LOG_CARDS) console.log('[cards] B elegida:', cardB && cardB.text);
+            renderCards({ A: cardA, B: cardB });
         } catch (err) {
             area.innerHTML = `<p class="cards-error">Error cargando cartas: ${err.message}</p>`;
         }
