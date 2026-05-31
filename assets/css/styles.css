@@ -726,8 +726,8 @@ button {
 
 .player-corner {
     position: absolute;
-    width: 210px;
-    padding: 15px;
+    width: 282px;
+    padding: 20px;
     background: var(--paper);
     border: 2px solid var(--ink-black);
     border-radius: 0;
@@ -736,7 +736,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+    gap: 6px;
     box-shadow: 4px 4px 0 var(--ink-blue);
 }
 
@@ -784,8 +784,8 @@ button {
 }
 
 .player-portrait {
-    width: 110px;
-    height: 110px;
+    width: 148px;
+    height: 148px;
     border-radius: 0;
     overflow: hidden;
     background: var(--ink-blue-tint);
