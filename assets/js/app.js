@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // === Tiempos del juego (ajustar aquí para pruebas) ===
     const TIMINGS = {
-        PLAYER_TURN_SEC:     10,     // segundos por turno de cada jugador
+        PLAYER_TURN_SEC:     2,     // segundos por turno de cada jugador
         DECISION_SEC:        120,    // segundos de deliberación común tras los 4 turnos
         BETWEEN_ROUNDS_MS:   10000,  // pausa (ms) entre revelar efectos e iniciar la siguiente ronda
         DECISION_LABEL:      '2 min' // texto del cartel "Decisión común" (solo visual)
@@ -229,7 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
         selectedDecision = null;
         currentHand = null;
 
-        ['role-info-overlay', 'action-info-overlay', 'turn-overlay'].forEach(id => {
+        ['role-info-overlay', 'action-info-overlay', 'turn-overlay', 'round-summary-overlay'].forEach(id => {
             const el = document.getElementById(id);
             if (el) el.classList.remove('visible', 'dealt', 'reading');
         });
@@ -633,7 +633,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function loadCardsPool() {
         if (cardsPool) return cardsPool;
-        const res = await fetch('assets/data/cards.json');
+        const res = await fetch(`assets/data/cards.json?v=${Date.now()}`, { cache: 'no-store' });
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         cardsPool = await res.json();
         return cardsPool;
@@ -1051,17 +1051,58 @@ document.addEventListener('DOMContentLoaded', () => {
             revealingEffects = true;
             await revealEffects();
             if (stale(mySession) || !screens.game.classList.contains('active')) return;
-            await wait(TIMINGS.BETWEEN_ROUNDS_MS);
+            await showRoundSummary(currentHand, selectedDecision);
             if (stale(mySession) || !screens.game.classList.contains('active')) return;
             nextRound();
         });
     });
 
+    function showRoundSummary(hand, decision) {
+        return new Promise(resolve => {
+            const mySession = gameSessionId;
+            const overlay = document.getElementById('round-summary-overlay');
+            if (!overlay || !hand || !decision) { resolve(); return; }
+
+            overlay.querySelector('.round-summary-decision-banner').textContent = `Decisión: ${decision}`;
+
+            ['A', 'B'].forEach(deck => {
+                const section = overlay.querySelector(`.round-summary-section[data-deck="${deck}"]`);
+                if (!section) return;
+                const card = hand[deck];
+                const eff = card && Array.isArray(card.effects)
+                    ? card.effects.find(x => x.decision === decision)
+                    : null;
+                section.querySelector('.round-summary-scenario').textContent = card ? card.text : '';
+                section.querySelector('.round-summary-chips').innerHTML = eff ? formatDeltaChips(eff) : '';
+                const txtEl = section.querySelector('.round-summary-text');
+                const expl = eff && eff.explanation && String(eff.explanation).trim();
+                if (expl) {
+                    txtEl.textContent = expl;
+                    txtEl.classList.remove('empty');
+                } else {
+                    txtEl.textContent = '(Sin explicación añadida todavía.)';
+                    txtEl.classList.add('empty');
+                }
+            });
+
+            overlay.classList.add('visible');
+
+            const continueBtn = overlay.querySelector('.round-summary-continue');
+            const onClick = () => {
+                continueBtn.removeEventListener('click', onClick);
+                if (stale(mySession)) return;
+                overlay.classList.remove('visible');
+                resolve();
+            };
+            continueBtn.addEventListener('click', onClick);
+        });
+    }
+
     const ACTION_DESCRIPTIONS = {
-        'Contrastar': 'Antes de aplicar consecuencias, el grupo tiene que nombrar al menos <strong>dos fuentes o datos concretos</strong> del escenario, uno que apoye y otro que cuestione la versión dominante. Si no se encuentran las dos, la acción no se puede ejecutar y hay que elegir otra. Lleva tiempo, pero blinda la decisión frente a bulos.',
-        'Consultar': 'Cada jugador identifica <strong>un grupo afectado fuera de los cuatro roles</strong> (estudiantes, vecinos del barrio, profesores interinos, pequeños comerciantes… lo que aplique al escenario) y habla <strong>15 segundos en su nombre</strong>. La decisión final debe incorporar explícitamente al menos una de esas voces.',
-        'Blindar': 'El grupo nombra <strong>explícitamente a la persona, colectivo o minoría</strong> que más puede salir perjudicada en este escenario concreto y enuncia <strong>una salvaguarda específica</strong> para ellos (por ejemplo: "se mantiene el anonimato de los denunciantes" o "se garantiza acceso al servicio durante el conflicto"). Si nadie consigue nombrar a quién proteger ni cómo, no se puede usar esta acción.',
-        'Decretar': 'Votación <strong>inmediata, sin más debate</strong>. La decisión queda vinculante y rápida. Salva tiempo, pero el grupo renuncia a las garantías de las otras tres acciones, y eso debe pasar factura en las cartas B.'
+        'Contrastar': 'El grupo decide comprobar mejor los hechos antes de actuar. Es una respuesta prudente frente al ruido, los bulos y las versiones interesadas. Puede evitar errores graves, pero también hacer que la ciudad reaccione demasiado tarde.',
+        'Consultar': 'El grupo decide escuchar a más personas antes de cerrar una decisión. Da importancia a las voces afectadas y evita decidir solo desde arriba. Puede hacer que la decisión sea más legítima, pero también que el acuerdo sea más difícil.',
+        'Blindar': 'El grupo decide proteger a quienes pueden salir más perjudicados por la situación. Es una respuesta centrada en derechos, garantías y límites al abuso. Puede evitar daños injustos, pero también generar tensión con quienes quieren una solución más rápida o mayoritaria.',
+        'Decretar': 'El grupo decide actuar rápido y cerrar el debate. Es una respuesta útil cuando hay urgencia, bloqueo o falta de tiempo. Puede evitar la parálisis, pero también parecer una imposición si no se explica bien.'
     };
 
     document.querySelectorAll('.action-btn').forEach(btn => {
