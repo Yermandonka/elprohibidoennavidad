@@ -19,6 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
         screens[screenName].classList.add('active');
     }
 
+    let gameSessionId = 0;
+    function stale(s) { return s !== gameSessionId; }
+
     document.getElementById('btn-new-game').addEventListener('click', (e) => {
         startGame(e.currentTarget.getBoundingClientRect());
     });
@@ -207,6 +210,129 @@ document.addEventListener('DOMContentLoaded', () => {
         showScreen('start');
     });
 
+    let exiting = false;
+
+    async function exitToMainMenu() {
+        if (exiting) return;
+        exiting = true;
+
+        gameSessionId++;
+
+        clearInterval(timerInterval);
+        if (decisionTimerResolve) {
+            decisionTimerResolve('aborted');
+            decisionTimerResolve = null;
+        }
+
+        turnPhaseActive = false;
+        revealingEffects = false;
+        selectedDecision = null;
+        currentHand = null;
+
+        ['role-info-overlay', 'action-info-overlay', 'turn-overlay'].forEach(id => {
+            const el = document.getElementById(id);
+            if (el) el.classList.remove('visible', 'dealt', 'reading');
+        });
+        screens.game.classList.remove('reading-mode');
+
+        const startBtn = document.getElementById('btn-start-reading');
+        if (startBtn) startBtn.style.display = 'none';
+        document.querySelectorAll('.action-btn').forEach(b => b.classList.remove('selected'));
+
+        const exitBtn = document.getElementById('btn-exit-game');
+        const exitRect = exitBtn ? exitBtn.getBoundingClientRect() : null;
+        const dealOverlay = document.getElementById('role-deal-overlay');
+        const dealVisible = !!(dealOverlay && dealOverlay.classList.contains('visible'));
+
+        if (exitRect && screens.game.classList.contains('active')) {
+            screens.start.classList.add('active', 'entering');
+
+            const collapses = [collapseGameToButton(exitRect)];
+            if (dealVisible) collapses.push(collapseDealCardsToButton(exitRect));
+            await Promise.all(collapses);
+
+            screens.game.classList.remove('active');
+            screens.start.classList.remove('entering');
+        } else {
+            showScreen('start');
+        }
+
+        screens.game.classList.remove('emerging');
+        if (dealOverlay) dealOverlay.classList.remove('visible', 'dealt');
+
+        document.querySelectorAll('#screen-game .player-corner, #screen-game .dashboard, #btn-exit-game, .deal-card').forEach(el => {
+            el.style.transition = '';
+            el.style.transform = '';
+            el.style.opacity = '';
+        });
+
+        exiting = false;
+    }
+
+    function collapseGameToButton(btnRect) {
+        return new Promise(resolve => {
+            const btnCx = btnRect.left + btnRect.width / 2;
+            const btnCy = btnRect.top + btnRect.height / 2;
+            const elements = [
+                ...document.querySelectorAll('#screen-game .player-corner'),
+                document.querySelector('#screen-game .dashboard'),
+                document.getElementById('btn-exit-game')
+            ].filter(Boolean);
+            if (!elements.length) { resolve(); return; }
+
+            screens.game.classList.add('emerging');
+
+            const mid = (elements.length - 1) / 2;
+
+            elements.forEach((el, i) => {
+                const rect = el.getBoundingClientRect();
+                const dx = btnCx - (rect.left + rect.width / 2);
+                const dy = btnCy - (rect.top + rect.height / 2);
+                const rot = (i - mid) * 10;
+                const delay = i * EMERGE_STAGGER_MS;
+                el.style.transition =
+                    `transform ${EMERGE_DURATION_MS}ms ${EMERGE_EASE} ${delay}ms, ` +
+                    `opacity ${EMERGE_OPACITY_MS}ms ${EMERGE_EASE} ${delay}ms`;
+                el.style.transform = `translate3d(${dx}px, ${dy}px, 0) scale(${EMERGE_INITIAL_SCALE}) rotate(${rot}deg)`;
+                el.style.opacity = '0';
+            });
+
+            const total = EMERGE_DURATION_MS + (elements.length - 1) * EMERGE_STAGGER_MS + 60;
+            setTimeout(resolve, total);
+        });
+    }
+
+    function collapseDealCardsToButton(btnRect) {
+        return new Promise(resolve => {
+            const dealCards = Array.from(document.querySelectorAll('.deal-card'));
+            const overlay = document.getElementById('role-deal-overlay');
+            if (!dealCards.length || !overlay) { resolve(); return; }
+            const btnCx = btnRect.left + btnRect.width / 2;
+            const btnCy = btnRect.top + btnRect.height / 2;
+            const overlayRect = overlay.getBoundingClientRect();
+            const dx = btnCx - (overlayRect.left + overlayRect.width / 2);
+            const dy = btnCy - (overlayRect.top + overlayRect.height / 2);
+
+            dealCards.forEach((card, i) => {
+                const delay = i * DEAL_STAGGER_MS;
+                const naturalRot = DEAL_NATURAL_ROTATIONS[i] || 0;
+                const rot = naturalRot - DEAL_SPIN_DEG;
+                card.style.transition =
+                    `transform ${DEAL_DURATION_MS}ms ${DEAL_EASE} ${delay}ms, ` +
+                    `opacity ${DEAL_OPACITY_MS}ms ease-in ${delay + DEAL_DURATION_MS - DEAL_OPACITY_MS}ms`;
+                card.style.transform = `translate(-50%, -50%) translate(${dx}px, ${dy}px) scale(${DEAL_INITIAL_SCALE}) rotate(${rot}deg)`;
+                card.style.opacity = '0';
+            });
+
+            overlay.classList.remove('visible');
+
+            const total = DEAL_DURATION_MS + (dealCards.length - 1) * DEAL_STAGGER_MS + 80;
+            setTimeout(resolve, total);
+        });
+    }
+
+    document.getElementById('btn-exit-game').addEventListener('click', exitToMainMenu);
+
     const MAX_INDICATOR = 8;
 
     const ROLES = [
@@ -275,17 +401,73 @@ document.addEventListener('DOMContentLoaded', () => {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
 
-    async function dealRoles(originRect = null) {
+    async function dealRolesShowAndEmerge(originRect = null, extraEmerge = null) {
         const overlay = document.getElementById('role-deal-overlay');
         overlay.classList.remove('dealt');
         overlay.classList.add('visible');
-        if (originRect) await emergeDealCardsFromButton(originRect);
+        const promises = [];
+        if (originRect) promises.push(emergeDealCardsFromButton(originRect));
+        if (extraEmerge) promises.push(extraEmerge);
+        if (promises.length) await Promise.all(promises);
+    }
+
+    const DEAL_TO_PLAYER_DUR_MS     = 820;
+    const DEAL_TO_PLAYER_STAGGER_MS = 90;
+    const DEAL_TO_PLAYER_EASE       = 'cubic-bezier(0.22, 0.61, 0.36, 1)';
+    const DEAL_TO_PLAYER_ORDER      = [0, 1, 2, 3];
+
+    async function dealRolesWaitAndHide() {
+        const mySession = gameSessionId;
+        const overlay = document.getElementById('role-deal-overlay');
         await waitForClick(overlay);
+        if (stale(mySession)) return;
+
+        const dealCards = Array.from(document.querySelectorAll('.deal-card'));
+        DEAL_TO_PLAYER_ORDER.forEach((cardIdx, dealIdx) => {
+            const card = dealCards[cardIdx];
+            if (!card) return;
+            const delay = dealIdx * DEAL_TO_PLAYER_STAGGER_MS;
+            card.style.transition =
+                `top ${DEAL_TO_PLAYER_DUR_MS}ms ${DEAL_TO_PLAYER_EASE} ${delay}ms, ` +
+                `left ${DEAL_TO_PLAYER_DUR_MS}ms ${DEAL_TO_PLAYER_EASE} ${delay}ms, ` +
+                `right ${DEAL_TO_PLAYER_DUR_MS}ms ${DEAL_TO_PLAYER_EASE} ${delay}ms, ` +
+                `bottom ${DEAL_TO_PLAYER_DUR_MS}ms ${DEAL_TO_PLAYER_EASE} ${delay}ms, ` +
+                `transform ${DEAL_TO_PLAYER_DUR_MS}ms ${DEAL_TO_PLAYER_EASE} ${delay}ms`;
+        });
+
         overlay.classList.add('dealt');
-        await wait(900);
+
+        const total = DEAL_TO_PLAYER_DUR_MS + (DEAL_TO_PLAYER_ORDER.length - 1) * DEAL_TO_PLAYER_STAGGER_MS + 120;
+        await wait(total);
+        if (stale(mySession)) return;
+
+        dealCards.forEach(card => { card.style.transition = ''; });
+
         overlay.classList.remove('visible');
         overlay.classList.remove('dealt');
     }
+
+    async function dealRoles(originRect = null) {
+        const mySession = gameSessionId;
+        await dealRolesShowAndEmerge(originRect);
+        if (stale(mySession)) return;
+        await dealRolesWaitAndHide();
+    }
+
+    const EMERGE_DURATION_MS    = 900;
+    const EMERGE_STAGGER_MS     = 70;
+    const EMERGE_OPACITY_MS     = 550;
+    const EMERGE_EASE           = 'cubic-bezier(0.18, 0.85, 0.42, 1)';
+    const EMERGE_INITIAL_SCALE  = 0.04;
+
+    // Dealing-card animation: longer stagger, full-size flight, spin while travelling, overshoot landing.
+    const DEAL_DURATION_MS      = 620;
+    const DEAL_STAGGER_MS       = 200;
+    const DEAL_OPACITY_MS       = 180;
+    const DEAL_EASE             = 'cubic-bezier(0.34, 1.30, 0.64, 1)';
+    const DEAL_INITIAL_SCALE    = 0.72;
+    const DEAL_SPIN_DEG         = 360;
+    const DEAL_NATURAL_ROTATIONS = [-10, -3, 3, 10];
 
     function emergeDealCardsFromButton(btnRect) {
         return new Promise(resolve => {
@@ -301,20 +483,33 @@ document.addEventListener('DOMContentLoaded', () => {
                 const dy = btnCy - (overlayRect.top + overlayRect.height / 2);
 
                 dealCards.forEach((card, i) => {
+                    const naturalRot = DEAL_NATURAL_ROTATIONS[i] || 0;
+                    const rot = naturalRot - DEAL_SPIN_DEG;
                     card.style.transition = 'none';
-                    card.style.transform = `translate(-50%, -50%) translate(${dx}px, ${dy}px) scale(0.06) rotate(${(i - 1.5) * 4}deg)`;
+                    card.style.transform = `translate(-50%, -50%) translate(${dx}px, ${dy}px) scale(${DEAL_INITIAL_SCALE}) rotate(${rot}deg)`;
                     card.style.opacity = '0';
                 });
 
                 overlay.getBoundingClientRect();
 
                 requestAnimationFrame(() => {
-                    dealCards.forEach(card => {
-                        card.style.transition = '';
+                    dealCards.forEach((card, i) => {
+                        const delay = i * DEAL_STAGGER_MS;
+                        card.style.transition =
+                            `transform ${DEAL_DURATION_MS}ms ${DEAL_EASE} ${delay}ms, ` +
+                            `opacity ${DEAL_OPACITY_MS}ms ease-out ${delay}ms`;
                         card.style.transform = '';
                         card.style.opacity = '';
                     });
-                    setTimeout(resolve, 900);
+                    const total = DEAL_DURATION_MS + (dealCards.length - 1) * DEAL_STAGGER_MS + 80;
+                    setTimeout(() => {
+                        dealCards.forEach(card => {
+                            card.style.transition = '';
+                            card.style.transform = '';
+                            card.style.opacity = '';
+                        });
+                        resolve();
+                    }, total);
                 });
             });
         });
@@ -322,8 +517,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function waitForClick(el) {
         return new Promise(resolve => {
+            const mySession = gameSessionId;
             const handler = () => {
                 el.removeEventListener('click', handler);
+                if (stale(mySession)) return;
                 resolve();
             };
             el.addEventListener('click', handler);
@@ -342,24 +539,89 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function startGame(originRect = null) {
-        if (originRect) {
-            screens.start.classList.add('leaving');
-            Object.values(screens).forEach(s => { if (s !== screens.start) s.classList.remove('active'); });
-            screens.game.classList.add('active');
-            setTimeout(() => {
-                screens.start.classList.remove('active', 'leaving');
-            }, 650);
-        } else {
-            showScreen('game');
-        }
+        const mySession = ++gameSessionId;
+
         gameState = { confianza: 4, informacion: 4, pluralismo: 4, participacion: 4 };
         revealingEffects = false;
         selectedDecision = null;
         document.querySelectorAll('.action-btn').forEach(b => b.classList.remove('selected'));
         assignRoles();
         updateIndicators(gameState);
-        await dealRoles(originRect);
+
+        if (originRect) {
+            screens.start.classList.add('leaving');
+            Object.values(screens).forEach(s => { if (s !== screens.start) s.classList.remove('active'); });
+            screens.game.classList.add('active');
+
+            await dealRolesShowAndEmerge(originRect, emergeGameFromButton(originRect));
+            if (stale(mySession)) return;
+            screens.start.classList.remove('active', 'leaving');
+
+            await dealRolesWaitAndHide();
+            if (stale(mySession)) return;
+        } else {
+            showScreen('game');
+            await dealRoles(originRect);
+            if (stale(mySession)) return;
+        }
+
         startRound();
+    }
+
+    function emergeGameFromButton(btnRect) {
+        return new Promise(resolve => {
+            const btnCx = btnRect.left + btnRect.width / 2;
+            const btnCy = btnRect.top + btnRect.height / 2;
+            const elements = [
+                ...document.querySelectorAll('#screen-game .player-corner'),
+                document.querySelector('#screen-game .dashboard'),
+                document.getElementById('btn-exit-game')
+            ].filter(Boolean);
+            if (!elements.length) { resolve(); return; }
+
+            screens.game.classList.add('emerging');
+
+            const layout = elements.map(el => {
+                const rect = el.getBoundingClientRect();
+                return {
+                    dx: btnCx - (rect.left + rect.width / 2),
+                    dy: btnCy - (rect.top + rect.height / 2)
+                };
+            });
+
+            const mid = (elements.length - 1) / 2;
+
+            elements.forEach((el, i) => {
+                const { dx, dy } = layout[i];
+                const rot = (i - mid) * 10;
+                el.style.transition = 'none';
+                el.style.transform = `translate3d(${dx}px, ${dy}px, 0) scale(${EMERGE_INITIAL_SCALE}) rotate(${rot}deg)`;
+                el.style.opacity = '0';
+            });
+
+            screens.game.getBoundingClientRect();
+
+            requestAnimationFrame(() => {
+                elements.forEach((el, i) => {
+                    const delay = i * EMERGE_STAGGER_MS;
+                    el.style.transition =
+                        `transform ${EMERGE_DURATION_MS}ms ${EMERGE_EASE} ${delay}ms, ` +
+                        `opacity ${EMERGE_OPACITY_MS}ms ${EMERGE_EASE} ${delay}ms`;
+                    el.style.transform = '';
+                    el.style.opacity = '';
+                });
+                const total = EMERGE_DURATION_MS + (elements.length - 1) * EMERGE_STAGGER_MS + 60;
+                setTimeout(() => {
+                    screens.game.classList.remove('emerging');
+                    elements.forEach(el => {
+                        el.style.transition = '';
+                        el.style.transform = '';
+                        el.style.opacity = '';
+                    });
+                    resolve();
+                }, total);
+            });
+        });
     }
 
     async function startRound() {
@@ -496,7 +758,9 @@ document.addEventListener('DOMContentLoaded', () => {
     async function maybeEndGame() {
         const losers = checkGameOver();
         if (!losers) return false;
+        const mySession = gameSessionId;
         await wait(1200);
+        if (stale(mySession)) return true;
         showEndScreen(losers);
         return true;
     }
@@ -521,11 +785,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function nextRound() {
+        const mySession = gameSessionId;
         revealingEffects = false;
         selectedDecision = null;
         document.querySelectorAll('.action-btn').forEach(b => b.classList.remove('selected'));
         assignRoles();
         await loadCards();
+        if (stale(mySession)) return;
         await runRoundTurns();
     }
 
@@ -621,6 +887,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function waitForStart() {
         return new Promise(resolve => {
+            const mySession = gameSessionId;
             const overlay = document.getElementById('turn-overlay');
             overlay.querySelector('.turn-player').textContent = 'Lectura inicial';
             overlay.querySelector('.turn-role').textContent = 'Leed el escenario';
@@ -631,11 +898,13 @@ document.addEventListener('DOMContentLoaded', () => {
             screens.game.classList.add('reading-mode');
             const onClick = async () => {
                 btn.removeEventListener('click', onClick);
+                if (stale(mySession)) return;
                 btn.style.display = 'none';
                 overlay.classList.remove('visible');
                 screens.game.classList.remove('reading-mode');
                 hideRoleInfo();
                 await wait(380);
+                if (stale(mySession)) return;
                 overlay.classList.remove('reading');
                 resolve();
             };
@@ -681,17 +950,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function runRoundTurns() {
+        const mySession = gameSessionId;
         turnPhaseActive = true;
         await waitForStart();
+        if (stale(mySession)) return;
 
         for (let i = 0; i < 4; i++) {
             const role = playerRoles[i];
             await playerTurn(`Jugador ${i + 1}`, role.name, TIMINGS.PLAYER_TURN_SEC);
+            if (stale(mySession)) return;
         }
         turnPhaseActive = false;
 
         await flashTurn('Decisión común', TIMINGS.DECISION_LABEL);
+        if (stale(mySession)) return;
         const result = await startDecisionTimer(TIMINGS.DECISION_SEC);
+        if (stale(mySession)) return;
         if (result === 'timeout' && !revealingEffects) {
             handleDecisionTimeout();
         }
@@ -710,14 +984,15 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.addEventListener('click', async (e) => {
             if (revealingEffects || turnPhaseActive) return;
             if (e.target.classList.contains('action-info-btn')) return;
+            const mySession = gameSessionId;
             document.querySelectorAll('.action-btn').forEach(b => b.classList.remove('selected'));
             btn.classList.add('selected');
             selectedDecision = btn.dataset.action;
             revealingEffects = true;
             await revealEffects();
-            if (!screens.game.classList.contains('active')) return;
+            if (stale(mySession) || !screens.game.classList.contains('active')) return;
             await wait(TIMINGS.BETWEEN_ROUNDS_MS);
-            if (!screens.game.classList.contains('active')) return;
+            if (stale(mySession) || !screens.game.classList.contains('active')) return;
             nextRound();
         });
     });

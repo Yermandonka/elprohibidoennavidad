@@ -1191,6 +1191,21 @@ button {
     box-shadow: 4px 4px 0 var(--ink-blue);
 }
 
+.btn-close--game {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 1000;
+}
+
+/* === Emerge desde el botón "Nueva Partida" === */
+#screen-game.emerging .player-corner,
+#screen-game.emerging .dashboard,
+#screen-game.emerging #btn-exit-game {
+    will-change: transform, opacity;
+    transform-origin: center center;
+}
+
 
 .cards-area {
     display: flex;
