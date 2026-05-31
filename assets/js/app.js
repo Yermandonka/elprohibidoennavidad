@@ -690,15 +690,51 @@ document.addEventListener('DOMContentLoaded', () => {
         updateIndicators(gameState);
     }
 
+    const POKE_TYPES = [
+        { id: 'fuego',      label: 'Fuego',      icon: '🔥' },
+        { id: 'agua',       label: 'Agua',       icon: '💧' },
+        { id: 'bosque',     label: 'Bosque',     icon: '🌿' },
+        { id: 'electrico',  label: 'Eléctrico',  icon: '⚡' },
+        { id: 'psiquico',   label: 'Psíquico',   icon: '🔮' },
+        { id: 'tierra',     label: 'Tierra',     icon: '🪨' }
+    ];
+
+    function randomPokeType() {
+        return POKE_TYPES[Math.floor(Math.random() * POKE_TYPES.length)];
+    }
+
+    function randInRange(min, max) {
+        return Math.random() * (max - min) + min;
+    }
+
     function renderCards(hand) {
         currentHand = hand;
         const area = document.getElementById('cards-area');
-        area.innerHTML = ['A', 'B'].map(deck => `
-            <div class="card" data-deck="${deck}">
-                <div class="card-letter">${deck}</div>
-                <p class="card-text">${escapeHtml(hand[deck].text)}</p>
-            </div>
-        `).join('');
+        area.innerHTML = ['A', 'B'].map(deck => {
+            const type = randomPokeType();
+            const name = deck === 'A' ? 'Escenario' : 'Síntoma';
+            const hp = (Math.floor(Math.random() * 7) + 4) * 10;
+            const tiltMag = randInRange(5, 9);
+            const rot = (Math.random() < 0.5 ? -tiltMag : tiltMag).toFixed(2);
+            const dx  = randInRange(-8, 8).toFixed(1);
+            const dy  = randInRange(-5, 5).toFixed(1);
+            const tilt = `translate(${dx}px, ${dy}px) rotate(${rot}deg)`;
+            return `
+                <div class="card pokecard" data-deck="${deck}" data-type="${type.id}" style="transform: ${tilt};">
+                    <div class="pokecard-header">
+                        <span class="pokecard-name">${name} · ${deck}</span>
+                        <span class="pokecard-hp">PS ${hp}</span>
+                    </div>
+                    <div class="pokecard-art">
+                        <span class="pokecard-art-watermark" aria-hidden="true">${type.icon}</span>
+                        <p class="pokecard-text">${escapeHtml(hand[deck].text)}</p>
+                    </div>
+                    <div class="pokecard-typebar">
+                        <span class="pokecard-type-badge" aria-hidden="true">${type.icon}</span>
+                    </div>
+                </div>
+            `;
+        }).join('');
     }
 
     function renderEffectsTable(effects) {
@@ -740,7 +776,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const cardEl = document.querySelector(`.card[data-deck="${deck}"]`);
         cardEl.classList.add('flipping');
         await wait(350);
-        cardEl.innerHTML = renderEffectsTable(currentHand[deck].effects || []);
+        const artEl = cardEl.querySelector('.pokecard-art');
+        const tableHtml = renderEffectsTable(currentHand[deck].effects || []);
+        if (artEl) {
+            const watermarkHtml = artEl.querySelector('.pokecard-art-watermark')?.outerHTML || '';
+            artEl.innerHTML = watermarkHtml + tableHtml;
+        } else {
+            cardEl.innerHTML = tableHtml;
+        }
         cardEl.classList.add('flipped');
         cardEl.classList.remove('flipping');
         await wait(250);

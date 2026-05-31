@@ -1208,13 +1208,15 @@ button {
 
 
 .cards-area {
+    position: relative;
+    z-index: 1;
     display: flex;
     justify-content: space-around;
     align-items: stretch;
     flex-grow: 1;
-    gap: 24px;
+    gap: 32px;
     width: 100%;
-    max-width: 760px;
+    max-width: 980px;
     margin: 0 auto;
 }
 
@@ -1296,9 +1298,166 @@ button {
 }
 
 .card.flipped {
-    justify-content: flex-start;
-    align-items: stretch;
     text-align: left;
+}
+
+/* === Cartas estilo TCG Pokémon === */
+#screen-game .card.pokecard { border-radius: 18px; }
+
+.card.pokecard {
+    --type-color:      var(--paper-warm);
+    --type-color-deep: rgba(0, 0, 0, 0.18);
+    --type-soft:       rgba(244, 234, 213, 0.55);
+    position: relative;
+    background: var(--paper);
+    padding: 0;
+    border: 9px solid var(--type-color);
+    border-radius: 18px;
+    box-shadow:
+        0 1px 0 rgba(255, 255, 255, 0.45) inset,
+        0 8px 18px rgba(0, 0, 0, 0.18);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    text-align: left;
+    overflow: hidden;
+}
+
+/* Línea fina interior, típica de los marcos TCG */
+.card.pokecard::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 1px solid var(--type-color-deep);
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+.card.pokecard[data-type="fuego"]     { --type-color: #E69A78; --type-color-deep: #B66B4D; --type-soft: rgba(230, 154, 120, 0.28); }
+.card.pokecard[data-type="agua"]      { --type-color: #8FB6DC; --type-color-deep: #5E89B5; --type-soft: rgba(143, 182, 220, 0.28); }
+.card.pokecard[data-type="bosque"]    { --type-color: #A9C57A; --type-color-deep: #6E904B; --type-soft: rgba(169, 197, 122, 0.28); }
+.card.pokecard[data-type="electrico"] { --type-color: #ECC85A; --type-color-deep: #B5953A; --type-soft: rgba(236, 200, 90, 0.30); }
+.card.pokecard[data-type="psiquico"]  { --type-color: #C49DD2; --type-color-deep: #8E6C9F; --type-soft: rgba(196, 157, 210, 0.28); }
+.card.pokecard[data-type="tierra"]    { --type-color: #C29B6B; --type-color-deep: #8B6A45; --type-soft: rgba(194, 155, 107, 0.28); }
+
+.pokecard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 8px 14px;
+    background: var(--type-soft);
+    border-bottom: 1px solid var(--type-color-deep);
+    font-family: 'Inter', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.pokecard-name {
+    font-size: 1rem;
+    color: var(--ink-black);
+}
+
+.pokecard-hp {
+    font-size: 0.88rem;
+    color: var(--ink-red-deep);
+    font-weight: 900;
+}
+
+.pokecard-art {
+    position: relative;
+    flex: 1 1 auto;
+    min-height: 150px;
+    margin: 10px 14px 0;
+    padding: 18px 22px;
+    background:
+        radial-gradient(circle at 30% 25%, rgba(255, 255, 255, 0.4), transparent 55%),
+        var(--type-soft);
+    border: 1px solid var(--type-color-deep);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.pokecard-art-watermark {
+    position: absolute;
+    font-size: 9rem;
+    opacity: 0.22;
+    filter: grayscale(0.15);
+    pointer-events: none;
+    line-height: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-10deg);
+    z-index: 0;
+}
+
+.pokecard-typebar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 14px;
+    margin: 8px 0 0;
+    background: var(--type-soft);
+    border-top: 1px solid var(--type-color-deep);
+    border-bottom: 1px solid var(--type-color-deep);
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.10em;
+    color: var(--ink-black);
+}
+
+.pokecard-type-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--type-color);
+    border: 1px solid var(--type-color-deep);
+    font-size: 1.05rem;
+    line-height: 1;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18);
+}
+
+.pokecard-text {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    font-family: 'Iowan Old Style', 'Georgia', serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 1.2;
+    color: var(--ink-black);
+    text-align: center;
+    text-wrap: balance;
+}
+
+/* Cuando la carta se voltea, el marco Pokémon se conserva: sólo cambia el
+   contenido dentro de .pokecard-art (texto → tabla de efectos). */
+.card.pokecard.flipped .pokecard-art {
+    align-items: stretch;
+    justify-content: center;
+    padding: 12px 14px;
+}
+
+.card.pokecard.flipped .effects-table {
+    position: relative;
+    z-index: 1;
+    gap: 5px;
+}
+
+.card.pokecard.flipped .effect-row {
+    padding: 6px 10px;
+    background: rgba(244, 234, 213, 0.92);
+    border: 1.5px solid var(--type-color-deep);
 }
 
 .effects-table {
@@ -1389,6 +1548,8 @@ button {
 }
 
 .actions-area {
+    position: relative;
+    z-index: 5;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -1400,8 +1561,25 @@ button {
     box-shadow: 5px 5px 0 var(--ink-blue);
     margin: 20px auto 0;
     width: 100%;
-    max-width: 760px;
+    max-width: 980px;
     box-sizing: border-box;
+}
+
+.actions-area::before {
+    content: "DECIDE AQUÍ";
+    position: absolute;
+    top: 0;
+    left: 28px;
+    transform: translateY(-55%);
+    background: var(--paper);
+    padding: 0 12px;
+    font-family: 'Inter', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    font-size: 1.55rem;
+    line-height: 1;
+    color: var(--ink-black);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
 }
 
 .action-btn {
