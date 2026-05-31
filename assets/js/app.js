@@ -1107,8 +1107,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const overlay = document.getElementById('round-summary-overlay');
             if (!overlay || !hand || !decision) { resolve(); return; }
 
-            overlay.querySelector('.round-summary-decision-banner').textContent = `Decisión: ${decision}`;
-
             ['A', 'B'].forEach(deck => {
                 const section = overlay.querySelector(`.round-summary-section[data-deck="${deck}"]`);
                 if (!section) return;
@@ -1116,8 +1114,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 const eff = card && Array.isArray(card.effects)
                     ? card.effects.find(x => x.decision === decision)
                     : null;
-                section.querySelector('.round-summary-scenario').textContent = card ? card.text : '';
-                section.querySelector('.round-summary-chips').innerHTML = eff ? formatDeltaChips(eff) : '';
                 const txtEl = section.querySelector('.round-summary-text');
                 const expl = eff && eff.explanation && String(eff.explanation).trim();
                 if (expl) {
@@ -1143,10 +1139,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const ACTION_DESCRIPTIONS = {
-        'Contrastar': 'El grupo decide comprobar mejor los hechos antes de actuar. Es una respuesta prudente frente al ruido, los bulos y las versiones interesadas. Puede evitar errores graves, pero también hacer que la ciudad reaccione demasiado tarde.',
-        'Consultar': 'El grupo decide escuchar a más personas antes de cerrar una decisión. Da importancia a las voces afectadas y evita decidir solo desde arriba. Puede hacer que la decisión sea más legítima, pero también que el acuerdo sea más difícil.',
-        'Blindar': 'El grupo decide proteger a quienes pueden salir más perjudicados por la situación. Es una respuesta centrada en derechos, garantías y límites al abuso. Puede evitar daños injustos, pero también generar tensión con quienes quieren una solución más rápida o mayoritaria.',
-        'Decretar': 'El grupo decide actuar rápido y cerrar el debate. Es una respuesta útil cuando hay urgencia, bloqueo o falta de tiempo. Puede evitar la parálisis, pero también parecer una imposición si no se explica bien.'
+        'Comprobar': 'El grupo decide comprobar mejor los hechos antes de actuar. Es una respuesta prudente frente al ruido, los bulos y las versiones interesadas. Puede evitar errores graves, pero también hacer que la ciudad reaccione demasiado tarde.',
+        'Escuchar': 'El grupo decide escuchar a más personas antes de cerrar una decisión. Da importancia a las voces afectadas y evita decidir solo desde arriba. Puede hacer que la decisión sea más legítima, pero también que el acuerdo sea más difícil.',
+        'Proteger': 'El grupo decide proteger a quienes pueden salir más perjudicados por la situación. Es una respuesta centrada en derechos, garantías y límites al abuso. Puede evitar daños injustos, pero también generar tensión con quienes quieren una solución más rápida o mayoritaria.',
+        'Actuar ya': 'El grupo decide actuar rápido y cerrar el debate. Es una respuesta útil cuando hay urgencia, bloqueo o falta de tiempo. Puede evitar la parálisis, pero también parecer una imposición si no se explica bien.'
     };
 
     document.querySelectorAll('.action-btn').forEach(btn => {
