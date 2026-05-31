@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // === Tiempos del juego (ajustar aquí para pruebas) ===
     const TIMINGS = {
-        PLAYER_TURN_SEC:     2,     // segundos por turno de cada jugador
+        PLAYER_TURN_SEC:     40,     // segundos por turno de cada jugador
         DECISION_SEC:        120,    // segundos de deliberación común tras los 4 turnos
         BETWEEN_ROUNDS_MS:   10000,  // pausa (ms) entre revelar efectos e iniciar la siguiente ronda
         DECISION_LABEL:      '2 min' // texto del cartel "Decisión común" (solo visual)
