@@ -683,11 +683,28 @@ document.addEventListener('DOMContentLoaded', () => {
     function applyEffect(effects, decision) {
         const e = effects.find(x => x.decision === decision);
         if (!e) return;
-        gameState.confianza   = clamp(gameState.confianza   + Number(e.confianza_delta),   0, MAX_INDICATOR);
-        gameState.informacion = clamp(gameState.informacion + Number(e.informacion_delta), 0, MAX_INDICATOR);
-        gameState.pluralismo  = clamp(gameState.pluralismo  + Number(e.pluralismo_delta),  0, MAX_INDICATOR);
-        gameState.participacion = clamp(gameState.participacion + Number(e.participacion_delta), 0, MAX_INDICATOR);
+        const indicators = ['confianza', 'informacion', 'pluralismo', 'participacion'];
+        indicators.forEach(ind => {
+            const raw = Number(e[`${ind}_delta`]);
+            const before = gameState[ind];
+            const after = clamp(before + raw, 0, MAX_INDICATOR);
+            const actual = after - before;
+            gameState[ind] = after;
+            if (actual !== 0) showIndicatorDelta(ind, actual);
+        });
         updateIndicators(gameState);
+    }
+
+    function showIndicatorDelta(indicator, delta) {
+        const bar = document.querySelector(`.player-corner .bar[data-indicator="${indicator}"]`);
+        if (!bar) return;
+        const corner = bar.closest('.player-corner');
+        if (!corner) return;
+        const float = document.createElement('div');
+        float.className = `indicator-delta ${delta > 0 ? 'positive' : 'negative'}`;
+        float.textContent = (delta > 0 ? '+' : '') + delta;
+        corner.appendChild(float);
+        setTimeout(() => float.remove(), 1700);
     }
 
     const POKE_TYPES = [
