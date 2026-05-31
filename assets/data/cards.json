@@ -5,37 +5,46 @@
       "bonus_indicator": "participacion",
       "effects": [
         {
-          "decision": "Contrastar",
+          "decision": "Comprobar",
           "confianza_delta": 1,
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -2,
-          "explanation": ""
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
         },
         {
-          "decision": "Consultar",
+          "decision": "Escuchar",
           "confianza_delta": 0,
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": ""
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: entre ruido y prisas, los datos salen despeinados."
         },
         {
-          "decision": "Blindar",
+          "decision": "Proteger",
           "confianza_delta": 0,
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": ""
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. El coste: algunos sienten que esto no va con ellos y desaparecen."
         },
         {
-          "decision": "Decretar",
+          "decision": "Actuar ya",
           "confianza_delta": -1,
           "informacion_delta": 0,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": ""
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. Pero ojo: si no caben matices, el debate se queda en blanco y negro."
         }
+      ],
+      "family": "instituto",
+      "tags": [
+        "instituto",
+        "normas",
+        "alumnos",
+        "curso",
+        "moviles",
+        "participacion"
       ]
     },
     {
@@ -43,37 +52,46 @@
       "bonus_indicator": "informacion",
       "effects": [
         {
-          "decision": "Contrastar",
+          "decision": "Comprobar",
           "confianza_delta": 0,
           "informacion_delta": 2,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": ""
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
         },
         {
-          "decision": "Consultar",
+          "decision": "Escuchar",
           "confianza_delta": -1,
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": ""
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
         },
         {
-          "decision": "Blindar",
+          "decision": "Proteger",
           "confianza_delta": 1,
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": ""
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: tanta vuelta enfría a la gente y se bajan del carro."
         },
         {
-          "decision": "Decretar",
+          "decision": "Actuar ya",
           "confianza_delta": -1,
           "informacion_delta": -2,
           "pluralismo_delta": 0,
           "participacion_delta": 2,
-          "explanation": ""
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: entre ruido y prisas, los datos salen despeinados."
         }
+      ],
+      "family": "politica",
+      "tags": [
+        "politica",
+        "ia",
+        "video",
+        "redes",
+        "desinformacion",
+        "reputacion"
       ]
     },
     {
@@ -81,37 +99,46 @@
       "bonus_indicator": "confianza",
       "effects": [
         {
-          "decision": "Contrastar",
+          "decision": "Comprobar",
           "confianza_delta": 1,
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -2,
-          "explanation": ""
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. El coste: algunos sienten que esto no va con ellos y desaparecen."
         },
         {
-          "decision": "Consultar",
+          "decision": "Escuchar",
           "confianza_delta": 0,
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": ""
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. Pero ojo: se cuelan versiones cutres con traje de noticia."
         },
         {
-          "decision": "Blindar",
+          "decision": "Proteger",
           "confianza_delta": 1,
           "informacion_delta": 0,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": ""
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
         },
         {
-          "decision": "Decretar",
+          "decision": "Actuar ya",
           "confianza_delta": -1,
           "informacion_delta": 0,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": ""
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: proteger una salida rápida deja gente en el arcén."
         }
+      ],
+      "family": "barrio",
+      "tags": [
+        "barrio",
+        "fiestas",
+        "ayuntamiento",
+        "recortes",
+        "tradicion",
+        "participacion"
       ]
     },
     {
@@ -119,37 +146,45 @@
       "bonus_indicator": "confianza",
       "effects": [
         {
-          "decision": "Contrastar",
+          "decision": "Comprobar",
           "confianza_delta": -1,
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": ""
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: huele a apaño y la confianza se va a comprar pipas."
         },
         {
-          "decision": "Consultar",
+          "decision": "Escuchar",
           "confianza_delta": -2,
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 0,
-          "explanation": ""
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
         },
         {
-          "decision": "Blindar",
+          "decision": "Proteger",
           "confianza_delta": 1,
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -2,
-          "explanation": ""
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. El coste: algunos sienten que esto no va con ellos y desaparecen."
         },
         {
-          "decision": "Decretar",
+          "decision": "Actuar ya",
           "confianza_delta": 2,
           "informacion_delta": -1,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": ""
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. Pero ojo: si no caben matices, el debate se queda en blanco y negro."
         }
+      ],
+      "family": "transporte",
+      "tags": [
+        "transporte",
+        "app",
+        "hora_punta",
+        "urgencia",
+        "servicios_publicos"
       ]
     },
     {
@@ -157,37 +192,46 @@
       "bonus_indicator": "informacion",
       "effects": [
         {
-          "decision": "Contrastar",
+          "decision": "Comprobar",
           "confianza_delta": 1,
           "informacion_delta": 2,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": ""
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
         },
         {
-          "decision": "Consultar",
+          "decision": "Escuchar",
           "confianza_delta": -1,
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": ""
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
         },
         {
-          "decision": "Blindar",
+          "decision": "Proteger",
           "confianza_delta": 1,
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": ""
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
         },
         {
-          "decision": "Decretar",
+          "decision": "Actuar ya",
           "confianza_delta": -1,
           "informacion_delta": -2,
           "pluralismo_delta": -1,
           "participacion_delta": 3,
-          "explanation": ""
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
         }
+      ],
+      "family": "instituto",
+      "tags": [
+        "instituto",
+        "profesor",
+        "redes",
+        "acusacion",
+        "desinformacion",
+        "reputacion"
       ]
     },
     {
@@ -195,37 +239,45 @@
       "bonus_indicator": "pluralismo",
       "effects": [
         {
-          "decision": "Contrastar",
+          "decision": "Comprobar",
           "confianza_delta": 0,
           "informacion_delta": 1,
           "pluralismo_delta": -1,
           "participacion_delta": -1,
-          "explanation": ""
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. El coste: la mayoría pisa fuerte y deja huellas donde no debe."
         },
         {
-          "decision": "Consultar",
+          "decision": "Escuchar",
           "confianza_delta": -1,
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": ""
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
         },
         {
-          "decision": "Blindar",
+          "decision": "Proteger",
           "confianza_delta": 1,
           "informacion_delta": 0,
           "pluralismo_delta": 2,
           "participacion_delta": -2,
-          "explanation": ""
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
         },
         {
-          "decision": "Decretar",
+          "decision": "Actuar ya",
           "confianza_delta": -1,
           "informacion_delta": 0,
           "pluralismo_delta": -2,
           "participacion_delta": 2,
-          "explanation": ""
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: proteger una salida rápida deja gente en el arcén."
         }
+      ],
+      "family": "convivencia",
+      "tags": [
+        "barrio",
+        "migracion",
+        "convivencia",
+        "minorías",
+        "polarizacion"
       ]
     },
     {
@@ -233,37 +285,46 @@
       "bonus_indicator": "confianza",
       "effects": [
         {
-          "decision": "Contrastar",
+          "decision": "Comprobar",
           "confianza_delta": -1,
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": ""
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: huele a apaño y la confianza se va a comprar pipas."
         },
         {
-          "decision": "Consultar",
+          "decision": "Escuchar",
           "confianza_delta": -2,
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 0,
-          "explanation": ""
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
         },
         {
-          "decision": "Blindar",
+          "decision": "Proteger",
           "confianza_delta": 1,
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -2,
-          "explanation": ""
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. El coste: algunos sienten que esto no va con ellos y desaparecen."
         },
         {
-          "decision": "Decretar",
+          "decision": "Actuar ya",
           "confianza_delta": 2,
           "informacion_delta": -1,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": ""
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. Pero ojo: si no caben matices, el debate se queda en blanco y negro."
         }
+      ],
+      "family": "seguridad",
+      "tags": [
+        "plaza",
+        "futbol",
+        "seguridad",
+        "urgencia",
+        "polarizacion",
+        "convivencia"
       ]
     },
     {
@@ -271,37 +332,45 @@
       "bonus_indicator": "participacion",
       "effects": [
         {
-          "decision": "Contrastar",
+          "decision": "Comprobar",
           "confianza_delta": 1,
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -2,
-          "explanation": ""
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
         },
         {
-          "decision": "Consultar",
+          "decision": "Escuchar",
           "confianza_delta": -1,
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": ""
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
         },
         {
-          "decision": "Blindar",
+          "decision": "Proteger",
           "confianza_delta": 0,
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": ""
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: tanta vuelta enfría a la gente y se bajan del carro."
         },
         {
-          "decision": "Decretar",
+          "decision": "Actuar ya",
           "confianza_delta": -1,
           "informacion_delta": 0,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": ""
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: alguien acaba sintiendo que la ciudad no va con él."
         }
+      ],
+      "family": "vivienda",
+      "tags": [
+        "barrio",
+        "alquileres",
+        "vivienda",
+        "desigualdad",
+        "participacion"
       ]
     },
     {
@@ -309,37 +378,45 @@
       "bonus_indicator": "confianza",
       "effects": [
         {
-          "decision": "Contrastar",
+          "decision": "Comprobar",
           "confianza_delta": 0,
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -2,
-          "explanation": ""
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. El coste: algunos sienten que esto no va con ellos y desaparecen."
         },
         {
-          "decision": "Consultar",
+          "decision": "Escuchar",
           "confianza_delta": -1,
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": ""
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
         },
         {
-          "decision": "Blindar",
+          "decision": "Proteger",
           "confianza_delta": 1,
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -2,
-          "explanation": ""
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
         },
         {
-          "decision": "Decretar",
+          "decision": "Actuar ya",
           "confianza_delta": 3,
           "informacion_delta": -1,
           "pluralismo_delta": -2,
           "participacion_delta": 1,
-          "explanation": ""
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: proteger una salida rápida deja gente en el arcén."
         }
+      ],
+      "family": "seguridad",
+      "tags": [
+        "camaras",
+        "robos",
+        "seguridad",
+        "privacidad",
+        "urgencia"
       ]
     },
     {
@@ -347,37 +424,46 @@
       "bonus_indicator": "participacion",
       "effects": [
         {
-          "decision": "Contrastar",
+          "decision": "Comprobar",
           "confianza_delta": 1,
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -2,
-          "explanation": ""
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: tanta vuelta enfría a la gente y se bajan del carro."
         },
         {
-          "decision": "Consultar",
+          "decision": "Escuchar",
           "confianza_delta": -1,
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": ""
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
         },
         {
-          "decision": "Blindar",
+          "decision": "Proteger",
           "confianza_delta": 1,
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -2,
-          "explanation": ""
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. El coste: algunos sienten que esto no va con ellos y desaparecen."
         },
         {
-          "decision": "Decretar",
+          "decision": "Actuar ya",
           "confianza_delta": -1,
           "informacion_delta": 0,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": ""
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. Pero ojo: si no caben matices, el debate se queda en blanco y negro."
         }
+      ],
+      "family": "trabajo",
+      "tags": [
+        "repartidores",
+        "huelga",
+        "trabajo",
+        "examenes",
+        "urgencia",
+        "derechos"
       ]
     },
     {
@@ -385,37 +471,47 @@
       "bonus_indicator": "pluralismo",
       "effects": [
         {
-          "decision": "Contrastar",
+          "decision": "Comprobar",
           "confianza_delta": 0,
           "informacion_delta": 1,
           "pluralismo_delta": -1,
           "participacion_delta": -1,
-          "explanation": ""
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: los de siempre hablan alto y otros se comen el silencio."
         },
         {
-          "decision": "Consultar",
+          "decision": "Escuchar",
           "confianza_delta": -1,
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": ""
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
         },
         {
-          "decision": "Blindar",
+          "decision": "Proteger",
           "confianza_delta": 1,
           "informacion_delta": 0,
           "pluralismo_delta": 2,
           "participacion_delta": -2,
-          "explanation": ""
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
         },
         {
-          "decision": "Decretar",
+          "decision": "Actuar ya",
           "confianza_delta": -1,
           "informacion_delta": 0,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": ""
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: alguien acaba sintiendo que la ciudad no va con él."
         }
+      ],
+      "family": "barrio",
+      "tags": [
+        "obra",
+        "plaza",
+        "barrio",
+        "mayores",
+        "niños",
+        "skaters",
+        "convivencia"
       ]
     },
     {
@@ -423,37 +519,1130 @@
       "bonus_indicator": "informacion",
       "effects": [
         {
-          "decision": "Contrastar",
+          "decision": "Comprobar",
           "confianza_delta": 0,
           "informacion_delta": 2,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": ""
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. El coste: algunos sienten que esto no va con ellos y desaparecen."
         },
         {
-          "decision": "Consultar",
+          "decision": "Escuchar",
           "confianza_delta": -1,
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": ""
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
         },
         {
-          "decision": "Blindar",
+          "decision": "Proteger",
           "confianza_delta": 1,
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": ""
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
         },
         {
-          "decision": "Decretar",
+          "decision": "Actuar ya",
           "confianza_delta": -1,
           "informacion_delta": -2,
           "pluralismo_delta": -1,
           "participacion_delta": 3,
-          "explanation": ""
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: proteger una salida rápida deja gente en el arcén."
         }
+      ],
+      "family": "instituto",
+      "tags": [
+        "instituto",
+        "chat",
+        "privacidad",
+        "notas",
+        "capturas",
+        "redes"
+      ]
+    },
+    {
+      "text": "El instituto prohíbe móviles en el recreo porque dice que “se nos va de las manos”…",
+      "bonus_indicator": "participacion",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 1,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -2,
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": 0,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 2,
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: entre ruido y prisas, los datos salen despeinados."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. El coste: algunos sienten que esto no va con ellos y desaparecen."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": -1,
+          "participacion_delta": 1,
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. Pero ojo: si no caben matices, el debate se queda en blanco y negro."
+        }
+      ],
+      "family": "instituto",
+      "tags": [
+        "instituto",
+        "moviles",
+        "alumnos",
+        "normas",
+        "redes"
+      ]
+    },
+    {
+      "text": "Un alumno sube una lista de profes favoritos y profes cancelados…",
+      "bonus_indicator": "informacion",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 1,
+          "informacion_delta": 2,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -1,
+          "informacion_delta": -2,
+          "pluralismo_delta": 0,
+          "participacion_delta": 2,
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: entre ruido y prisas, los datos salen despeinados."
+        }
+      ],
+      "family": "instituto",
+      "tags": [
+        "instituto",
+        "redes",
+        "profesores",
+        "linchamiento",
+        "reputacion"
+      ]
+    },
+    {
+      "text": "La dirección mueve un examen importante a última hora…",
+      "bonus_indicator": "confianza",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 1,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. El coste: algunos sienten que esto no va con ellos y desaparecen."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 2,
+          "informacion_delta": 0,
+          "pluralismo_delta": 0,
+          "participacion_delta": -2,
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -2,
+          "informacion_delta": -1,
+          "pluralismo_delta": 0,
+          "participacion_delta": 2,
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: el salseo tapa lo importante y encima presume."
+        }
+      ],
+      "family": "instituto",
+      "tags": [
+        "instituto",
+        "examenes",
+        "alumnos",
+        "normas"
+      ]
+    },
+    {
+      "text": "Un grupo pide baños neutros y el debate se pone intensito…",
+      "bonus_indicator": "pluralismo",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 0,
+          "informacion_delta": 1,
+          "pluralismo_delta": -1,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: algunas voces quedan fuera y luego vienen los portazos."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 2,
+          "participacion_delta": -2,
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. El coste: algunos sienten que esto no va con ellos y desaparecen."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": -2,
+          "participacion_delta": 2,
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. Pero ojo: si no caben matices, el debate se queda en blanco y negro."
+        }
+      ],
+      "family": "instituto",
+      "tags": [
+        "instituto",
+        "minorías",
+        "derechos",
+        "identidad",
+        "pluralismo"
+      ]
+    },
+    {
+      "text": "El centro cultural invita a un streamer polémico a dar una charla…",
+      "bonus_indicator": "pluralismo",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 0,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": 0,
+          "informacion_delta": -1,
+          "pluralismo_delta": -1,
+          "participacion_delta": 1,
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: alguien acaba sintiendo que la ciudad no va con él."
+        }
+      ],
+      "family": "cultura",
+      "tags": [
+        "cultura",
+        "redes",
+        "libertad",
+        "polarizacion"
+      ]
+    },
+    {
+      "text": "El ayuntamiento peatonaliza una calle llena de tiendas…",
+      "bonus_indicator": "pluralismo",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 0,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. El coste: algunos sienten que esto no va con ellos y desaparecen."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": 0,
+          "informacion_delta": -1,
+          "pluralismo_delta": -1,
+          "participacion_delta": 1,
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: proteger una salida rápida deja gente en el arcén."
+        }
+      ],
+      "family": "barrio",
+      "tags": [
+        "barrio",
+        "comercio",
+        "movilidad",
+        "vecinos"
+      ]
+    },
+    {
+      "text": "Vecinos piden cerrar una cancha porque hay ruido por las noches…",
+      "bonus_indicator": "pluralismo",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 0,
+          "informacion_delta": 1,
+          "pluralismo_delta": -1,
+          "participacion_delta": -1,
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: algunas voces quedan fuera y luego vienen los portazos."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 2,
+          "participacion_delta": -2,
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. El coste: algunos sienten que esto no va con ellos y desaparecen."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": -2,
+          "participacion_delta": 2,
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. Pero ojo: si no caben matices, el debate se queda en blanco y negro."
+        }
+      ],
+      "family": "barrio",
+      "tags": [
+        "barrio",
+        "jovenes",
+        "ruido",
+        "convivencia"
+      ]
+    },
+    {
+      "text": "El mercadillo de siempre se cambia por un evento patrocinado…",
+      "bonus_indicator": "confianza",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 1,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 2,
+          "informacion_delta": 0,
+          "pluralismo_delta": 0,
+          "participacion_delta": -2,
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -2,
+          "informacion_delta": -1,
+          "pluralismo_delta": 0,
+          "participacion_delta": 2,
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: entre ruido y prisas, los datos salen despeinados."
+        }
+      ],
+      "family": "barrio",
+      "tags": [
+        "barrio",
+        "comercio",
+        "tradicion",
+        "empresa"
+      ]
+    },
+    {
+      "text": "La policía hace controles cerca del instituto después de varias peleas…",
+      "bonus_indicator": "confianza",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": -1,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. El coste: algunos sienten que les han vendido la moto sin casco."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -2,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 0,
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": -2,
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": 2,
+          "informacion_delta": -1,
+          "pluralismo_delta": -1,
+          "participacion_delta": 1,
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: proteger una salida rápida deja gente en el arcén."
+        }
+      ],
+      "family": "seguridad",
+      "tags": [
+        "seguridad",
+        "instituto",
+        "jovenes",
+        "control"
+      ]
+    },
+    {
+      "text": "La biblioteca recorta horario justo en época de exámenes…",
+      "bonus_indicator": "participacion",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 1,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -2,
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": 0,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 2,
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: entre ruido y prisas, los datos salen despeinados."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. El coste: algunos sienten que esto no va con ellos y desaparecen."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": -1,
+          "participacion_delta": 1,
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. Pero ojo: si no caben matices, el debate se queda en blanco y negro."
+        }
+      ],
+      "family": "servicios",
+      "tags": [
+        "servicios",
+        "estudiantes",
+        "examenes",
+        "biblioteca"
+      ]
+    },
+    {
+      "text": "Una influencer local denuncia acoso en el barrio y todo el mundo opina…",
+      "bonus_indicator": "informacion",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 1,
+          "informacion_delta": 2,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -1,
+          "informacion_delta": -2,
+          "pluralismo_delta": 0,
+          "participacion_delta": 2,
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: entre ruido y prisas, los datos salen despeinados."
+        }
+      ],
+      "family": "redes",
+      "tags": [
+        "redes",
+        "acoso",
+        "barrio",
+        "linchamiento"
+      ]
+    },
+    {
+      "text": "El ayuntamiento propone limitar los pisos turísticos del centro…",
+      "bonus_indicator": "pluralismo",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 0,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. El coste: algunos sienten que esto no va con ellos y desaparecen."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": 0,
+          "informacion_delta": -1,
+          "pluralismo_delta": -1,
+          "participacion_delta": 1,
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: proteger una salida rápida deja gente en el arcén."
+        }
+      ],
+      "family": "vivienda",
+      "tags": [
+        "vivienda",
+        "turismo",
+        "barrio",
+        "comercio"
+      ]
+    },
+    {
+      "text": "La fiesta del barrio presenta un cartel que muchos ven machista…",
+      "bonus_indicator": "pluralismo",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 0,
+          "informacion_delta": 1,
+          "pluralismo_delta": -1,
+          "participacion_delta": -1,
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: algunas voces quedan fuera y luego vienen los portazos."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 2,
+          "participacion_delta": -2,
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. El coste: algunos sienten que esto no va con ellos y desaparecen."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": -2,
+          "participacion_delta": 2,
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. Pero ojo: si no caben matices, el debate se queda en blanco y negro."
+        }
+      ],
+      "family": "cultura",
+      "tags": [
+        "fiestas",
+        "barrio",
+        "igualdad",
+        "redes"
+      ]
+    },
+    {
+      "text": "El ayuntamiento promete becas, pero nadie entiende los criterios…",
+      "bonus_indicator": "informacion",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 1,
+          "informacion_delta": 2,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -1,
+          "informacion_delta": -2,
+          "pluralismo_delta": 0,
+          "participacion_delta": 2,
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: entre ruido y prisas, los datos salen despeinados."
+        }
+      ],
+      "family": "politica",
+      "tags": [
+        "politica",
+        "becas",
+        "opacidad",
+        "juventud"
+      ]
+    },
+    {
+      "text": "Una empresa de reparto cambia condiciones y los riders estallan…",
+      "bonus_indicator": "participacion",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 1,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -2,
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. El coste: algunos sienten que esto no va con ellos y desaparecen."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": 0,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 2,
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. Pero ojo: se cuelan versiones cutres con traje de noticia."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": -1,
+          "participacion_delta": 1,
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: proteger una salida rápida deja gente en el arcén."
+        }
+      ],
+      "family": "trabajo",
+      "tags": [
+        "trabajo",
+        "repartidores",
+        "derechos",
+        "empresa"
+      ]
+    },
+    {
+      "text": "Un sindicato estudiantil convoca paro el día antes de una prueba importante…",
+      "bonus_indicator": "participacion",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 1,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -2,
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": 0,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 2,
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: entre ruido y prisas, los datos salen despeinados."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. El coste: algunos sienten que esto no va con ellos y desaparecen."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": -1,
+          "participacion_delta": 1,
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. Pero ojo: si no caben matices, el debate se queda en blanco y negro."
+        }
+      ],
+      "family": "instituto",
+      "tags": [
+        "instituto",
+        "huelga",
+        "examenes",
+        "participacion"
+      ]
+    },
+    {
+      "text": "Hackean la web municipal y se filtran datos personales…",
+      "bonus_indicator": "confianza",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": -1,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: la sospecha se queda pegada como chicle bajo la mesa."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -2,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 0,
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": -2,
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": 2,
+          "informacion_delta": -1,
+          "pluralismo_delta": -1,
+          "participacion_delta": 1,
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: alguien acaba sintiendo que la ciudad no va con él."
+        }
+      ],
+      "family": "privacidad",
+      "tags": [
+        "datos",
+        "hackeo",
+        "privacidad",
+        "ayuntamiento"
+      ]
+    },
+    {
+      "text": "El periódico escolar publica una investigación que deja mal a dirección…",
+      "bonus_indicator": "informacion",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 1,
+          "informacion_delta": 2,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. El coste: algunos sienten que esto no va con ellos y desaparecen."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -1,
+          "informacion_delta": -2,
+          "pluralismo_delta": 0,
+          "participacion_delta": 2,
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: el salseo tapa lo importante y encima presume."
+        }
+      ],
+      "family": "instituto",
+      "tags": [
+        "periodismo",
+        "instituto",
+        "informacion",
+        "direccion"
+      ]
+    },
+    {
+      "text": "Instalan un refugio climático en una plaza y quitan media zona de bancos…",
+      "bonus_indicator": "pluralismo",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 0,
+          "informacion_delta": 1,
+          "pluralismo_delta": -1,
+          "participacion_delta": -1,
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: algunas voces quedan fuera y luego vienen los portazos."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 2,
+          "participacion_delta": -2,
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. El coste: algunos sienten que esto no va con ellos y desaparecen."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": -2,
+          "participacion_delta": 2,
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. Pero ojo: si no caben matices, el debate se queda en blanco y negro."
+        }
+      ],
+      "family": "barrio",
+      "tags": [
+        "barrio",
+        "clima",
+        "mayores",
+        "espacio_publico"
+      ]
+    },
+    {
+      "text": "El equipo femenino pide el mismo horario de entreno que el masculino…",
+      "bonus_indicator": "pluralismo",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 0,
+          "informacion_delta": 1,
+          "pluralismo_delta": -1,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: los de siempre hablan alto y otros se comen el silencio."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 2,
+          "participacion_delta": -2,
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": -2,
+          "participacion_delta": 2,
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: alguien acaba sintiendo que la ciudad no va con él."
+        }
+      ],
+      "family": "deporte",
+      "tags": [
+        "deporte",
+        "igualdad",
+        "jovenes",
+        "pluralismo"
+      ]
+    },
+    {
+      "text": "El centro juvenil cierra por falta de presupuesto…",
+      "bonus_indicator": "confianza",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 1,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. El coste: algunos sienten que esto no va con ellos y desaparecen."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 2,
+          "informacion_delta": 0,
+          "pluralismo_delta": 0,
+          "participacion_delta": -2,
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -2,
+          "informacion_delta": -1,
+          "pluralismo_delta": 0,
+          "participacion_delta": 2,
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: el salseo tapa lo importante y encima presume."
+        }
+      ],
+      "family": "servicios",
+      "tags": [
+        "jovenes",
+        "servicios",
+        "presupuesto",
+        "barrio"
+      ]
+    },
+    {
+      "text": "La asociación vecinal veta a un partido en un debate público…",
+      "bonus_indicator": "pluralismo",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 0,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. El coste: algunos sienten que esto no va con ellos y desaparecen."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": 0,
+          "informacion_delta": -1,
+          "pluralismo_delta": -1,
+          "participacion_delta": 1,
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. Pero ojo: si no caben matices, el debate se queda en blanco y negro."
+        }
+      ],
+      "family": "politica",
+      "tags": [
+        "politica",
+        "debate",
+        "pluralismo",
+        "barrio"
+      ]
+    },
+    {
+      "text": "Se viraliza un audio del alcalde insultando a jóvenes…",
+      "bonus_indicator": "informacion",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 1,
+          "informacion_delta": 2,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -1,
+          "informacion_delta": -2,
+          "pluralismo_delta": 0,
+          "participacion_delta": 2,
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: entre ruido y prisas, los datos salen despeinados."
+        }
+      ],
+      "family": "politica",
+      "tags": [
+        "politica",
+        "audio",
+        "redes",
+        "jovenes",
+        "reputacion"
+      ]
+    },
+    {
+      "text": "Un corte de agua afecta sobre todo al bloque más viejo del barrio…",
+      "bonus_indicator": "confianza",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": -1,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. El coste: algunos sienten que les han vendido la moto sin casco."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -2,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 0,
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": -2,
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": 2,
+          "informacion_delta": -1,
+          "pluralismo_delta": -1,
+          "participacion_delta": 1,
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: proteger una salida rápida deja gente en el arcén."
+        }
+      ],
+      "family": "servicios",
+      "tags": [
+        "servicios",
+        "agua",
+        "barrio",
+        "desigualdad"
       ]
     }
   ],
@@ -463,37 +1652,51 @@
       "bonus_indicator": "informacion",
       "effects": [
         {
-          "decision": "Contrastar",
+          "decision": "Comprobar",
           "confianza_delta": 0,
           "informacion_delta": 2,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": ""
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
         },
         {
-          "decision": "Consultar",
+          "decision": "Escuchar",
           "confianza_delta": -1,
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": ""
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
         },
         {
-          "decision": "Blindar",
+          "decision": "Proteger",
           "confianza_delta": 1,
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": ""
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. El coste: algunos sienten que esto no va con ellos y desaparecen."
         },
         {
-          "decision": "Decretar",
+          "decision": "Actuar ya",
           "confianza_delta": -1,
           "informacion_delta": -2,
           "pluralismo_delta": 0,
           "participacion_delta": 2,
-          "explanation": ""
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. Pero ojo: se cuelan versiones cutres con traje de noticia."
         }
+      ],
+      "families": [
+        "redes",
+        "politica",
+        "instituto",
+        "convivencia",
+        "barrio"
+      ],
+      "tags": [
+        "tiktok",
+        "redes",
+        "linchamiento",
+        "desinformacion",
+        "reputacion"
       ]
     },
     {
@@ -501,37 +1704,50 @@
       "bonus_indicator": "pluralismo",
       "effects": [
         {
-          "decision": "Contrastar",
+          "decision": "Comprobar",
           "confianza_delta": 0,
           "informacion_delta": 1,
           "pluralismo_delta": -1,
           "participacion_delta": -1,
-          "explanation": ""
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: los de siempre hablan alto y otros se comen el silencio."
         },
         {
-          "decision": "Consultar",
+          "decision": "Escuchar",
           "confianza_delta": -1,
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": ""
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
         },
         {
-          "decision": "Blindar",
+          "decision": "Proteger",
           "confianza_delta": 1,
           "informacion_delta": 0,
           "pluralismo_delta": 2,
           "participacion_delta": -3,
-          "explanation": ""
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: tanta vuelta enfría a la gente y se bajan del carro."
         },
         {
-          "decision": "Decretar",
+          "decision": "Actuar ya",
           "confianza_delta": -1,
           "informacion_delta": 0,
           "pluralismo_delta": -2,
           "participacion_delta": 2,
-          "explanation": ""
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: alguien acaba sintiendo que la ciudad no va con él."
         }
+      ],
+      "families": [
+        "convivencia",
+        "barrio",
+        "vivienda",
+        "trabajo",
+        "instituto"
+      ],
+      "tags": [
+        "afectados",
+        "representacion",
+        "pluralismo",
+        "voz"
       ]
     },
     {
@@ -539,37 +1755,50 @@
       "bonus_indicator": "confianza",
       "effects": [
         {
-          "decision": "Contrastar",
+          "decision": "Comprobar",
           "confianza_delta": 0,
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -2,
-          "explanation": ""
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. El coste: algunos sienten que esto no va con ellos y desaparecen."
         },
         {
-          "decision": "Consultar",
+          "decision": "Escuchar",
           "confianza_delta": -2,
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": ""
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
         },
         {
-          "decision": "Blindar",
+          "decision": "Proteger",
           "confianza_delta": 1,
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -2,
-          "explanation": ""
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
         },
         {
-          "decision": "Decretar",
+          "decision": "Actuar ya",
           "confianza_delta": -2,
           "informacion_delta": 0,
           "pluralismo_delta": -1,
           "participacion_delta": 2,
-          "explanation": ""
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: proteger una salida rápida deja gente en el arcén."
         }
+      ],
+      "families": [
+        "politica",
+        "barrio",
+        "convivencia",
+        "seguridad",
+        "vivienda"
+      ],
+      "tags": [
+        "polarizacion",
+        "bandos",
+        "conflicto",
+        "futbol"
       ]
     },
     {
@@ -577,37 +1806,50 @@
       "bonus_indicator": "informacion",
       "effects": [
         {
-          "decision": "Contrastar",
+          "decision": "Comprobar",
           "confianza_delta": 1,
           "informacion_delta": 2,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": ""
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: tanta vuelta enfría a la gente y se bajan del carro."
         },
         {
-          "decision": "Consultar",
+          "decision": "Escuchar",
           "confianza_delta": -1,
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": ""
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
         },
         {
-          "decision": "Blindar",
+          "decision": "Proteger",
           "confianza_delta": 1,
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -2,
-          "explanation": ""
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. El coste: algunos sienten que esto no va con ellos y desaparecen."
         },
         {
-          "decision": "Decretar",
+          "decision": "Actuar ya",
           "confianza_delta": -1,
           "informacion_delta": -2,
           "pluralismo_delta": 0,
           "participacion_delta": 2,
-          "explanation": ""
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. Pero ojo: se cuelan versiones cutres con traje de noticia."
         }
+      ],
+      "families": [
+        "politica",
+        "barrio",
+        "transporte",
+        "seguridad",
+        "instituto"
+      ],
+      "tags": [
+        "opacidad",
+        "instituciones",
+        "responsabilidad",
+        "informacion"
       ]
     },
     {
@@ -615,37 +1857,50 @@
       "bonus_indicator": "participacion",
       "effects": [
         {
-          "decision": "Contrastar",
+          "decision": "Comprobar",
           "confianza_delta": 0,
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -2,
-          "explanation": ""
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
         },
         {
-          "decision": "Consultar",
+          "decision": "Escuchar",
           "confianza_delta": -1,
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 2,
-          "explanation": ""
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
         },
         {
-          "decision": "Blindar",
+          "decision": "Proteger",
           "confianza_delta": 1,
           "informacion_delta": 0,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": ""
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
         },
         {
-          "decision": "Decretar",
+          "decision": "Actuar ya",
           "confianza_delta": 0,
           "informacion_delta": 0,
           "pluralismo_delta": -1,
           "participacion_delta": 0,
-          "explanation": ""
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: alguien acaba sintiendo que la ciudad no va con él."
         }
+      ],
+      "families": [
+        "barrio",
+        "instituto",
+        "vivienda",
+        "politica",
+        "trabajo"
+      ],
+      "tags": [
+        "participacion",
+        "apatia",
+        "consulta",
+        "bot"
       ]
     },
     {
@@ -653,37 +1908,49 @@
       "bonus_indicator": "informacion",
       "effects": [
         {
-          "decision": "Contrastar",
+          "decision": "Comprobar",
           "confianza_delta": 0,
           "informacion_delta": 2,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": ""
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. El coste: algunos sienten que esto no va con ellos y desaparecen."
         },
         {
-          "decision": "Consultar",
+          "decision": "Escuchar",
           "confianza_delta": -1,
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": ""
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
         },
         {
-          "decision": "Blindar",
+          "decision": "Proteger",
           "confianza_delta": 1,
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": ""
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
         },
         {
-          "decision": "Decretar",
+          "decision": "Actuar ya",
           "confianza_delta": -1,
           "informacion_delta": -2,
           "pluralismo_delta": 0,
           "participacion_delta": 2,
-          "explanation": ""
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: el salseo tapa lo importante y encima presume."
         }
+      ],
+      "families": [
+        "redes",
+        "instituto",
+        "politica",
+        "seguridad"
+      ],
+      "tags": [
+        "capturas",
+        "desinformacion",
+        "versiones",
+        "redes"
       ]
     },
     {
@@ -691,37 +1958,50 @@
       "bonus_indicator": "pluralismo",
       "effects": [
         {
-          "decision": "Contrastar",
+          "decision": "Comprobar",
           "confianza_delta": 0,
           "informacion_delta": 1,
           "pluralismo_delta": -1,
           "participacion_delta": -1,
-          "explanation": ""
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: algunas voces quedan fuera y luego vienen los portazos."
         },
         {
-          "decision": "Consultar",
+          "decision": "Escuchar",
           "confianza_delta": -1,
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": ""
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
         },
         {
-          "decision": "Blindar",
+          "decision": "Proteger",
           "confianza_delta": 1,
           "informacion_delta": 0,
           "pluralismo_delta": 2,
           "participacion_delta": -2,
-          "explanation": ""
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. El coste: algunos sienten que esto no va con ellos y desaparecen."
         },
         {
-          "decision": "Decretar",
+          "decision": "Actuar ya",
           "confianza_delta": -1,
           "informacion_delta": 0,
           "pluralismo_delta": -2,
           "participacion_delta": 2,
-          "explanation": ""
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. Pero ojo: si no caben matices, el debate se queda en blanco y negro."
         }
+      ],
+      "families": [
+        "convivencia",
+        "barrio",
+        "vivienda",
+        "trabajo",
+        "seguridad"
+      ],
+      "tags": [
+        "vulnerables",
+        "desigualdad",
+        "altavoz",
+        "minorías"
       ]
     },
     {
@@ -729,37 +2009,50 @@
       "bonus_indicator": "confianza",
       "effects": [
         {
-          "decision": "Contrastar",
+          "decision": "Comprobar",
           "confianza_delta": 1,
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": ""
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
         },
         {
-          "decision": "Consultar",
+          "decision": "Escuchar",
           "confianza_delta": -2,
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": ""
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
         },
         {
-          "decision": "Blindar",
+          "decision": "Proteger",
           "confianza_delta": 2,
           "informacion_delta": 0,
           "pluralismo_delta": 0,
           "participacion_delta": -2,
-          "explanation": ""
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: tanta vuelta enfría a la gente y se bajan del carro."
         },
         {
-          "decision": "Decretar",
+          "decision": "Actuar ya",
           "confianza_delta": -2,
           "informacion_delta": -1,
           "pluralismo_delta": 0,
           "participacion_delta": 2,
-          "explanation": ""
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: entre ruido y prisas, los datos salen despeinados."
         }
+      ],
+      "families": [
+        "politica",
+        "barrio",
+        "transporte",
+        "vivienda",
+        "trabajo"
+      ],
+      "tags": [
+        "desconfianza",
+        "pactado",
+        "opacidad",
+        "sospecha"
       ]
     },
     {
@@ -767,37 +2060,50 @@
       "bonus_indicator": "pluralismo",
       "effects": [
         {
-          "decision": "Contrastar",
+          "decision": "Comprobar",
           "confianza_delta": 0,
           "informacion_delta": 1,
           "pluralismo_delta": -1,
           "participacion_delta": -1,
-          "explanation": ""
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. El coste: la mayoría pisa fuerte y deja huellas donde no debe."
         },
         {
-          "decision": "Consultar",
+          "decision": "Escuchar",
           "confianza_delta": -1,
           "informacion_delta": 0,
           "pluralismo_delta": 2,
           "participacion_delta": 1,
-          "explanation": ""
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
         },
         {
-          "decision": "Blindar",
+          "decision": "Proteger",
           "confianza_delta": 1,
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -2,
-          "explanation": ""
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
         },
         {
-          "decision": "Decretar",
+          "decision": "Actuar ya",
           "confianza_delta": -1,
           "informacion_delta": 0,
           "pluralismo_delta": -2,
           "participacion_delta": 2,
-          "explanation": ""
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: proteger una salida rápida deja gente en el arcén."
         }
+      ],
+      "families": [
+        "barrio",
+        "convivencia",
+        "instituto",
+        "politica",
+        "vivienda"
+      ],
+      "tags": [
+        "gritos",
+        "twitch",
+        "polarizacion",
+        "pluralismo"
       ]
     },
     {
@@ -805,37 +2111,50 @@
       "bonus_indicator": "participacion",
       "effects": [
         {
-          "decision": "Contrastar",
+          "decision": "Comprobar",
           "confianza_delta": 0,
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -2,
-          "explanation": ""
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: tanta vuelta enfría a la gente y se bajan del carro."
         },
         {
-          "decision": "Consultar",
+          "decision": "Escuchar",
           "confianza_delta": -1,
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": ""
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
         },
         {
-          "decision": "Blindar",
+          "decision": "Proteger",
           "confianza_delta": 1,
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": ""
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. El coste: algunos sienten que esto no va con ellos y desaparecen."
         },
         {
-          "decision": "Decretar",
+          "decision": "Actuar ya",
           "confianza_delta": -1,
           "informacion_delta": 0,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": ""
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. Pero ojo: si no caben matices, el debate se queda en blanco y negro."
         }
+      ],
+      "families": [
+        "instituto",
+        "trabajo",
+        "seguridad",
+        "convivencia",
+        "barrio"
+      ],
+      "tags": [
+        "miedo",
+        "silencio",
+        "presion",
+        "participacion"
       ]
     },
     {
@@ -843,37 +2162,49 @@
       "bonus_indicator": "confianza",
       "effects": [
         {
-          "decision": "Contrastar",
+          "decision": "Comprobar",
           "confianza_delta": -1,
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": ""
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: la sospecha se queda pegada como chicle bajo la mesa."
         },
         {
-          "decision": "Consultar",
+          "decision": "Escuchar",
           "confianza_delta": -2,
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 0,
-          "explanation": ""
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
         },
         {
-          "decision": "Blindar",
+          "decision": "Proteger",
           "confianza_delta": 1,
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -2,
-          "explanation": ""
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
         },
         {
-          "decision": "Decretar",
+          "decision": "Actuar ya",
           "confianza_delta": 2,
           "informacion_delta": -1,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": ""
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: alguien acaba sintiendo que la ciudad no va con él."
         }
+      ],
+      "families": [
+        "transporte",
+        "seguridad",
+        "convivencia",
+        "trabajo"
+      ],
+      "tags": [
+        "urgencia",
+        "crisis",
+        "rapidez",
+        "orden"
       ]
     },
     {
@@ -881,37 +2212,1221 @@
       "bonus_indicator": "informacion",
       "effects": [
         {
-          "decision": "Contrastar",
+          "decision": "Comprobar",
           "confianza_delta": 0,
           "informacion_delta": 2,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": ""
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. El coste: algunos sienten que esto no va con ellos y desaparecen."
         },
         {
-          "decision": "Consultar",
+          "decision": "Escuchar",
           "confianza_delta": -1,
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": ""
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
         },
         {
-          "decision": "Blindar",
+          "decision": "Proteger",
           "confianza_delta": 1,
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": ""
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
         },
         {
-          "decision": "Decretar",
+          "decision": "Actuar ya",
           "confianza_delta": -1,
           "informacion_delta": -2,
           "pluralismo_delta": -1,
           "participacion_delta": 3,
-          "explanation": ""
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: proteger una salida rápida deja gente en el arcén."
         }
+      ],
+      "families": [
+        "redes",
+        "politica",
+        "convivencia",
+        "instituto",
+        "barrio"
+      ],
+      "tags": [
+        "algoritmo",
+        "redes",
+        "polarizacion",
+        "viralidad",
+        "desinformacion"
+      ]
+    },
+    {
+      "text": "…y alguien filtra un pantallazo sin contexto, el deporte municipal favorito.",
+      "bonus_indicator": "informacion",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 1,
+          "informacion_delta": 2,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. El coste: algunos sienten que esto no va con ellos y desaparecen."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -1,
+          "informacion_delta": -2,
+          "pluralismo_delta": 0,
+          "participacion_delta": 2,
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. Pero ojo: se cuelan versiones cutres con traje de noticia."
+        }
+      ],
+      "families": [
+        "instituto",
+        "politica",
+        "redes",
+        "barrio"
+      ],
+      "tags": [
+        "captura",
+        "redes",
+        "bulo",
+        "contexto"
+      ]
+    },
+    {
+      "text": "…y un hilo de X lo resume mal, pero con mucha seguridad.",
+      "bonus_indicator": "informacion",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 1,
+          "informacion_delta": 2,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -1,
+          "informacion_delta": -2,
+          "pluralismo_delta": 0,
+          "participacion_delta": 2,
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: entre ruido y prisas, los datos salen despeinados."
+        }
+      ],
+      "families": [
+        "politica",
+        "redes",
+        "cultura"
+      ],
+      "tags": [
+        "redes",
+        "desinformacion",
+        "viral"
+      ]
+    },
+    {
+      "text": "…y el grupo de padres empieza a escribir TODO EN MAYÚSCULAS.",
+      "bonus_indicator": "participacion",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 1,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -2,
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. El coste: algunos sienten que esto no va con ellos y desaparecen."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": 0,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 2,
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. Pero ojo: se cuelan versiones cutres con traje de noticia."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": -1,
+          "participacion_delta": 1,
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: proteger una salida rápida deja gente en el arcén."
+        }
+      ],
+      "families": [
+        "instituto",
+        "servicios",
+        "barrio"
+      ],
+      "tags": [
+        "familias",
+        "whatsapp",
+        "participacion"
+      ]
+    },
+    {
+      "text": "…y una encuesta de Instagram decide la verdad en diez minutos.",
+      "bonus_indicator": "informacion",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 1,
+          "informacion_delta": 2,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. El coste: algunos sienten que esto no va con ellos y desaparecen."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -1,
+          "informacion_delta": -2,
+          "pluralismo_delta": 0,
+          "participacion_delta": 2,
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. Pero ojo: se cuelan versiones cutres con traje de noticia."
+        }
+      ],
+      "families": [
+        "redes",
+        "instituto",
+        "cultura"
+      ],
+      "tags": [
+        "instagram",
+        "redes",
+        "opinion",
+        "viral"
+      ]
+    },
+    {
+      "text": "…y los afectados se enteran por un meme antes que por el ayuntamiento.",
+      "bonus_indicator": "confianza",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 1,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 2,
+          "informacion_delta": 0,
+          "pluralismo_delta": 0,
+          "participacion_delta": -2,
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -2,
+          "informacion_delta": -1,
+          "pluralismo_delta": 0,
+          "participacion_delta": 2,
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: entre ruido y prisas, los datos salen despeinados."
+        }
+      ],
+      "families": [
+        "politica",
+        "barrio",
+        "servicios",
+        "vivienda"
+      ],
+      "tags": [
+        "meme",
+        "opacidad",
+        "afectados"
+      ]
+    },
+    {
+      "text": "…y aparece un experto de sofá con gráficos más falsos que una moneda de tres euros.",
+      "bonus_indicator": "informacion",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 1,
+          "informacion_delta": 2,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. El coste: algunos sienten que esto no va con ellos y desaparecen."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -1,
+          "informacion_delta": -2,
+          "pluralismo_delta": 0,
+          "participacion_delta": 2,
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: el salseo tapa lo importante y encima presume."
+        }
+      ],
+      "families": [
+        "redes",
+        "politica",
+        "vivienda",
+        "seguridad"
+      ],
+      "tags": [
+        "bulo",
+        "datos",
+        "redes"
+      ]
+    },
+    {
+      "text": "…y la reunión se llena de gente que no pisa el barrio ni en Google Maps.",
+      "bonus_indicator": "participacion",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 1,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -2,
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": 0,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 2,
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: entre ruido y prisas, los datos salen despeinados."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. El coste: algunos sienten que esto no va con ellos y desaparecen."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": -1,
+          "participacion_delta": 1,
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. Pero ojo: si no caben matices, el debate se queda en blanco y negro."
+        }
+      ],
+      "families": [
+        "barrio",
+        "vivienda",
+        "convivencia"
+      ],
+      "tags": [
+        "barrio",
+        "participacion",
+        "representacion"
+      ]
+    },
+    {
+      "text": "…y una minoría acaba convertida en saco de boxeo público.",
+      "bonus_indicator": "pluralismo",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 0,
+          "informacion_delta": 1,
+          "pluralismo_delta": -1,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: los de siempre hablan alto y otros se comen el silencio."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 2,
+          "participacion_delta": -2,
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": -2,
+          "participacion_delta": 2,
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: alguien acaba sintiendo que la ciudad no va con él."
+        }
+      ],
+      "families": [
+        "convivencia",
+        "instituto",
+        "cultura",
+        "deporte"
+      ],
+      "tags": [
+        "minorías",
+        "pluralismo",
+        "linchamiento"
+      ]
+    },
+    {
+      "text": "…y las normas cambian tres veces en una tarde, nivel partida bugueada.",
+      "bonus_indicator": "confianza",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 1,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. El coste: algunos sienten que esto no va con ellos y desaparecen."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 2,
+          "informacion_delta": 0,
+          "pluralismo_delta": 0,
+          "participacion_delta": -2,
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -2,
+          "informacion_delta": -1,
+          "pluralismo_delta": 0,
+          "participacion_delta": 2,
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: el salseo tapa lo importante y encima presume."
+        }
+      ],
+      "families": [
+        "instituto",
+        "politica",
+        "servicios"
+      ],
+      "tags": [
+        "normas",
+        "confusion",
+        "instituciones"
+      ]
+    },
+    {
+      "text": "…y quien pide calma queda como el aguafiestas oficial.",
+      "bonus_indicator": "pluralismo",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 0,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. El coste: algunos sienten que esto no va con ellos y desaparecen."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": 0,
+          "informacion_delta": -1,
+          "pluralismo_delta": -1,
+          "participacion_delta": 1,
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. Pero ojo: si no caben matices, el debate se queda en blanco y negro."
+        }
+      ],
+      "families": [
+        "redes",
+        "politica",
+        "seguridad",
+        "barrio"
+      ],
+      "tags": [
+        "polarizacion",
+        "calma",
+        "redes"
+      ]
+    },
+    {
+      "text": "…y los comentarios se llenan de “yo solo hago preguntas”.",
+      "bonus_indicator": "informacion",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 1,
+          "informacion_delta": 2,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -1,
+          "informacion_delta": -2,
+          "pluralismo_delta": 0,
+          "participacion_delta": 2,
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: entre ruido y prisas, los datos salen despeinados."
+        }
+      ],
+      "families": [
+        "redes",
+        "politica",
+        "cultura"
+      ],
+      "tags": [
+        "comentarios",
+        "sospecha",
+        "redes"
+      ]
+    },
+    {
+      "text": "…y una cuenta anónima amenaza con sacar más cosas.",
+      "bonus_indicator": "informacion",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 1,
+          "informacion_delta": 2,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. El coste: algunos sienten que esto no va con ellos y desaparecen."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -1,
+          "informacion_delta": -2,
+          "pluralismo_delta": 0,
+          "participacion_delta": 2,
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: el salseo tapa lo importante y encima presume."
+        }
+      ],
+      "families": [
+        "redes",
+        "instituto",
+        "politica"
+      ],
+      "tags": [
+        "anonimo",
+        "amenaza",
+        "filtracion"
+      ]
+    },
+    {
+      "text": "…y los medios llegan tarde, pero con cámara enorme y cara seria.",
+      "bonus_indicator": "informacion",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 1,
+          "informacion_delta": 2,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. El coste: algunos sienten que esto no va con ellos y desaparecen."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -1,
+          "informacion_delta": -2,
+          "pluralismo_delta": 0,
+          "participacion_delta": 2,
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. Pero ojo: se cuelan versiones cutres con traje de noticia."
+        }
+      ],
+      "families": [
+        "politica",
+        "seguridad",
+        "barrio",
+        "servicios"
+      ],
+      "tags": [
+        "medios",
+        "reputacion",
+        "informacion"
+      ]
+    },
+    {
+      "text": "…y el debate se convierte en concurso nacional de zascas.",
+      "bonus_indicator": "pluralismo",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 0,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": 0,
+          "informacion_delta": -1,
+          "pluralismo_delta": -1,
+          "participacion_delta": 1,
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: alguien acaba sintiendo que la ciudad no va con él."
+        }
+      ],
+      "families": [
+        "politica",
+        "redes",
+        "cultura",
+        "instituto"
+      ],
+      "tags": [
+        "polarizacion",
+        "zascas",
+        "debate"
+      ]
+    },
+    {
+      "text": "…y los que necesitan ayuda pasan vergüenza en público.",
+      "bonus_indicator": "pluralismo",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 0,
+          "informacion_delta": 1,
+          "pluralismo_delta": -1,
+          "participacion_delta": -1,
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. El coste: la mayoría pisa fuerte y deja huellas donde no debe."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 2,
+          "participacion_delta": -2,
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": -2,
+          "participacion_delta": 2,
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: proteger una salida rápida deja gente en el arcén."
+        }
+      ],
+      "families": [
+        "servicios",
+        "vivienda",
+        "trabajo",
+        "instituto"
+      ],
+      "tags": [
+        "vulnerabilidad",
+        "ayuda",
+        "vergüenza"
+      ]
+    },
+    {
+      "text": "…y un rumor sobre dinero prende como gasolina barata.",
+      "bonus_indicator": "confianza",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 1,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 2,
+          "informacion_delta": 0,
+          "pluralismo_delta": 0,
+          "participacion_delta": -2,
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. El coste: algunos sienten que esto no va con ellos y desaparecen."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -2,
+          "informacion_delta": -1,
+          "pluralismo_delta": 0,
+          "participacion_delta": 2,
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. Pero ojo: se cuelan versiones cutres con traje de noticia."
+        }
+      ],
+      "families": [
+        "politica",
+        "trabajo",
+        "vivienda",
+        "barrio"
+      ],
+      "tags": [
+        "dinero",
+        "rumor",
+        "confianza"
+      ]
+    },
+    {
+      "text": "…y nadie sabe si el vídeo es real, IA o el primo de alguien.",
+      "bonus_indicator": "informacion",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 1,
+          "informacion_delta": 2,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -1,
+          "informacion_delta": -2,
+          "pluralismo_delta": 0,
+          "participacion_delta": 2,
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: entre ruido y prisas, los datos salen despeinados."
+        }
+      ],
+      "families": [
+        "redes",
+        "politica",
+        "instituto"
+      ],
+      "tags": [
+        "ia",
+        "video",
+        "desinformacion"
+      ]
+    },
+    {
+      "text": "…y dos grupos montan quedada para “hablarlo”, demasiado fuerte.",
+      "bonus_indicator": "confianza",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": -1,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. El coste: algunos sienten que les han vendido la moto sin casco."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -2,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 0,
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": -2,
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": 2,
+          "informacion_delta": -1,
+          "pluralismo_delta": -1,
+          "participacion_delta": 1,
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: proteger una salida rápida deja gente en el arcén."
+        }
+      ],
+      "families": [
+        "seguridad",
+        "barrio",
+        "instituto",
+        "deporte"
+      ],
+      "tags": [
+        "urgencia",
+        "tension",
+        "conflicto"
+      ]
+    },
+    {
+      "text": "…y el algoritmo solo enseña la parte más fea, qué sorpresa.",
+      "bonus_indicator": "informacion",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 1,
+          "informacion_delta": 2,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. El coste: algunos sienten que esto no va con ellos y desaparecen."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -1,
+          "informacion_delta": -2,
+          "pluralismo_delta": 0,
+          "participacion_delta": 2,
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. Pero ojo: se cuelan versiones cutres con traje de noticia."
+        }
+      ],
+      "families": [
+        "redes",
+        "politica",
+        "convivencia",
+        "cultura"
+      ],
+      "tags": [
+        "algoritmo",
+        "redes",
+        "polarizacion"
+      ]
+    },
+    {
+      "text": "…y se monta una petición online con título de incendio forestal.",
+      "bonus_indicator": "participacion",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 1,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -2,
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": 0,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 2,
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: el salseo tapa lo importante y encima presume."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": -1,
+          "participacion_delta": 1,
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: alguien acaba sintiendo que la ciudad no va con él."
+        }
+      ],
+      "families": [
+        "barrio",
+        "politica",
+        "instituto",
+        "servicios"
+      ],
+      "tags": [
+        "peticion",
+        "redes",
+        "participacion"
+      ]
+    },
+    {
+      "text": "…y los moderados desaparecen como calcetines en la lavadora.",
+      "bonus_indicator": "pluralismo",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 0,
+          "informacion_delta": 1,
+          "pluralismo_delta": -1,
+          "participacion_delta": -1,
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. El coste: la mayoría pisa fuerte y deja huellas donde no debe."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 2,
+          "participacion_delta": -2,
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": -2,
+          "participacion_delta": 2,
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: proteger una salida rápida deja gente en el arcén."
+        }
+      ],
+      "families": [
+        "politica",
+        "barrio",
+        "cultura",
+        "convivencia"
+      ],
+      "tags": [
+        "polarizacion",
+        "pluralismo",
+        "silencio"
+      ]
+    },
+    {
+      "text": "…y alguien usa la crisis para hacerse campaña, discretísimo todo.",
+      "bonus_indicator": "confianza",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 1,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 2,
+          "informacion_delta": 0,
+          "pluralismo_delta": 0,
+          "participacion_delta": -2,
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. El coste: algunos sienten que esto no va con ellos y desaparecen."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -2,
+          "informacion_delta": -1,
+          "pluralismo_delta": 0,
+          "participacion_delta": 2,
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. Pero ojo: se cuelan versiones cutres con traje de noticia."
+        }
+      ],
+      "families": [
+        "politica",
+        "barrio",
+        "servicios"
+      ],
+      "tags": [
+        "campaña",
+        "oportunismo",
+        "confianza"
+      ]
+    },
+    {
+      "text": "…y la solución rápida deja un fleco feo que nadie quiere mirar.",
+      "bonus_indicator": "confianza",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": -1,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: la sospecha se queda pegada como chicle bajo la mesa."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -2,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 0,
+          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": -2,
+          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": 2,
+          "informacion_delta": -1,
+          "pluralismo_delta": -1,
+          "participacion_delta": 1,
+          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: alguien acaba sintiendo que la ciudad no va con él."
+        }
+      ],
+      "families": [
+        "seguridad",
+        "servicios",
+        "politica",
+        "instituto"
+      ],
+      "tags": [
+        "urgencia",
+        "coste",
+        "decision"
+      ]
+    },
+    {
+      "text": "…y cuando por fin hay datos, ya todo el mundo está enfadado.",
+      "bonus_indicator": "informacion",
+      "effects": [
+        {
+          "decision": "Comprobar",
+          "confianza_delta": 1,
+          "informacion_delta": 2,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. El coste: algunos sienten que esto no va con ellos y desaparecen."
+        },
+        {
+          "decision": "Escuchar",
+          "confianza_delta": -1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+        },
+        {
+          "decision": "Proteger",
+          "confianza_delta": 1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+        },
+        {
+          "decision": "Actuar ya",
+          "confianza_delta": -1,
+          "informacion_delta": -2,
+          "pluralismo_delta": 0,
+          "participacion_delta": 2,
+          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: el salseo tapa lo importante y encima presume."
+        }
+      ],
+      "families": [
+        "redes",
+        "politica",
+        "barrio",
+        "instituto",
+        "vivienda"
+      ],
+      "tags": [
+        "datos",
+        "enfado",
+        "desinformacion"
       ]
     }
   ]
