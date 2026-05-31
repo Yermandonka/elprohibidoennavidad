@@ -1,226 +1,918 @@
 {
-    "A": [
+  "A": [
+    {
+      "text": "El instituto anuncia una norma nueva a mitad de curso…",
+      "bonus_indicator": "participacion",
+      "effects": [
         {
-            "text": "Los estudiantes protestan en el instituto…",
-            "bonus_indicator": "participacion",
-            "effects": [
-                { "decision": "Contrastar",  "confianza_delta":  0, "informacion_delta":  1, "pluralismo_delta":  0, "participacion_delta": -1 },
-                { "decision": "Consultar",   "confianza_delta":  0, "informacion_delta":  0, "pluralismo_delta":  1, "participacion_delta":  2 },
-                { "decision": "Blindar",     "confianza_delta":  1, "informacion_delta":  0, "pluralismo_delta":  1, "participacion_delta":  0 },
-                { "decision": "Decretar",    "confianza_delta": -1, "informacion_delta":  0, "pluralismo_delta":  0, "participacion_delta": -2 }
-            ]
+          "decision": "Contrastar",
+          "confianza_delta": 1,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -2,
+          "explanation": ""
         },
         {
-            "text": "El alcalde cambia algo del barrio sin preguntar a nadie…",
-            "bonus_indicator": "pluralismo",
-            "effects": [
-                { "decision": "Contrastar",  "confianza_delta":  0, "informacion_delta":  1, "pluralismo_delta":  0, "participacion_delta": -1 },
-                { "decision": "Consultar",   "confianza_delta":  0, "informacion_delta":  0, "pluralismo_delta":  2, "participacion_delta":  1 },
-                { "decision": "Blindar",     "confianza_delta":  1, "informacion_delta":  0, "pluralismo_delta":  1, "participacion_delta":  0 },
-                { "decision": "Decretar",    "confianza_delta": -1, "informacion_delta":  0, "pluralismo_delta": -2, "participacion_delta":  0 }
-            ]
+          "decision": "Consultar",
+          "confianza_delta": 0,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": ""
         },
         {
-            "text": "Un periódico destapa un escándalo en el ayuntamiento…",
-            "bonus_indicator": "informacion",
-            "effects": [
-                { "decision": "Contrastar",  "confianza_delta":  0, "informacion_delta":  2, "pluralismo_delta":  0, "participacion_delta": -1 },
-                { "decision": "Consultar",   "confianza_delta":  0, "informacion_delta":  0, "pluralismo_delta":  1, "participacion_delta":  1 },
-                { "decision": "Blindar",     "confianza_delta":  1, "informacion_delta":  1, "pluralismo_delta":  0, "participacion_delta":  0 },
-                { "decision": "Decretar",    "confianza_delta": -1, "informacion_delta": -2, "pluralismo_delta":  0, "participacion_delta":  0 }
-            ]
+          "decision": "Blindar",
+          "confianza_delta": 0,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": ""
         },
         {
-            "text": "Una empresa grande amenaza con cerrar…",
-            "bonus_indicator": "confianza",
-            "effects": [
-                { "decision": "Contrastar",  "confianza_delta":  0, "informacion_delta":  1, "pluralismo_delta":  0, "participacion_delta": -1 },
-                { "decision": "Consultar",   "confianza_delta": -1, "informacion_delta":  0, "pluralismo_delta":  1, "participacion_delta":  1 },
-                { "decision": "Blindar",     "confianza_delta":  2, "informacion_delta":  0, "pluralismo_delta":  1, "participacion_delta":  0 },
-                { "decision": "Decretar",    "confianza_delta": -2, "informacion_delta":  0, "pluralismo_delta": -1, "participacion_delta":  0 }
-            ]
-        },
-        {
-            "text": "Unos vecinos ocupan un edificio vacío…",
-            "bonus_indicator": "participacion",
-            "effects": [
-                { "decision": "Contrastar",  "confianza_delta":  0, "informacion_delta":  1, "pluralismo_delta":  0, "participacion_delta": -1 },
-                { "decision": "Consultar",   "confianza_delta":  0, "informacion_delta":  0, "pluralismo_delta":  1, "participacion_delta":  2 },
-                { "decision": "Blindar",     "confianza_delta":  1, "informacion_delta":  0, "pluralismo_delta":  1, "participacion_delta":  0 },
-                { "decision": "Decretar",    "confianza_delta": -1, "informacion_delta":  0, "pluralismo_delta":  0, "participacion_delta": -2 }
-            ]
-        },
-        {
-            "text": "La ciudad vota qué hacer con una calle…",
-            "bonus_indicator": "pluralismo",
-            "effects": [
-                { "decision": "Contrastar",  "confianza_delta":  0, "informacion_delta":  1, "pluralismo_delta":  0, "participacion_delta": -1 },
-                { "decision": "Consultar",   "confianza_delta":  0, "informacion_delta":  0, "pluralismo_delta":  2, "participacion_delta":  1 },
-                { "decision": "Blindar",     "confianza_delta":  1, "informacion_delta":  0, "pluralismo_delta":  1, "participacion_delta":  0 },
-                { "decision": "Decretar",    "confianza_delta": -1, "informacion_delta":  0, "pluralismo_delta": -2, "participacion_delta":  0 }
-            ]
-        },
-        {
-            "text": "Un político da trabajo a su familia…",
-            "bonus_indicator": "informacion",
-            "effects": [
-                { "decision": "Contrastar",  "confianza_delta":  1, "informacion_delta":  2, "pluralismo_delta":  0, "participacion_delta":  0 },
-                { "decision": "Consultar",   "confianza_delta":  0, "informacion_delta":  0, "pluralismo_delta":  1, "participacion_delta":  1 },
-                { "decision": "Blindar",     "confianza_delta":  1, "informacion_delta":  1, "pluralismo_delta":  0, "participacion_delta":  0 },
-                { "decision": "Decretar",    "confianza_delta": -1, "informacion_delta": -2, "pluralismo_delta":  0, "participacion_delta":  0 }
-            ]
-        },
-        {
-            "text": "El autobús falla durante una semana entera…",
-            "bonus_indicator": "confianza",
-            "effects": [
-                { "decision": "Contrastar",  "confianza_delta":  0, "informacion_delta":  1, "pluralismo_delta":  0, "participacion_delta": -1 },
-                { "decision": "Consultar",   "confianza_delta":  0, "informacion_delta":  0, "pluralismo_delta":  1, "participacion_delta":  1 },
-                { "decision": "Blindar",     "confianza_delta":  2, "informacion_delta":  0, "pluralismo_delta":  1, "participacion_delta":  0 },
-                { "decision": "Decretar",    "confianza_delta": -2, "informacion_delta":  0, "pluralismo_delta":  0, "participacion_delta":  0 }
-            ]
-        },
-        {
-            "text": "Un grupo pequeño pide ayuda por primera vez…",
-            "bonus_indicator": "pluralismo",
-            "effects": [
-                { "decision": "Contrastar",  "confianza_delta":  0, "informacion_delta":  1, "pluralismo_delta":  0, "participacion_delta":  0 },
-                { "decision": "Consultar",   "confianza_delta":  0, "informacion_delta":  0, "pluralismo_delta":  1, "participacion_delta":  1 },
-                { "decision": "Blindar",     "confianza_delta":  1, "informacion_delta":  0, "pluralismo_delta":  2, "participacion_delta":  0 },
-                { "decision": "Decretar",    "confianza_delta": -1, "informacion_delta":  0, "pluralismo_delta": -2, "participacion_delta":  0 }
-            ]
-        },
-        {
-            "text": "Una escuela prohíbe ciertos libros…",
-            "bonus_indicator": "informacion",
-            "effects": [
-                { "decision": "Contrastar",  "confianza_delta":  0, "informacion_delta":  2, "pluralismo_delta":  1, "participacion_delta":  0 },
-                { "decision": "Consultar",   "confianza_delta":  0, "informacion_delta":  0, "pluralismo_delta":  1, "participacion_delta":  1 },
-                { "decision": "Blindar",     "confianza_delta":  1, "informacion_delta":  1, "pluralismo_delta":  1, "participacion_delta":  0 },
-                { "decision": "Decretar",    "confianza_delta": -1, "informacion_delta": -2, "pluralismo_delta": -1, "participacion_delta":  0 }
-            ]
-        },
-        {
-            "text": "Hay elecciones en la asociación del barrio…",
-            "bonus_indicator": "participacion",
-            "effects": [
-                { "decision": "Contrastar",  "confianza_delta":  0, "informacion_delta":  1, "pluralismo_delta":  0, "participacion_delta": -1 },
-                { "decision": "Consultar",   "confianza_delta":  0, "informacion_delta":  0, "pluralismo_delta":  1, "participacion_delta":  2 },
-                { "decision": "Blindar",     "confianza_delta":  1, "informacion_delta":  0, "pluralismo_delta":  0, "participacion_delta":  1 },
-                { "decision": "Decretar",    "confianza_delta": -1, "informacion_delta":  0, "pluralismo_delta":  0, "participacion_delta": -2 }
-            ]
-        },
-        {
-            "text": "Un banco quiebra y mucha gente pierde sus ahorros…",
-            "bonus_indicator": "confianza",
-            "effects": [
-                { "decision": "Contrastar",  "confianza_delta":  0, "informacion_delta":  1, "pluralismo_delta":  0, "participacion_delta": -1 },
-                { "decision": "Consultar",   "confianza_delta":  0, "informacion_delta":  0, "pluralismo_delta":  1, "participacion_delta":  1 },
-                { "decision": "Blindar",     "confianza_delta":  2, "informacion_delta":  0, "pluralismo_delta":  1, "participacion_delta":  0 },
-                { "decision": "Decretar",    "confianza_delta": -2, "informacion_delta": -1, "pluralismo_delta":  0, "participacion_delta":  0 }
-            ]
+          "decision": "Decretar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": -1,
+          "participacion_delta": 1,
+          "explanation": ""
         }
-    ],
-    "B": [
+      ]
+    },
+    {
+      "text": "Un vídeo editado con IA deja fatal a un concejal…",
+      "bonus_indicator": "informacion",
+      "effects": [
         {
-            "text": "…pero corre una mentira que confunde a todos.",
-            "bonus_indicator": "informacion",
-            "effects": [
-                { "decision": "Contrastar",  "confianza_delta":  0, "informacion_delta":  2, "pluralismo_delta":  0, "participacion_delta": -1 },
-                { "decision": "Consultar",   "confianza_delta":  0, "informacion_delta": -1, "pluralismo_delta":  1, "participacion_delta":  0 },
-                { "decision": "Blindar",     "confianza_delta":  1, "informacion_delta":  0, "pluralismo_delta":  1, "participacion_delta":  0 },
-                { "decision": "Decretar",    "confianza_delta": -1, "informacion_delta": -2, "pluralismo_delta":  0, "participacion_delta":  0 }
-            ]
+          "decision": "Contrastar",
+          "confianza_delta": 0,
+          "informacion_delta": 2,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": ""
         },
         {
-            "text": "…mientras parte del barrio siente que nadie la escucha.",
-            "bonus_indicator": "pluralismo",
-            "effects": [
-                { "decision": "Contrastar",  "confianza_delta":  0, "informacion_delta":  1, "pluralismo_delta":  0, "participacion_delta": -1 },
-                { "decision": "Consultar",   "confianza_delta":  0, "informacion_delta":  0, "pluralismo_delta":  2, "participacion_delta":  1 },
-                { "decision": "Blindar",     "confianza_delta":  1, "informacion_delta":  0, "pluralismo_delta":  1, "participacion_delta":  0 },
-                { "decision": "Decretar",    "confianza_delta": -1, "informacion_delta":  0, "pluralismo_delta": -2, "participacion_delta":  0 }
-            ]
+          "decision": "Consultar",
+          "confianza_delta": -1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": ""
         },
         {
-            "text": "…y la gente se parte en dos bandos que no se hablan.",
-            "bonus_indicator": "confianza",
-            "effects": [
-                { "decision": "Contrastar",  "confianza_delta":  0, "informacion_delta":  1, "pluralismo_delta":  0, "participacion_delta": -1 },
-                { "decision": "Consultar",   "confianza_delta": -1, "informacion_delta":  0, "pluralismo_delta":  2, "participacion_delta":  1 },
-                { "decision": "Blindar",     "confianza_delta":  2, "informacion_delta":  0, "pluralismo_delta":  1, "participacion_delta":  0 },
-                { "decision": "Decretar",    "confianza_delta": -2, "informacion_delta":  0, "pluralismo_delta": -1, "participacion_delta":  0 }
-            ]
+          "decision": "Blindar",
+          "confianza_delta": 1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": ""
         },
         {
-            "text": "…y nadie sabe quién decide en realidad.",
-            "bonus_indicator": "informacion",
-            "effects": [
-                { "decision": "Contrastar",  "confianza_delta":  1, "informacion_delta":  2, "pluralismo_delta":  0, "participacion_delta": -1 },
-                { "decision": "Consultar",   "confianza_delta":  0, "informacion_delta":  0, "pluralismo_delta":  1, "participacion_delta":  1 },
-                { "decision": "Blindar",     "confianza_delta":  1, "informacion_delta":  1, "pluralismo_delta":  0, "participacion_delta":  0 },
-                { "decision": "Decretar",    "confianza_delta": -1, "informacion_delta": -2, "pluralismo_delta":  0, "participacion_delta":  0 }
-            ]
-        },
-        {
-            "text": "…y casi nadie aparece cuando se les llama.",
-            "bonus_indicator": "participacion",
-            "effects": [
-                { "decision": "Contrastar",  "confianza_delta":  0, "informacion_delta":  1, "pluralismo_delta":  0, "participacion_delta": -1 },
-                { "decision": "Consultar",   "confianza_delta":  0, "informacion_delta":  0, "pluralismo_delta":  1, "participacion_delta":  2 },
-                { "decision": "Blindar",     "confianza_delta":  1, "informacion_delta":  0, "pluralismo_delta":  0, "participacion_delta": -1 },
-                { "decision": "Decretar",    "confianza_delta": -1, "informacion_delta":  0, "pluralismo_delta":  0, "participacion_delta": -2 }
-            ]
-        },
-        {
-            "text": "…pero cada uno cuenta una versión distinta.",
-            "bonus_indicator": "informacion",
-            "effects": [
-                { "decision": "Contrastar",  "confianza_delta":  0, "informacion_delta":  2, "pluralismo_delta":  0, "participacion_delta": -1 },
-                { "decision": "Consultar",   "confianza_delta":  0, "informacion_delta":  1, "pluralismo_delta":  1, "participacion_delta":  0 },
-                { "decision": "Blindar",     "confianza_delta":  1, "informacion_delta": -1, "pluralismo_delta":  0, "participacion_delta":  0 },
-                { "decision": "Decretar",    "confianza_delta": -1, "informacion_delta": -2, "pluralismo_delta":  0, "participacion_delta":  0 }
-            ]
-        },
-        {
-            "text": "…mientras los más afectados no consiguen que les escuchen.",
-            "bonus_indicator": "pluralismo",
-            "effects": [
-                { "decision": "Contrastar",  "confianza_delta":  0, "informacion_delta":  1, "pluralismo_delta":  0, "participacion_delta": -1 },
-                { "decision": "Consultar",   "confianza_delta":  0, "informacion_delta":  0, "pluralismo_delta":  1, "participacion_delta":  1 },
-                { "decision": "Blindar",     "confianza_delta":  1, "informacion_delta":  0, "pluralismo_delta":  2, "participacion_delta":  0 },
-                { "decision": "Decretar",    "confianza_delta": -1, "informacion_delta":  0, "pluralismo_delta": -2, "participacion_delta":  0 }
-            ]
-        },
-        {
-            "text": "…y crece la sensación de que todo está pactado.",
-            "bonus_indicator": "confianza",
-            "effects": [
-                { "decision": "Contrastar",  "confianza_delta":  1, "informacion_delta":  2, "pluralismo_delta":  0, "participacion_delta":  0 },
-                { "decision": "Consultar",   "confianza_delta": -1, "informacion_delta":  0, "pluralismo_delta":  1, "participacion_delta":  1 },
-                { "decision": "Blindar",     "confianza_delta":  2, "informacion_delta":  1, "pluralismo_delta":  0, "participacion_delta":  0 },
-                { "decision": "Decretar",    "confianza_delta": -2, "informacion_delta": -1, "pluralismo_delta":  0, "participacion_delta":  0 }
-            ]
-        },
-        {
-            "text": "…pero solo se oye a los más radicales.",
-            "bonus_indicator": "pluralismo",
-            "effects": [
-                { "decision": "Contrastar",  "confianza_delta":  0, "informacion_delta":  1, "pluralismo_delta":  0, "participacion_delta": -1 },
-                { "decision": "Consultar",   "confianza_delta":  0, "informacion_delta":  0, "pluralismo_delta":  2, "participacion_delta":  1 },
-                { "decision": "Blindar",     "confianza_delta":  1, "informacion_delta":  0, "pluralismo_delta":  1, "participacion_delta":  0 },
-                { "decision": "Decretar",    "confianza_delta": -1, "informacion_delta":  0, "pluralismo_delta": -2, "participacion_delta":  0 }
-            ]
-        },
-        {
-            "text": "…y muchos callan por miedo a meterse en problemas.",
-            "bonus_indicator": "participacion",
-            "effects": [
-                { "decision": "Contrastar",  "confianza_delta":  0, "informacion_delta":  1, "pluralismo_delta":  0, "participacion_delta": -1 },
-                { "decision": "Consultar",   "confianza_delta": -1, "informacion_delta":  0, "pluralismo_delta":  1, "participacion_delta":  1 },
-                { "decision": "Blindar",     "confianza_delta":  1, "informacion_delta":  0, "pluralismo_delta":  0, "participacion_delta":  2 },
-                { "decision": "Decretar",    "confianza_delta": -1, "informacion_delta":  0, "pluralismo_delta":  0, "participacion_delta": -2 }
-            ]
+          "decision": "Decretar",
+          "confianza_delta": -1,
+          "informacion_delta": -2,
+          "pluralismo_delta": 0,
+          "participacion_delta": 2,
+          "explanation": ""
         }
-    ]
+      ]
+    },
+    {
+      "text": "El ayuntamiento recorta las fiestas del barrio…",
+      "bonus_indicator": "confianza",
+      "effects": [
+        {
+          "decision": "Contrastar",
+          "confianza_delta": 1,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -2,
+          "explanation": ""
+        },
+        {
+          "decision": "Consultar",
+          "confianza_delta": 0,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": ""
+        },
+        {
+          "decision": "Blindar",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": ""
+        },
+        {
+          "decision": "Decretar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": -1,
+          "participacion_delta": 1,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "text": "La app del transporte se cae justo en hora punta…",
+      "bonus_indicator": "confianza",
+      "effects": [
+        {
+          "decision": "Contrastar",
+          "confianza_delta": -1,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": ""
+        },
+        {
+          "decision": "Consultar",
+          "confianza_delta": -2,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 0,
+          "explanation": ""
+        },
+        {
+          "decision": "Blindar",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": -2,
+          "explanation": ""
+        },
+        {
+          "decision": "Decretar",
+          "confianza_delta": 2,
+          "informacion_delta": -1,
+          "pluralismo_delta": -1,
+          "participacion_delta": 1,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "text": "Una cuenta famosa acusa a un profesor sin pruebas claras…",
+      "bonus_indicator": "informacion",
+      "effects": [
+        {
+          "decision": "Contrastar",
+          "confianza_delta": 1,
+          "informacion_delta": 2,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": ""
+        },
+        {
+          "decision": "Consultar",
+          "confianza_delta": -1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": ""
+        },
+        {
+          "decision": "Blindar",
+          "confianza_delta": 1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": ""
+        },
+        {
+          "decision": "Decretar",
+          "confianza_delta": -1,
+          "informacion_delta": -2,
+          "pluralismo_delta": -1,
+          "participacion_delta": 3,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "text": "Se abre un centro para gente migrante en el barrio…",
+      "bonus_indicator": "pluralismo",
+      "effects": [
+        {
+          "decision": "Contrastar",
+          "confianza_delta": 0,
+          "informacion_delta": 1,
+          "pluralismo_delta": -1,
+          "participacion_delta": -1,
+          "explanation": ""
+        },
+        {
+          "decision": "Consultar",
+          "confianza_delta": -1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": ""
+        },
+        {
+          "decision": "Blindar",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 2,
+          "participacion_delta": -2,
+          "explanation": ""
+        },
+        {
+          "decision": "Decretar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": -2,
+          "participacion_delta": 2,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "text": "Tras un partido, dos grupos se encaran en la plaza…",
+      "bonus_indicator": "confianza",
+      "effects": [
+        {
+          "decision": "Contrastar",
+          "confianza_delta": -1,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": ""
+        },
+        {
+          "decision": "Consultar",
+          "confianza_delta": -2,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 0,
+          "explanation": ""
+        },
+        {
+          "decision": "Blindar",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": -2,
+          "explanation": ""
+        },
+        {
+          "decision": "Decretar",
+          "confianza_delta": 2,
+          "informacion_delta": -1,
+          "pluralismo_delta": -1,
+          "participacion_delta": 1,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "text": "Los alquileres suben y medio barrio está quemadísimo…",
+      "bonus_indicator": "participacion",
+      "effects": [
+        {
+          "decision": "Contrastar",
+          "confianza_delta": 1,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -2,
+          "explanation": ""
+        },
+        {
+          "decision": "Consultar",
+          "confianza_delta": -1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": ""
+        },
+        {
+          "decision": "Blindar",
+          "confianza_delta": 0,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": ""
+        },
+        {
+          "decision": "Decretar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": -1,
+          "participacion_delta": 1,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "text": "Quieren poner cámaras en una zona con muchos robos…",
+      "bonus_indicator": "confianza",
+      "effects": [
+        {
+          "decision": "Contrastar",
+          "confianza_delta": 0,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -2,
+          "explanation": ""
+        },
+        {
+          "decision": "Consultar",
+          "confianza_delta": -1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": ""
+        },
+        {
+          "decision": "Blindar",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": -2,
+          "explanation": ""
+        },
+        {
+          "decision": "Decretar",
+          "confianza_delta": 3,
+          "informacion_delta": -1,
+          "pluralismo_delta": -2,
+          "participacion_delta": 1,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "text": "Los repartidores anuncian huelga en plena semana de exámenes…",
+      "bonus_indicator": "participacion",
+      "effects": [
+        {
+          "decision": "Contrastar",
+          "confianza_delta": 1,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -2,
+          "explanation": ""
+        },
+        {
+          "decision": "Consultar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": ""
+        },
+        {
+          "decision": "Blindar",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": -2,
+          "explanation": ""
+        },
+        {
+          "decision": "Decretar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": -1,
+          "participacion_delta": 1,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "text": "Una obra deja sin plaza a niños, mayores y skaters…",
+      "bonus_indicator": "pluralismo",
+      "effects": [
+        {
+          "decision": "Contrastar",
+          "confianza_delta": 0,
+          "informacion_delta": 1,
+          "pluralismo_delta": -1,
+          "participacion_delta": -1,
+          "explanation": ""
+        },
+        {
+          "decision": "Consultar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": ""
+        },
+        {
+          "decision": "Blindar",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 2,
+          "participacion_delta": -2,
+          "explanation": ""
+        },
+        {
+          "decision": "Decretar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": -1,
+          "participacion_delta": 1,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "text": "Se filtran notas privadas de un chat de clase…",
+      "bonus_indicator": "informacion",
+      "effects": [
+        {
+          "decision": "Contrastar",
+          "confianza_delta": 0,
+          "informacion_delta": 2,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": ""
+        },
+        {
+          "decision": "Consultar",
+          "confianza_delta": -1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": ""
+        },
+        {
+          "decision": "Blindar",
+          "confianza_delta": 1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": ""
+        },
+        {
+          "decision": "Decretar",
+          "confianza_delta": -1,
+          "informacion_delta": -2,
+          "pluralismo_delta": -1,
+          "participacion_delta": 3,
+          "explanation": ""
+        }
+      ]
+    }
+  ],
+  "B": [
+    {
+      "text": "…pero TikTok ya ha decidido quién es el villano.",
+      "bonus_indicator": "informacion",
+      "effects": [
+        {
+          "decision": "Contrastar",
+          "confianza_delta": 0,
+          "informacion_delta": 2,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": ""
+        },
+        {
+          "decision": "Consultar",
+          "confianza_delta": -1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": ""
+        },
+        {
+          "decision": "Blindar",
+          "confianza_delta": 1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": ""
+        },
+        {
+          "decision": "Decretar",
+          "confianza_delta": -1,
+          "informacion_delta": -2,
+          "pluralismo_delta": 0,
+          "participacion_delta": 2,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "text": "…y los afectados sienten que otra vez hablan por ellos.",
+      "bonus_indicator": "pluralismo",
+      "effects": [
+        {
+          "decision": "Contrastar",
+          "confianza_delta": 0,
+          "informacion_delta": 1,
+          "pluralismo_delta": -1,
+          "participacion_delta": -1,
+          "explanation": ""
+        },
+        {
+          "decision": "Consultar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": ""
+        },
+        {
+          "decision": "Blindar",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 2,
+          "participacion_delta": -3,
+          "explanation": ""
+        },
+        {
+          "decision": "Decretar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": -2,
+          "participacion_delta": 2,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "text": "…y la conversación se convierte en Madrid-Barça político.",
+      "bonus_indicator": "confianza",
+      "effects": [
+        {
+          "decision": "Contrastar",
+          "confianza_delta": 0,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -2,
+          "explanation": ""
+        },
+        {
+          "decision": "Consultar",
+          "confianza_delta": -2,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": ""
+        },
+        {
+          "decision": "Blindar",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": -2,
+          "explanation": ""
+        },
+        {
+          "decision": "Decretar",
+          "confianza_delta": -2,
+          "informacion_delta": 0,
+          "pluralismo_delta": -1,
+          "participacion_delta": 2,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "text": "…y nadie entiende quién manda ni por qué.",
+      "bonus_indicator": "informacion",
+      "effects": [
+        {
+          "decision": "Contrastar",
+          "confianza_delta": 1,
+          "informacion_delta": 2,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": ""
+        },
+        {
+          "decision": "Consultar",
+          "confianza_delta": -1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": ""
+        },
+        {
+          "decision": "Blindar",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": -2,
+          "explanation": ""
+        },
+        {
+          "decision": "Decretar",
+          "confianza_delta": -1,
+          "informacion_delta": -2,
+          "pluralismo_delta": 0,
+          "participacion_delta": 2,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "text": "…y cuando toca participar aparecen tres personas y un bot.",
+      "bonus_indicator": "participacion",
+      "effects": [
+        {
+          "decision": "Contrastar",
+          "confianza_delta": 0,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -2,
+          "explanation": ""
+        },
+        {
+          "decision": "Consultar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 2,
+          "explanation": ""
+        },
+        {
+          "decision": "Blindar",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": ""
+        },
+        {
+          "decision": "Decretar",
+          "confianza_delta": 0,
+          "informacion_delta": 0,
+          "pluralismo_delta": -1,
+          "participacion_delta": 0,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "text": "…pero cada captura de pantalla cuenta una película distinta.",
+      "bonus_indicator": "informacion",
+      "effects": [
+        {
+          "decision": "Contrastar",
+          "confianza_delta": 0,
+          "informacion_delta": 2,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": ""
+        },
+        {
+          "decision": "Consultar",
+          "confianza_delta": -1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": ""
+        },
+        {
+          "decision": "Blindar",
+          "confianza_delta": 1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": ""
+        },
+        {
+          "decision": "Decretar",
+          "confianza_delta": -1,
+          "informacion_delta": -2,
+          "pluralismo_delta": 0,
+          "participacion_delta": 2,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "text": "…y los que más pierden no tienen altavoz.",
+      "bonus_indicator": "pluralismo",
+      "effects": [
+        {
+          "decision": "Contrastar",
+          "confianza_delta": 0,
+          "informacion_delta": 1,
+          "pluralismo_delta": -1,
+          "participacion_delta": -1,
+          "explanation": ""
+        },
+        {
+          "decision": "Consultar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": ""
+        },
+        {
+          "decision": "Blindar",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 2,
+          "participacion_delta": -2,
+          "explanation": ""
+        },
+        {
+          "decision": "Decretar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": -2,
+          "participacion_delta": 2,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "text": "…y empieza el clásico: ‘esto estaba pactado desde el minuto uno’.",
+      "bonus_indicator": "confianza",
+      "effects": [
+        {
+          "decision": "Contrastar",
+          "confianza_delta": 1,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": ""
+        },
+        {
+          "decision": "Consultar",
+          "confianza_delta": -2,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": ""
+        },
+        {
+          "decision": "Blindar",
+          "confianza_delta": 2,
+          "informacion_delta": 0,
+          "pluralismo_delta": 0,
+          "participacion_delta": -2,
+          "explanation": ""
+        },
+        {
+          "decision": "Decretar",
+          "confianza_delta": -2,
+          "informacion_delta": -1,
+          "pluralismo_delta": 0,
+          "participacion_delta": 2,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "text": "…pero solo se oye al que grita como si estuviera en Twitch.",
+      "bonus_indicator": "pluralismo",
+      "effects": [
+        {
+          "decision": "Contrastar",
+          "confianza_delta": 0,
+          "informacion_delta": 1,
+          "pluralismo_delta": -1,
+          "participacion_delta": -1,
+          "explanation": ""
+        },
+        {
+          "decision": "Consultar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 2,
+          "participacion_delta": 1,
+          "explanation": ""
+        },
+        {
+          "decision": "Blindar",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": -2,
+          "explanation": ""
+        },
+        {
+          "decision": "Decretar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": -2,
+          "participacion_delta": 2,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "text": "…y mucha gente calla para no comerse el marrón.",
+      "bonus_indicator": "participacion",
+      "effects": [
+        {
+          "decision": "Contrastar",
+          "confianza_delta": 0,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -2,
+          "explanation": ""
+        },
+        {
+          "decision": "Consultar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": ""
+        },
+        {
+          "decision": "Blindar",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": ""
+        },
+        {
+          "decision": "Decretar",
+          "confianza_delta": -1,
+          "informacion_delta": 0,
+          "pluralismo_delta": -1,
+          "participacion_delta": 1,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "text": "…y hay que hacer algo ya o la cosa se lía de verdad.",
+      "bonus_indicator": "confianza",
+      "effects": [
+        {
+          "decision": "Contrastar",
+          "confianza_delta": -1,
+          "informacion_delta": 1,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": ""
+        },
+        {
+          "decision": "Consultar",
+          "confianza_delta": -2,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": 0,
+          "explanation": ""
+        },
+        {
+          "decision": "Blindar",
+          "confianza_delta": 1,
+          "informacion_delta": 0,
+          "pluralismo_delta": 1,
+          "participacion_delta": -2,
+          "explanation": ""
+        },
+        {
+          "decision": "Decretar",
+          "confianza_delta": 2,
+          "informacion_delta": -1,
+          "pluralismo_delta": -1,
+          "participacion_delta": 1,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "text": "…y el algoritmo empuja justo lo que más incendia el ambiente.",
+      "bonus_indicator": "informacion",
+      "effects": [
+        {
+          "decision": "Contrastar",
+          "confianza_delta": 0,
+          "informacion_delta": 2,
+          "pluralismo_delta": 0,
+          "participacion_delta": -1,
+          "explanation": ""
+        },
+        {
+          "decision": "Consultar",
+          "confianza_delta": -1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": 1,
+          "explanation": ""
+        },
+        {
+          "decision": "Blindar",
+          "confianza_delta": 1,
+          "informacion_delta": -1,
+          "pluralismo_delta": 1,
+          "participacion_delta": -1,
+          "explanation": ""
+        },
+        {
+          "decision": "Decretar",
+          "confianza_delta": -1,
+          "informacion_delta": -2,
+          "pluralismo_delta": -1,
+          "participacion_delta": 3,
+          "explanation": ""
+        }
+      ]
+    }
+  ]
 }
