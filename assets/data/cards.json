@@ -10,7 +10,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -2,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Aquí mirar los hechos primero funciona en el instituto: mejora confianza porque muestra que hay un criterio antes de actuar y información porque aclarar qué se sabe y qué no. El coste está en participación porque el debate pierde energía mientras se buscan pruebas."
         },
         {
           "decision": "Escuchar",
@@ -18,7 +18,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: entre ruido y prisas, los datos salen despeinados."
+          "explanation": "Preguntar a quienes están dentro del problema suma en el instituto: mejora pluralismo porque evita que solo mande el grupo más ruidoso y participación porque activa a personas que estaban fuera del debate. El coste está en información porque no todo lo que se escucha es necesariamente cierto."
         },
         {
           "decision": "Proteger",
@@ -26,7 +26,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Proteger primero reduce daños en el instituto: mejora pluralismo porque protege a quien puede quedar señalado. El coste está en participación porque parte de la gente siente que no puede intervenir."
         },
         {
           "decision": "Actuar ya",
@@ -34,7 +34,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. Pero ojo: si no caben matices, el debate se queda en blanco y negro."
+          "explanation": "Decidir ya evita que el problema se descontrole en el instituto: mejora participación porque evita que la gente se queme esperando eternamente. El coste está en confianza porque deja la sensación de que alguien ha decidido por todos y pluralismo porque los matices se pierden y alguien puede salir mal parado."
         }
       ],
       "family": "instituto",
@@ -57,7 +57,7 @@
           "informacion_delta": 2,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Parar a verificar ayuda cuando hay bulos circulando: mejora información porque aclarar qué se sabe y qué no. El coste está en participación porque el debate pierde energía mientras se buscan pruebas."
         },
         {
           "decision": "Escuchar",
@@ -65,7 +65,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+          "explanation": "Escuchar a más gente aporta legitimidad cuando hay bulos circulando: mejora pluralismo porque evita que solo mande el grupo más ruidoso y participación porque más gente siente que cuenta. El coste está en confianza porque puede parecer que se pregunta mucho para no decidir nada y información porque puede aumentar el ruido si no hay filtros claros."
         },
         {
           "decision": "Proteger",
@@ -73,7 +73,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Poner garantías aquí es útil cuando hay bulos circulando: mejora confianza porque pone límites claros y evita abusos y pluralismo porque cuida a las voces con menos poder. El coste está en información porque frena datos que algunos querían ver ya y participación porque se prioriza proteger antes que abrir la conversación a todos."
         },
         {
           "decision": "Actuar ya",
@@ -81,7 +81,7 @@
           "informacion_delta": -2,
           "pluralismo_delta": 0,
           "participacion_delta": 2,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: entre ruido y prisas, los datos salen despeinados."
+          "explanation": "Actuar rápido puede ordenar el incendio cuando hay bulos circulando: mejora participación porque convierte el debate en una acción concreta. El coste está en confianza porque puede sonar a imposición desde arriba y información porque la rapidez puede llevarse por delante matices necesarios."
         }
       ],
       "family": "politica",
@@ -104,7 +104,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -2,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Parar a verificar ayuda en el barrio: mejora confianza porque muestra que hay un criterio antes de actuar y información porque bajar el humo antes de decidir. El coste está en participación porque parte de la gente se enfría y se desconecta."
         },
         {
           "decision": "Escuchar",
@@ -112,7 +112,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. Pero ojo: se cuelan versiones cutres con traje de noticia."
+          "explanation": "Abrir la decisión mejora el proceso en el barrio: mejora pluralismo porque entran voces que podían quedar tapadas y participación porque abre la puerta a implicarse de verdad. El coste está en información porque no todo lo que se escucha es necesariamente cierto."
         },
         {
           "decision": "Proteger",
@@ -120,7 +120,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Marcar límites protege mejor a los vulnerables en el barrio: mejora confianza porque pone límites claros y evita abusos. El coste está en participación porque se prioriza proteger antes que abrir la conversación a todos."
         },
         {
           "decision": "Actuar ya",
@@ -128,7 +128,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: proteger una salida rápida deja gente en el arcén."
+          "explanation": "Una respuesta rápida puede ser útil en el barrio: mejora participación porque convierte el debate en una acción concreta. El coste está en confianza porque deja la sensación de que alguien ha decidido por todos y pluralismo porque la solución rápida puede atropellar a quien necesitaba protección."
         }
       ],
       "family": "barrio",
@@ -151,7 +151,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: huele a apaño y la confianza se va a comprar pipas."
+          "explanation": "Parar a verificar ayuda cuando hay prisa real: mejora información porque separar hechos, rumores y pantallazos. El coste está en confianza porque da sensación de frialdad cuando la gente espera una respuesta y participación porque quien quería acción inmediata siente que no le escuchan."
         },
         {
           "decision": "Escuchar",
@@ -159,7 +159,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 0,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
+          "explanation": "Escuchar a más gente aporta legitimidad cuando hay prisa real: mejora pluralismo porque evita que solo mande el grupo más ruidoso. El coste está en confianza porque abre sospechas si luego no se nota lo escuchado."
         },
         {
           "decision": "Proteger",
@@ -167,7 +167,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -2,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Proteger primero reduce daños cuando hay prisa real: mejora confianza porque da seguridad a quienes temen salir perjudicados y pluralismo porque evita que la mayoría pase por encima de los más expuestos. El coste está en participación porque parte de la gente siente que no puede intervenir."
         },
         {
           "decision": "Actuar ya",
@@ -175,7 +175,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. Pero ojo: si no caben matices, el debate se queda en blanco y negro."
+          "explanation": "Actuar rápido puede ordenar el incendio cuando hay prisa real: mejora confianza porque evita que la sensación de abandono crezca y participación porque desbloquea la situación y pone a todos en marcha. El coste está en información porque la rapidez puede llevarse por delante matices necesarios y pluralismo porque la solución rápida puede atropellar a quien necesitaba protección."
         }
       ],
       "family": "transporte",
@@ -197,7 +197,7 @@
           "informacion_delta": 2,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Parar a verificar ayuda con las redes metidas en medio: mejora confianza porque da sensación de que no se decide por calentón y información porque aclarar qué se sabe y qué no. El coste está en participación porque parte de la gente se enfría y se desconecta."
         },
         {
           "decision": "Escuchar",
@@ -205,7 +205,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+          "explanation": "Preguntar a quienes están dentro del problema suma con las redes metidas en medio: mejora pluralismo porque evita que solo mande el grupo más ruidoso y participación porque activa a personas que estaban fuera del debate. El coste está en confianza porque abre sospechas si luego no se nota lo escuchado y información porque mezcla testimonios, rumores y emociones difíciles de ordenar."
         },
         {
           "decision": "Proteger",
@@ -213,7 +213,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Marcar límites protege mejor a los vulnerables con las redes metidas en medio: mejora confianza porque muestra que hay reglas incluso en mitad del lío y pluralismo porque cuida a las voces con menos poder. El coste está en información porque puede dejar preguntas sin responder durante un tiempo y participación porque se prioriza proteger antes que abrir la conversación a todos."
         },
         {
           "decision": "Actuar ya",
@@ -221,7 +221,7 @@
           "informacion_delta": -2,
           "pluralismo_delta": -1,
           "participacion_delta": 3,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
+          "explanation": "Una respuesta rápida puede ser útil con las redes metidas en medio: mejora participación porque convierte el debate en una acción concreta. El coste está en confianza porque deja la sensación de que alguien ha decidido por todos, información porque quedan datos importantes fuera de la decisión y pluralismo porque las voces pequeñas suelen quedarse fuera."
         }
       ],
       "family": "instituto",
@@ -244,7 +244,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": -1,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. El coste: la mayoría pisa fuerte y deja huellas donde no debe."
+          "explanation": "Aquí mirar los hechos primero funciona si hay gente fácil de señalar: mejora información porque separar hechos, rumores y pantallazos. El coste está en pluralismo porque mientras se verifica, algunas voces quedan sin protección y participación porque quien quería acción inmediata siente que no le escuchan."
         },
         {
           "decision": "Escuchar",
@@ -252,7 +252,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+          "explanation": "Preguntar a quienes están dentro del problema suma si hay gente fácil de señalar: mejora pluralismo porque evita que solo mande el grupo más ruidoso y participación porque más gente siente que cuenta. El coste está en confianza porque puede parecer que se pregunta mucho para no decidir nada y información porque no todo lo que se escucha es necesariamente cierto."
         },
         {
           "decision": "Proteger",
@@ -260,7 +260,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 2,
           "participacion_delta": -2,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Marcar límites protege mejor a los vulnerables si hay gente fácil de señalar: mejora confianza porque pone límites claros y evita abusos y pluralismo porque cuida a las voces con menos poder. El coste está en participación porque reduce el debate abierto para evitar daños."
         },
         {
           "decision": "Actuar ya",
@@ -268,7 +268,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": -2,
           "participacion_delta": 2,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: proteger una salida rápida deja gente en el arcén."
+          "explanation": "Decidir ya evita que el problema se descontrole si hay gente fácil de señalar: mejora participación porque convierte el debate en una acción concreta. El coste está en confianza porque si no se explica, parece orden de “porque sí” y pluralismo porque la solución rápida puede atropellar a quien necesitaba protección."
         }
       ],
       "family": "convivencia",
@@ -290,7 +290,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: huele a apaño y la confianza se va a comprar pipas."
+          "explanation": "Aquí mirar los hechos primero funciona cuando hay que seguir viéndose mañana: mejora información porque bajar el humo antes de decidir. El coste está en confianza porque si tarda demasiado, parece que se están lavando las manos y participación porque quien quería acción inmediata siente que no le escuchan."
         },
         {
           "decision": "Escuchar",
@@ -298,7 +298,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 0,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
+          "explanation": "Preguntar a quienes están dentro del problema suma cuando hay que seguir viéndose mañana: mejora pluralismo porque se escuchan más lados del problema. El coste está en confianza porque puede parecer que se pregunta mucho para no decidir nada."
         },
         {
           "decision": "Proteger",
@@ -306,7 +306,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -2,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Marcar límites protege mejor a los vulnerables cuando hay que seguir viéndose mañana: mejora confianza porque pone límites claros y evita abusos y pluralismo porque evita que la mayoría pase por encima de los más expuestos. El coste está en participación porque reduce el debate abierto para evitar daños."
         },
         {
           "decision": "Actuar ya",
@@ -314,7 +314,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. Pero ojo: si no caben matices, el debate se queda en blanco y negro."
+          "explanation": "Decidir ya evita que el problema se descontrole cuando hay que seguir viéndose mañana: mejora confianza porque da una respuesta rápida cuando el caos ya está servido y participación porque desbloquea la situación y pone a todos en marcha. El coste está en información porque se actúa sin comprobar todos los detalles y pluralismo porque las voces pequeñas suelen quedarse fuera."
         }
       ],
       "family": "seguridad",
@@ -337,7 +337,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -2,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Aquí mirar los hechos primero funciona cuando el problema toca la vida diaria: mejora confianza porque muestra que hay un criterio antes de actuar y información porque separar hechos, rumores y pantallazos. El coste está en participación porque quien quería acción inmediata siente que no le escuchan."
         },
         {
           "decision": "Escuchar",
@@ -345,7 +345,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+          "explanation": "Escuchar a más gente aporta legitimidad cuando el problema toca la vida diaria: mejora pluralismo porque entran voces que podían quedar tapadas y participación porque activa a personas que estaban fuera del debate. El coste está en confianza porque abre sospechas si luego no se nota lo escuchado y información porque puede aumentar el ruido si no hay filtros claros."
         },
         {
           "decision": "Proteger",
@@ -353,7 +353,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Proteger primero reduce daños cuando el problema toca la vida diaria: mejora pluralismo porque cuida a las voces con menos poder. El coste está en participación porque reduce el debate abierto para evitar daños."
         },
         {
           "decision": "Actuar ya",
@@ -361,7 +361,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: alguien acaba sintiendo que la ciudad no va con él."
+          "explanation": "Una respuesta rápida puede ser útil cuando el problema toca la vida diaria: mejora participación porque desbloquea la situación y pone a todos en marcha. El coste está en confianza porque puede sonar a imposición desde arriba y pluralismo porque las voces pequeñas suelen quedarse fuera."
         }
       ],
       "family": "vivienda",
@@ -383,7 +383,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -2,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Parar a verificar ayuda cuando hay datos o intimidad en juego: mejora información porque aclarar qué se sabe y qué no. El coste está en participación porque parte de la gente se enfría y se desconecta."
         },
         {
           "decision": "Escuchar",
@@ -391,7 +391,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+          "explanation": "Preguntar a quienes están dentro del problema suma cuando hay datos o intimidad en juego: mejora pluralismo porque entran voces que podían quedar tapadas y participación porque más gente siente que cuenta. El coste está en confianza porque si se alarga, parece postureo participativo y información porque mezcla testimonios, rumores y emociones difíciles de ordenar."
         },
         {
           "decision": "Proteger",
@@ -399,7 +399,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -2,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Poner garantías aquí es útil cuando hay datos o intimidad en juego: mejora confianza porque pone límites claros y evita abusos y pluralismo porque evita que la mayoría pase por encima de los más expuestos. El coste está en participación porque se prioriza proteger antes que abrir la conversación a todos."
         },
         {
           "decision": "Actuar ya",
@@ -407,7 +407,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": -2,
           "participacion_delta": 1,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: proteger una salida rápida deja gente en el arcén."
+          "explanation": "Decidir ya evita que el problema se descontrole cuando hay datos o intimidad en juego: mejora confianza porque muestra control en una situación urgente y participación porque evita que la gente se queme esperando eternamente. El coste está en información porque quedan datos importantes fuera de la decisión y pluralismo porque los matices se pierden y alguien puede salir mal parado."
         }
       ],
       "family": "seguridad",
@@ -429,7 +429,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -2,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Comprobar antes de actuar tiene sentido cuando hay derechos y dinero en juego: mejora confianza porque muestra que hay un criterio antes de actuar y información porque separar hechos, rumores y pantallazos. El coste está en participación porque parte de la gente se enfría y se desconecta."
         },
         {
           "decision": "Escuchar",
@@ -437,7 +437,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
+          "explanation": "Abrir la decisión mejora el proceso cuando hay derechos y dinero en juego: mejora pluralismo porque entran voces que podían quedar tapadas y participación porque abre la puerta a implicarse de verdad. El coste está en confianza porque puede parecer que se pregunta mucho para no decidir nada."
         },
         {
           "decision": "Proteger",
@@ -445,7 +445,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -2,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Marcar límites protege mejor a los vulnerables cuando hay derechos y dinero en juego: mejora confianza porque pone límites claros y evita abusos y pluralismo porque cuida a las voces con menos poder. El coste está en participación porque reduce el debate abierto para evitar daños."
         },
         {
           "decision": "Actuar ya",
@@ -453,7 +453,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. Pero ojo: si no caben matices, el debate se queda en blanco y negro."
+          "explanation": "Una respuesta rápida puede ser útil cuando hay derechos y dinero en juego: mejora participación porque desbloquea la situación y pone a todos en marcha. El coste está en confianza porque puede sonar a imposición desde arriba y pluralismo porque la solución rápida puede atropellar a quien necesitaba protección."
         }
       ],
       "family": "trabajo",
@@ -476,7 +476,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": -1,
           "participacion_delta": -1,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: los de siempre hablan alto y otros se comen el silencio."
+          "explanation": "Comprobar antes de actuar tiene sentido cuando hay que seguir viéndose mañana: mejora información porque bajar el humo antes de decidir. El coste está en pluralismo porque el daño puede avanzar antes de que se actúe y participación porque el debate pierde energía mientras se buscan pruebas."
         },
         {
           "decision": "Escuchar",
@@ -484,7 +484,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+          "explanation": "Preguntar a quienes están dentro del problema suma cuando hay que seguir viéndose mañana: mejora pluralismo porque se escuchan más lados del problema y participación porque activa a personas que estaban fuera del debate. El coste está en confianza porque puede parecer que se pregunta mucho para no decidir nada."
         },
         {
           "decision": "Proteger",
@@ -492,7 +492,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 2,
           "participacion_delta": -2,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Marcar límites protege mejor a los vulnerables cuando hay que seguir viéndose mañana: mejora confianza porque muestra que hay reglas incluso en mitad del lío y pluralismo porque protege a quien puede quedar señalado. El coste está en participación porque reduce el debate abierto para evitar daños."
         },
         {
           "decision": "Actuar ya",
@@ -500,7 +500,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: alguien acaba sintiendo que la ciudad no va con él."
+          "explanation": "Decidir ya evita que el problema se descontrole cuando hay que seguir viéndose mañana: mejora participación porque evita que la gente se queme esperando eternamente. El coste está en confianza porque deja la sensación de que alguien ha decidido por todos y pluralismo porque los matices se pierden y alguien puede salir mal parado."
         }
       ],
       "family": "barrio",
@@ -524,7 +524,7 @@
           "informacion_delta": 2,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Aquí mirar los hechos primero funciona en el instituto: mejora información porque separar hechos, rumores y pantallazos. El coste está en participación porque quien quería acción inmediata siente que no le escuchan."
         },
         {
           "decision": "Escuchar",
@@ -532,7 +532,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+          "explanation": "Abrir la decisión mejora el proceso en el instituto: mejora pluralismo porque evita que solo mande el grupo más ruidoso y participación porque abre la puerta a implicarse de verdad. El coste está en confianza porque abre sospechas si luego no se nota lo escuchado y información porque puede aumentar el ruido si no hay filtros claros."
         },
         {
           "decision": "Proteger",
@@ -540,7 +540,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Poner garantías aquí es útil en el instituto: mejora confianza porque pone límites claros y evita abusos y pluralismo porque protege a quien puede quedar señalado. El coste está en información porque frena datos que algunos querían ver ya y participación porque reduce el debate abierto para evitar daños."
         },
         {
           "decision": "Actuar ya",
@@ -548,7 +548,7 @@
           "informacion_delta": -2,
           "pluralismo_delta": -1,
           "participacion_delta": 3,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: proteger una salida rápida deja gente en el arcén."
+          "explanation": "Decidir ya evita que el problema se descontrole en el instituto: mejora participación porque evita que la gente se queme esperando eternamente. El coste está en confianza porque si no se explica, parece orden de “porque sí”, información porque la rapidez puede llevarse por delante matices necesarios y pluralismo porque las voces pequeñas suelen quedarse fuera."
         }
       ],
       "family": "instituto",
@@ -571,7 +571,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -2,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Comprobar antes de actuar tiene sentido en el instituto: mejora confianza porque da sensación de que no se decide por calentón y información porque aclarar qué se sabe y qué no. El coste está en participación porque quien quería acción inmediata siente que no le escuchan."
         },
         {
           "decision": "Escuchar",
@@ -579,7 +579,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 2,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: entre ruido y prisas, los datos salen despeinados."
+          "explanation": "Abrir la decisión mejora el proceso en el instituto: mejora pluralismo porque se escuchan más lados del problema y participación porque activa a personas que estaban fuera del debate. El coste está en información porque puede aumentar el ruido si no hay filtros claros."
         },
         {
           "decision": "Proteger",
@@ -587,7 +587,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Proteger primero reduce daños en el instituto: mejora confianza porque da seguridad a quienes temen salir perjudicados y pluralismo porque protege a quien puede quedar señalado. El coste está en participación porque se prioriza proteger antes que abrir la conversación a todos."
         },
         {
           "decision": "Actuar ya",
@@ -595,7 +595,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. Pero ojo: si no caben matices, el debate se queda en blanco y negro."
+          "explanation": "Decidir ya evita que el problema se descontrole en el instituto: mejora participación porque desbloquea la situación y pone a todos en marcha. El coste está en confianza porque si no se explica, parece orden de “porque sí” y pluralismo porque las voces pequeñas suelen quedarse fuera."
         }
       ],
       "family": "instituto",
@@ -617,7 +617,7 @@
           "informacion_delta": 2,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Parar a verificar ayuda en el instituto: mejora confianza porque da sensación de que no se decide por calentón y información porque aclarar qué se sabe y qué no. El coste está en participación porque el debate pierde energía mientras se buscan pruebas."
         },
         {
           "decision": "Escuchar",
@@ -625,7 +625,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+          "explanation": "Abrir la decisión mejora el proceso en el instituto: mejora pluralismo porque entran voces que podían quedar tapadas y participación porque abre la puerta a implicarse de verdad. El coste está en confianza porque si se alarga, parece postureo participativo y información porque puede aumentar el ruido si no hay filtros claros."
         },
         {
           "decision": "Proteger",
@@ -633,7 +633,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Marcar límites protege mejor a los vulnerables en el instituto: mejora confianza porque da seguridad a quienes temen salir perjudicados y pluralismo porque evita que la mayoría pase por encima de los más expuestos. El coste está en información porque frena datos que algunos querían ver ya y participación porque reduce el debate abierto para evitar daños."
         },
         {
           "decision": "Actuar ya",
@@ -641,7 +641,7 @@
           "informacion_delta": -2,
           "pluralismo_delta": 0,
           "participacion_delta": 2,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: entre ruido y prisas, los datos salen despeinados."
+          "explanation": "Actuar rápido puede ordenar el incendio en el instituto: mejora participación porque evita que la gente se queme esperando eternamente. El coste está en confianza porque si no se explica, parece orden de “porque sí” y información porque se actúa sin comprobar todos los detalles."
         }
       ],
       "family": "instituto",
@@ -663,7 +663,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Aquí mirar los hechos primero funciona en el instituto: mejora confianza porque da sensación de que no se decide por calentón y información porque bajar el humo antes de decidir. El coste está en participación porque el debate pierde energía mientras se buscan pruebas."
         },
         {
           "decision": "Escuchar",
@@ -671,7 +671,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+          "explanation": "Abrir la decisión mejora el proceso en el instituto: mejora pluralismo porque evita que solo mande el grupo más ruidoso y participación porque abre la puerta a implicarse de verdad. El coste está en confianza porque abre sospechas si luego no se nota lo escuchado."
         },
         {
           "decision": "Proteger",
@@ -679,7 +679,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 0,
           "participacion_delta": -2,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Proteger primero reduce daños en el instituto: mejora confianza porque muestra que hay reglas incluso en mitad del lío. El coste está en participación porque se prioriza proteger antes que abrir la conversación a todos."
         },
         {
           "decision": "Actuar ya",
@@ -687,7 +687,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 0,
           "participacion_delta": 2,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: el salseo tapa lo importante y encima presume."
+          "explanation": "Decidir ya evita que el problema se descontrole en el instituto: mejora participación porque desbloquea la situación y pone a todos en marcha. El coste está en confianza porque si no se explica, parece orden de “porque sí” y información porque quedan datos importantes fuera de la decisión."
         }
       ],
       "family": "instituto",
@@ -708,7 +708,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": -1,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: algunas voces quedan fuera y luego vienen los portazos."
+          "explanation": "Comprobar antes de actuar tiene sentido en el instituto: mejora información porque aclarar qué se sabe y qué no. El coste está en pluralismo porque mientras se verifica, algunas voces quedan sin protección y participación porque el debate pierde energía mientras se buscan pruebas."
         },
         {
           "decision": "Escuchar",
@@ -716,7 +716,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
+          "explanation": "Preguntar a quienes están dentro del problema suma en el instituto: mejora pluralismo porque evita que solo mande el grupo más ruidoso y participación porque activa a personas que estaban fuera del debate. El coste está en confianza porque abre sospechas si luego no se nota lo escuchado."
         },
         {
           "decision": "Proteger",
@@ -724,7 +724,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 2,
           "participacion_delta": -2,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Poner garantías aquí es útil en el instituto: mejora confianza porque pone límites claros y evita abusos y pluralismo porque evita que la mayoría pase por encima de los más expuestos. El coste está en participación porque parte de la gente siente que no puede intervenir."
         },
         {
           "decision": "Actuar ya",
@@ -732,7 +732,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": -2,
           "participacion_delta": 2,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. Pero ojo: si no caben matices, el debate se queda en blanco y negro."
+          "explanation": "Una respuesta rápida puede ser útil en el instituto: mejora participación porque desbloquea la situación y pone a todos en marcha. El coste está en confianza porque deja la sensación de que alguien ha decidido por todos y pluralismo porque la solución rápida puede atropellar a quien necesitaba protección."
         }
       ],
       "family": "instituto",
@@ -754,7 +754,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Comprobar antes de actuar tiene sentido con las redes metidas en medio: mejora información porque bajar el humo antes de decidir. El coste está en participación porque parte de la gente se enfría y se desconecta."
         },
         {
           "decision": "Escuchar",
@@ -762,7 +762,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+          "explanation": "Escuchar a más gente aporta legitimidad con las redes metidas en medio: mejora pluralismo porque evita que solo mande el grupo más ruidoso y participación porque abre la puerta a implicarse de verdad. El coste está en confianza porque puede parecer que se pregunta mucho para no decidir nada."
         },
         {
           "decision": "Proteger",
@@ -770,7 +770,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Proteger primero reduce daños con las redes metidas en medio: mejora confianza porque da seguridad a quienes temen salir perjudicados y pluralismo porque protege a quien puede quedar señalado. El coste está en participación porque parte de la gente siente que no puede intervenir."
         },
         {
           "decision": "Actuar ya",
@@ -778,7 +778,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: alguien acaba sintiendo que la ciudad no va con él."
+          "explanation": "Decidir ya evita que el problema se descontrole con las redes metidas en medio: mejora participación porque evita que la gente se queme esperando eternamente. El coste está en información porque la rapidez puede llevarse por delante matices necesarios y pluralismo porque los matices se pierden y alguien puede salir mal parado."
         }
       ],
       "family": "cultura",
@@ -799,7 +799,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Comprobar antes de actuar tiene sentido en el barrio: mejora información porque bajar el humo antes de decidir. El coste está en participación porque el debate pierde energía mientras se buscan pruebas."
         },
         {
           "decision": "Escuchar",
@@ -807,7 +807,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+          "explanation": "Abrir la decisión mejora el proceso en el barrio: mejora pluralismo porque evita que solo mande el grupo más ruidoso y participación porque abre la puerta a implicarse de verdad. El coste está en confianza porque abre sospechas si luego no se nota lo escuchado."
         },
         {
           "decision": "Proteger",
@@ -815,7 +815,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Proteger primero reduce daños en el barrio: mejora confianza porque pone límites claros y evita abusos y pluralismo porque cuida a las voces con menos poder. El coste está en participación porque reduce el debate abierto para evitar daños."
         },
         {
           "decision": "Actuar ya",
@@ -823,7 +823,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: proteger una salida rápida deja gente en el arcén."
+          "explanation": "Una respuesta rápida puede ser útil en el barrio: mejora participación porque evita que la gente se queme esperando eternamente. El coste está en información porque la rapidez puede llevarse por delante matices necesarios y pluralismo porque la solución rápida puede atropellar a quien necesitaba protección."
         }
       ],
       "family": "barrio",
@@ -844,7 +844,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": -1,
           "participacion_delta": -1,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: algunas voces quedan fuera y luego vienen los portazos."
+          "explanation": "Aquí mirar los hechos primero funciona cuando hay que seguir viéndose mañana: mejora información porque bajar el humo antes de decidir. El coste está en pluralismo porque mientras se verifica, algunas voces quedan sin protección y participación porque quien quería acción inmediata siente que no le escuchan."
         },
         {
           "decision": "Escuchar",
@@ -852,7 +852,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
+          "explanation": "Escuchar a más gente aporta legitimidad cuando hay que seguir viéndose mañana: mejora pluralismo porque entran voces que podían quedar tapadas y participación porque abre la puerta a implicarse de verdad. El coste está en confianza porque abre sospechas si luego no se nota lo escuchado."
         },
         {
           "decision": "Proteger",
@@ -860,7 +860,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 2,
           "participacion_delta": -2,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Proteger primero reduce daños cuando hay que seguir viéndose mañana: mejora confianza porque da seguridad a quienes temen salir perjudicados y pluralismo porque evita que la mayoría pase por encima de los más expuestos. El coste está en participación porque parte de la gente siente que no puede intervenir."
         },
         {
           "decision": "Actuar ya",
@@ -868,7 +868,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": -2,
           "participacion_delta": 2,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. Pero ojo: si no caben matices, el debate se queda en blanco y negro."
+          "explanation": "Una respuesta rápida puede ser útil cuando hay que seguir viéndose mañana: mejora participación porque convierte el debate en una acción concreta. El coste está en confianza porque puede sonar a imposición desde arriba y pluralismo porque las voces pequeñas suelen quedarse fuera."
         }
       ],
       "family": "barrio",
@@ -889,7 +889,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Parar a verificar ayuda en el barrio: mejora confianza porque muestra que hay un criterio antes de actuar y información porque aclarar qué se sabe y qué no. El coste está en participación porque el debate pierde energía mientras se buscan pruebas."
         },
         {
           "decision": "Escuchar",
@@ -897,7 +897,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+          "explanation": "Escuchar a más gente aporta legitimidad en el barrio: mejora pluralismo porque se escuchan más lados del problema y participación porque abre la puerta a implicarse de verdad. El coste está en confianza porque si se alarga, parece postureo participativo."
         },
         {
           "decision": "Proteger",
@@ -905,7 +905,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 0,
           "participacion_delta": -2,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Proteger primero reduce daños en el barrio: mejora confianza porque pone límites claros y evita abusos. El coste está en participación porque parte de la gente siente que no puede intervenir."
         },
         {
           "decision": "Actuar ya",
@@ -913,7 +913,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 0,
           "participacion_delta": 2,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: entre ruido y prisas, los datos salen despeinados."
+          "explanation": "Una respuesta rápida puede ser útil en el barrio: mejora participación porque desbloquea la situación y pone a todos en marcha. El coste está en confianza porque si no se explica, parece orden de “porque sí” y información porque la rapidez puede llevarse por delante matices necesarios."
         }
       ],
       "family": "barrio",
@@ -934,7 +934,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. El coste: algunos sienten que les han vendido la moto sin casco."
+          "explanation": "Parar a verificar ayuda si la tensión puede escalar: mejora información porque aclarar qué se sabe y qué no. El coste está en confianza porque si tarda demasiado, parece que se están lavando las manos y participación porque quien quería acción inmediata siente que no le escuchan."
         },
         {
           "decision": "Escuchar",
@@ -942,7 +942,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 0,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+          "explanation": "Preguntar a quienes están dentro del problema suma si la tensión puede escalar: mejora pluralismo porque evita que solo mande el grupo más ruidoso. El coste está en confianza porque abre sospechas si luego no se nota lo escuchado."
         },
         {
           "decision": "Proteger",
@@ -950,7 +950,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -2,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Marcar límites protege mejor a los vulnerables si la tensión puede escalar: mejora confianza porque pone límites claros y evita abusos y pluralismo porque cuida a las voces con menos poder. El coste está en participación porque reduce el debate abierto para evitar daños."
         },
         {
           "decision": "Actuar ya",
@@ -958,7 +958,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: proteger una salida rápida deja gente en el arcén."
+          "explanation": "Actuar rápido puede ordenar el incendio si la tensión puede escalar: mejora confianza porque da una respuesta rápida cuando el caos ya está servido y participación porque convierte el debate en una acción concreta. El coste está en información porque quedan datos importantes fuera de la decisión y pluralismo porque los matices se pierden y alguien puede salir mal parado."
         }
       ],
       "family": "seguridad",
@@ -979,7 +979,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -2,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Aquí mirar los hechos primero funciona si falla algo básico: mejora confianza porque da sensación de que no se decide por calentón y información porque separar hechos, rumores y pantallazos. El coste está en participación porque el debate pierde energía mientras se buscan pruebas."
         },
         {
           "decision": "Escuchar",
@@ -987,7 +987,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 2,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: entre ruido y prisas, los datos salen despeinados."
+          "explanation": "Preguntar a quienes están dentro del problema suma si falla algo básico: mejora pluralismo porque evita que solo mande el grupo más ruidoso y participación porque más gente siente que cuenta. El coste está en información porque no todo lo que se escucha es necesariamente cierto."
         },
         {
           "decision": "Proteger",
@@ -995,7 +995,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Poner garantías aquí es útil si falla algo básico: mejora confianza porque muestra que hay reglas incluso en mitad del lío y pluralismo porque cuida a las voces con menos poder. El coste está en participación porque parte de la gente siente que no puede intervenir."
         },
         {
           "decision": "Actuar ya",
@@ -1003,7 +1003,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. Pero ojo: si no caben matices, el debate se queda en blanco y negro."
+          "explanation": "Una respuesta rápida puede ser útil si falla algo básico: mejora participación porque desbloquea la situación y pone a todos en marcha. El coste está en confianza porque puede sonar a imposición desde arriba y pluralismo porque la solución rápida puede atropellar a quien necesitaba protección."
         }
       ],
       "family": "servicios",
@@ -1024,7 +1024,7 @@
           "informacion_delta": 2,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Parar a verificar ayuda en el barrio: mejora confianza porque muestra que hay un criterio antes de actuar y información porque aclarar qué se sabe y qué no. El coste está en participación porque el debate pierde energía mientras se buscan pruebas."
         },
         {
           "decision": "Escuchar",
@@ -1032,7 +1032,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+          "explanation": "Escuchar a más gente aporta legitimidad en el barrio: mejora pluralismo porque evita que solo mande el grupo más ruidoso y participación porque activa a personas que estaban fuera del debate. El coste está en confianza porque puede parecer que se pregunta mucho para no decidir nada y información porque puede aumentar el ruido si no hay filtros claros."
         },
         {
           "decision": "Proteger",
@@ -1040,7 +1040,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Marcar límites protege mejor a los vulnerables en el barrio: mejora confianza porque da seguridad a quienes temen salir perjudicados y pluralismo porque evita que la mayoría pase por encima de los más expuestos. El coste está en información porque puede dejar preguntas sin responder durante un tiempo y participación porque reduce el debate abierto para evitar daños."
         },
         {
           "decision": "Actuar ya",
@@ -1048,7 +1048,7 @@
           "informacion_delta": -2,
           "pluralismo_delta": 0,
           "participacion_delta": 2,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: entre ruido y prisas, los datos salen despeinados."
+          "explanation": "Una respuesta rápida puede ser útil en el barrio: mejora participación porque evita que la gente se queme esperando eternamente. El coste está en confianza porque deja la sensación de que alguien ha decidido por todos y información porque se actúa sin comprobar todos los detalles."
         }
       ],
       "family": "redes",
@@ -1069,7 +1069,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Comprobar antes de actuar tiene sentido en el barrio: mejora información porque aclarar qué se sabe y qué no. El coste está en participación porque el debate pierde energía mientras se buscan pruebas."
         },
         {
           "decision": "Escuchar",
@@ -1077,7 +1077,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+          "explanation": "Escuchar a más gente aporta legitimidad en el barrio: mejora pluralismo porque entran voces que podían quedar tapadas y participación porque más gente siente que cuenta. El coste está en confianza porque puede parecer que se pregunta mucho para no decidir nada."
         },
         {
           "decision": "Proteger",
@@ -1085,7 +1085,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Poner garantías aquí es útil en el barrio: mejora confianza porque pone límites claros y evita abusos y pluralismo porque cuida a las voces con menos poder. El coste está en participación porque se prioriza proteger antes que abrir la conversación a todos."
         },
         {
           "decision": "Actuar ya",
@@ -1093,7 +1093,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: proteger una salida rápida deja gente en el arcén."
+          "explanation": "Decidir ya evita que el problema se descontrole en el barrio: mejora participación porque convierte el debate en una acción concreta. El coste está en información porque quedan datos importantes fuera de la decisión y pluralismo porque los matices se pierden y alguien puede salir mal parado."
         }
       ],
       "family": "vivienda",
@@ -1114,7 +1114,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": -1,
           "participacion_delta": -1,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: algunas voces quedan fuera y luego vienen los portazos."
+          "explanation": "Aquí mirar los hechos primero funciona en el barrio: mejora información porque separar hechos, rumores y pantallazos. El coste está en pluralismo porque mientras se verifica, algunas voces quedan sin protección y participación porque quien quería acción inmediata siente que no le escuchan."
         },
         {
           "decision": "Escuchar",
@@ -1122,7 +1122,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
+          "explanation": "Abrir la decisión mejora el proceso en el barrio: mejora pluralismo porque evita que solo mande el grupo más ruidoso y participación porque abre la puerta a implicarse de verdad. El coste está en confianza porque si se alarga, parece postureo participativo."
         },
         {
           "decision": "Proteger",
@@ -1130,7 +1130,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 2,
           "participacion_delta": -2,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Marcar límites protege mejor a los vulnerables en el barrio: mejora confianza porque pone límites claros y evita abusos y pluralismo porque cuida a las voces con menos poder. El coste está en participación porque reduce el debate abierto para evitar daños."
         },
         {
           "decision": "Actuar ya",
@@ -1138,7 +1138,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": -2,
           "participacion_delta": 2,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. Pero ojo: si no caben matices, el debate se queda en blanco y negro."
+          "explanation": "Actuar rápido puede ordenar el incendio en el barrio: mejora participación porque convierte el debate en una acción concreta. El coste está en confianza porque puede sonar a imposición desde arriba y pluralismo porque los matices se pierden y alguien puede salir mal parado."
         }
       ],
       "family": "cultura",
@@ -1159,7 +1159,7 @@
           "informacion_delta": 2,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Comprobar antes de actuar tiene sentido cuando la institución está bajo sospecha: mejora confianza porque muestra que hay un criterio antes de actuar y información porque separar hechos, rumores y pantallazos. El coste está en participación porque parte de la gente se enfría y se desconecta."
         },
         {
           "decision": "Escuchar",
@@ -1167,7 +1167,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+          "explanation": "Abrir la decisión mejora el proceso cuando la institución está bajo sospecha: mejora pluralismo porque se escuchan más lados del problema y participación porque más gente siente que cuenta. El coste está en confianza porque si se alarga, parece postureo participativo y información porque mezcla testimonios, rumores y emociones difíciles de ordenar."
         },
         {
           "decision": "Proteger",
@@ -1175,7 +1175,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Marcar límites protege mejor a los vulnerables cuando la institución está bajo sospecha: mejora confianza porque pone límites claros y evita abusos y pluralismo porque protege a quien puede quedar señalado. El coste está en información porque frena datos que algunos querían ver ya y participación porque se prioriza proteger antes que abrir la conversación a todos."
         },
         {
           "decision": "Actuar ya",
@@ -1183,7 +1183,7 @@
           "informacion_delta": -2,
           "pluralismo_delta": 0,
           "participacion_delta": 2,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: entre ruido y prisas, los datos salen despeinados."
+          "explanation": "Decidir ya evita que el problema se descontrole cuando la institución está bajo sospecha: mejora participación porque convierte el debate en una acción concreta. El coste está en confianza porque si no se explica, parece orden de “porque sí” y información porque la rapidez puede llevarse por delante matices necesarios."
         }
       ],
       "family": "politica",
@@ -1204,7 +1204,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -2,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Aquí mirar los hechos primero funciona cuando hay derechos y dinero en juego: mejora confianza porque da sensación de que no se decide por calentón y información porque separar hechos, rumores y pantallazos. El coste está en participación porque quien quería acción inmediata siente que no le escuchan."
         },
         {
           "decision": "Escuchar",
@@ -1212,7 +1212,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 2,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. Pero ojo: se cuelan versiones cutres con traje de noticia."
+          "explanation": "Escuchar a más gente aporta legitimidad cuando hay derechos y dinero en juego: mejora pluralismo porque se escuchan más lados del problema y participación porque más gente siente que cuenta. El coste está en información porque puede aumentar el ruido si no hay filtros claros."
         },
         {
           "decision": "Proteger",
@@ -1220,7 +1220,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Poner garantías aquí es útil cuando hay derechos y dinero en juego: mejora confianza porque muestra que hay reglas incluso en mitad del lío y pluralismo porque cuida a las voces con menos poder. El coste está en participación porque reduce el debate abierto para evitar daños."
         },
         {
           "decision": "Actuar ya",
@@ -1228,7 +1228,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: proteger una salida rápida deja gente en el arcén."
+          "explanation": "Actuar rápido puede ordenar el incendio cuando hay derechos y dinero en juego: mejora participación porque convierte el debate en una acción concreta. El coste está en confianza porque deja la sensación de que alguien ha decidido por todos y pluralismo porque las voces pequeñas suelen quedarse fuera."
         }
       ],
       "family": "trabajo",
@@ -1249,7 +1249,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -2,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Parar a verificar ayuda en el instituto: mejora confianza porque da sensación de que no se decide por calentón y información porque aclarar qué se sabe y qué no. El coste está en participación porque el debate pierde energía mientras se buscan pruebas."
         },
         {
           "decision": "Escuchar",
@@ -1257,7 +1257,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 2,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: entre ruido y prisas, los datos salen despeinados."
+          "explanation": "Abrir la decisión mejora el proceso en el instituto: mejora pluralismo porque entran voces que podían quedar tapadas y participación porque abre la puerta a implicarse de verdad. El coste está en información porque mezcla testimonios, rumores y emociones difíciles de ordenar."
         },
         {
           "decision": "Proteger",
@@ -1265,7 +1265,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Marcar límites protege mejor a los vulnerables en el instituto: mejora confianza porque da seguridad a quienes temen salir perjudicados y pluralismo porque protege a quien puede quedar señalado. El coste está en participación porque reduce el debate abierto para evitar daños."
         },
         {
           "decision": "Actuar ya",
@@ -1273,7 +1273,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. Pero ojo: si no caben matices, el debate se queda en blanco y negro."
+          "explanation": "Decidir ya evita que el problema se descontrole en el instituto: mejora participación porque convierte el debate en una acción concreta. El coste está en confianza porque deja la sensación de que alguien ha decidido por todos y pluralismo porque las voces pequeñas suelen quedarse fuera."
         }
       ],
       "family": "instituto",
@@ -1294,7 +1294,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: la sospecha se queda pegada como chicle bajo la mesa."
+          "explanation": "Parar a verificar ayuda cuando hay datos o intimidad en juego: mejora información porque bajar el humo antes de decidir. El coste está en confianza porque si tarda demasiado, parece que se están lavando las manos y participación porque el debate pierde energía mientras se buscan pruebas."
         },
         {
           "decision": "Escuchar",
@@ -1302,7 +1302,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 0,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+          "explanation": "Escuchar a más gente aporta legitimidad cuando hay datos o intimidad en juego: mejora pluralismo porque evita que solo mande el grupo más ruidoso. El coste está en confianza porque si se alarga, parece postureo participativo."
         },
         {
           "decision": "Proteger",
@@ -1310,7 +1310,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -2,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Poner garantías aquí es útil cuando hay datos o intimidad en juego: mejora confianza porque da seguridad a quienes temen salir perjudicados y pluralismo porque protege a quien puede quedar señalado. El coste está en participación porque se prioriza proteger antes que abrir la conversación a todos."
         },
         {
           "decision": "Actuar ya",
@@ -1318,7 +1318,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: alguien acaba sintiendo que la ciudad no va con él."
+          "explanation": "Una respuesta rápida puede ser útil cuando hay datos o intimidad en juego: mejora confianza porque da una respuesta rápida cuando el caos ya está servido y participación porque convierte el debate en una acción concreta. El coste está en información porque quedan datos importantes fuera de la decisión y pluralismo porque los matices se pierden y alguien puede salir mal parado."
         }
       ],
       "family": "privacidad",
@@ -1339,7 +1339,7 @@
           "informacion_delta": 2,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Parar a verificar ayuda en el instituto: mejora confianza porque muestra que hay un criterio antes de actuar y información porque aclarar qué se sabe y qué no. El coste está en participación porque el debate pierde energía mientras se buscan pruebas."
         },
         {
           "decision": "Escuchar",
@@ -1347,7 +1347,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+          "explanation": "Preguntar a quienes están dentro del problema suma en el instituto: mejora pluralismo porque evita que solo mande el grupo más ruidoso y participación porque activa a personas que estaban fuera del debate. El coste está en confianza porque si se alarga, parece postureo participativo y información porque puede aumentar el ruido si no hay filtros claros."
         },
         {
           "decision": "Proteger",
@@ -1355,7 +1355,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Proteger primero reduce daños en el instituto: mejora confianza porque da seguridad a quienes temen salir perjudicados y pluralismo porque protege a quien puede quedar señalado. El coste está en información porque limita lo que circula mientras se aclara el caso y participación porque parte de la gente siente que no puede intervenir."
         },
         {
           "decision": "Actuar ya",
@@ -1363,7 +1363,7 @@
           "informacion_delta": -2,
           "pluralismo_delta": 0,
           "participacion_delta": 2,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: el salseo tapa lo importante y encima presume."
+          "explanation": "Una respuesta rápida puede ser útil en el instituto: mejora participación porque convierte el debate en una acción concreta. El coste está en confianza porque deja la sensación de que alguien ha decidido por todos y información porque quedan datos importantes fuera de la decisión."
         }
       ],
       "family": "instituto",
@@ -1384,7 +1384,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": -1,
           "participacion_delta": -1,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: algunas voces quedan fuera y luego vienen los portazos."
+          "explanation": "Aquí mirar los hechos primero funciona en el barrio: mejora información porque separar hechos, rumores y pantallazos. El coste está en pluralismo porque los más expuestos pueden sentir que se duda de ellos y participación porque quien quería acción inmediata siente que no le escuchan."
         },
         {
           "decision": "Escuchar",
@@ -1392,7 +1392,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
+          "explanation": "Preguntar a quienes están dentro del problema suma en el barrio: mejora pluralismo porque entran voces que podían quedar tapadas y participación porque activa a personas que estaban fuera del debate. El coste está en confianza porque si se alarga, parece postureo participativo."
         },
         {
           "decision": "Proteger",
@@ -1400,7 +1400,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 2,
           "participacion_delta": -2,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Poner garantías aquí es útil en el barrio: mejora confianza porque muestra que hay reglas incluso en mitad del lío y pluralismo porque protege a quien puede quedar señalado. El coste está en participación porque parte de la gente siente que no puede intervenir."
         },
         {
           "decision": "Actuar ya",
@@ -1408,7 +1408,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": -2,
           "participacion_delta": 2,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. Pero ojo: si no caben matices, el debate se queda en blanco y negro."
+          "explanation": "Actuar rápido puede ordenar el incendio en el barrio: mejora participación porque convierte el debate en una acción concreta. El coste está en confianza porque si no se explica, parece orden de “porque sí” y pluralismo porque la solución rápida puede atropellar a quien necesitaba protección."
         }
       ],
       "family": "barrio",
@@ -1429,7 +1429,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": -1,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: los de siempre hablan alto y otros se comen el silencio."
+          "explanation": "Parar a verificar ayuda: mejora información porque bajar el humo antes de decidir. El coste está en pluralismo porque mientras se verifica, algunas voces quedan sin protección y participación porque el debate pierde energía mientras se buscan pruebas."
         },
         {
           "decision": "Escuchar",
@@ -1437,7 +1437,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+          "explanation": "Preguntar a quienes están dentro del problema suma: mejora pluralismo porque se escuchan más lados del problema y participación porque activa a personas que estaban fuera del debate. El coste está en confianza porque si se alarga, parece postureo participativo."
         },
         {
           "decision": "Proteger",
@@ -1445,7 +1445,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 2,
           "participacion_delta": -2,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Marcar límites protege mejor a los vulnerables: mejora confianza porque pone límites claros y evita abusos y pluralismo porque evita que la mayoría pase por encima de los más expuestos. El coste está en participación porque reduce el debate abierto para evitar daños."
         },
         {
           "decision": "Actuar ya",
@@ -1453,7 +1453,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": -2,
           "participacion_delta": 2,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: alguien acaba sintiendo que la ciudad no va con él."
+          "explanation": "Actuar rápido puede ordenar el incendio: mejora participación porque desbloquea la situación y pone a todos en marcha. El coste está en confianza porque deja la sensación de que alguien ha decidido por todos y pluralismo porque las voces pequeñas suelen quedarse fuera."
         }
       ],
       "family": "deporte",
@@ -1474,7 +1474,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Comprobar antes de actuar tiene sentido si falla algo básico: mejora confianza porque da sensación de que no se decide por calentón y información porque bajar el humo antes de decidir. El coste está en participación porque parte de la gente se enfría y se desconecta."
         },
         {
           "decision": "Escuchar",
@@ -1482,7 +1482,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+          "explanation": "Escuchar a más gente aporta legitimidad si falla algo básico: mejora pluralismo porque evita que solo mande el grupo más ruidoso y participación porque abre la puerta a implicarse de verdad. El coste está en confianza porque si se alarga, parece postureo participativo."
         },
         {
           "decision": "Proteger",
@@ -1490,7 +1490,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 0,
           "participacion_delta": -2,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Proteger primero reduce daños si falla algo básico: mejora confianza porque pone límites claros y evita abusos. El coste está en participación porque reduce el debate abierto para evitar daños."
         },
         {
           "decision": "Actuar ya",
@@ -1498,7 +1498,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 0,
           "participacion_delta": 2,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: el salseo tapa lo importante y encima presume."
+          "explanation": "Una respuesta rápida puede ser útil si falla algo básico: mejora participación porque convierte el debate en una acción concreta. El coste está en confianza porque deja la sensación de que alguien ha decidido por todos y información porque la rapidez puede llevarse por delante matices necesarios."
         }
       ],
       "family": "servicios",
@@ -1519,7 +1519,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Aquí mirar los hechos primero funciona en el barrio: mejora información porque bajar el humo antes de decidir. El coste está en participación porque parte de la gente se enfría y se desconecta."
         },
         {
           "decision": "Escuchar",
@@ -1527,7 +1527,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
+          "explanation": "Preguntar a quienes están dentro del problema suma en el barrio: mejora pluralismo porque evita que solo mande el grupo más ruidoso y participación porque más gente siente que cuenta. El coste está en confianza porque puede parecer que se pregunta mucho para no decidir nada."
         },
         {
           "decision": "Proteger",
@@ -1535,7 +1535,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Marcar límites protege mejor a los vulnerables en el barrio: mejora confianza porque pone límites claros y evita abusos y pluralismo porque evita que la mayoría pase por encima de los más expuestos. El coste está en participación porque se prioriza proteger antes que abrir la conversación a todos."
         },
         {
           "decision": "Actuar ya",
@@ -1543,7 +1543,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. Pero ojo: si no caben matices, el debate se queda en blanco y negro."
+          "explanation": "Una respuesta rápida puede ser útil en el barrio: mejora participación porque convierte el debate en una acción concreta. El coste está en información porque la rapidez puede llevarse por delante matices necesarios y pluralismo porque las voces pequeñas suelen quedarse fuera."
         }
       ],
       "family": "politica",
@@ -1564,7 +1564,7 @@
           "informacion_delta": 2,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Comprobar antes de actuar tiene sentido con las redes metidas en medio: mejora confianza porque muestra que hay un criterio antes de actuar y información porque aclarar qué se sabe y qué no. El coste está en participación porque el debate pierde energía mientras se buscan pruebas."
         },
         {
           "decision": "Escuchar",
@@ -1572,7 +1572,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+          "explanation": "Escuchar a más gente aporta legitimidad con las redes metidas en medio: mejora pluralismo porque se escuchan más lados del problema y participación porque abre la puerta a implicarse de verdad. El coste está en confianza porque si se alarga, parece postureo participativo y información porque mezcla testimonios, rumores y emociones difíciles de ordenar."
         },
         {
           "decision": "Proteger",
@@ -1580,7 +1580,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Marcar límites protege mejor a los vulnerables con las redes metidas en medio: mejora confianza porque da seguridad a quienes temen salir perjudicados y pluralismo porque evita que la mayoría pase por encima de los más expuestos. El coste está en información porque frena datos que algunos querían ver ya y participación porque reduce el debate abierto para evitar daños."
         },
         {
           "decision": "Actuar ya",
@@ -1588,7 +1588,7 @@
           "informacion_delta": -2,
           "pluralismo_delta": 0,
           "participacion_delta": 2,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: entre ruido y prisas, los datos salen despeinados."
+          "explanation": "Actuar rápido puede ordenar el incendio con las redes metidas en medio: mejora participación porque desbloquea la situación y pone a todos en marcha. El coste está en confianza porque puede sonar a imposición desde arriba y información porque quedan datos importantes fuera de la decisión."
         }
       ],
       "family": "politica",
@@ -1610,7 +1610,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. El coste: algunos sienten que les han vendido la moto sin casco."
+          "explanation": "Parar a verificar ayuda si falla algo básico: mejora información porque aclarar qué se sabe y qué no. El coste está en confianza porque si tarda demasiado, parece que se están lavando las manos y participación porque quien quería acción inmediata siente que no le escuchan."
         },
         {
           "decision": "Escuchar",
@@ -1618,7 +1618,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 0,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+          "explanation": "Escuchar a más gente aporta legitimidad si falla algo básico: mejora pluralismo porque entran voces que podían quedar tapadas. El coste está en confianza porque puede parecer que se pregunta mucho para no decidir nada."
         },
         {
           "decision": "Proteger",
@@ -1626,7 +1626,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -2,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Poner garantías aquí es útil si falla algo básico: mejora confianza porque da seguridad a quienes temen salir perjudicados y pluralismo porque evita que la mayoría pase por encima de los más expuestos. El coste está en participación porque parte de la gente siente que no puede intervenir."
         },
         {
           "decision": "Actuar ya",
@@ -1634,7 +1634,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: proteger una salida rápida deja gente en el arcén."
+          "explanation": "Decidir ya evita que el problema se descontrole si falla algo básico: mejora confianza porque evita que la sensación de abandono crezca y participación porque desbloquea la situación y pone a todos en marcha. El coste está en información porque se actúa sin comprobar todos los detalles y pluralismo porque las voces pequeñas suelen quedarse fuera."
         }
       ],
       "family": "servicios",
@@ -1657,7 +1657,7 @@
           "informacion_delta": 2,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Aquí mirar los hechos primero funciona cuando hay bulos circulando: mejora información porque bajar el humo antes de decidir. El coste está en participación porque parte de la gente se enfría y se desconecta."
         },
         {
           "decision": "Escuchar",
@@ -1665,7 +1665,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
+          "explanation": "Preguntar a quienes están dentro del problema suma cuando hay bulos circulando: mejora pluralismo porque se escuchan más lados del problema y participación porque abre la puerta a implicarse de verdad. El coste está en confianza porque puede parecer que se pregunta mucho para no decidir nada y información porque puede aumentar el ruido si no hay filtros claros."
         },
         {
           "decision": "Proteger",
@@ -1673,7 +1673,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Proteger primero reduce daños cuando hay bulos circulando: mejora confianza porque pone límites claros y evita abusos y pluralismo porque evita que la mayoría pase por encima de los más expuestos. El coste está en información porque puede dejar preguntas sin responder durante un tiempo y participación porque se prioriza proteger antes que abrir la conversación a todos."
         },
         {
           "decision": "Actuar ya",
@@ -1681,7 +1681,7 @@
           "informacion_delta": -2,
           "pluralismo_delta": 0,
           "participacion_delta": 2,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. Pero ojo: se cuelan versiones cutres con traje de noticia."
+          "explanation": "Actuar rápido puede ordenar el incendio cuando hay bulos circulando: mejora participación porque desbloquea la situación y pone a todos en marcha. El coste está en confianza porque si no se explica, parece orden de “porque sí” y información porque la rapidez puede llevarse por delante matices necesarios."
         }
       ],
       "families": [
@@ -1709,7 +1709,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": -1,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: los de siempre hablan alto y otros se comen el silencio."
+          "explanation": "Comprobar antes de actuar tiene sentido cuando hay que seguir viéndose mañana: mejora información porque aclarar qué se sabe y qué no. El coste está en pluralismo porque mientras se verifica, algunas voces quedan sin protección y participación porque parte de la gente se enfría y se desconecta."
         },
         {
           "decision": "Escuchar",
@@ -1717,7 +1717,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+          "explanation": "Escuchar a más gente aporta legitimidad cuando hay que seguir viéndose mañana: mejora pluralismo porque entran voces que podían quedar tapadas y participación porque más gente siente que cuenta. El coste está en confianza porque si se alarga, parece postureo participativo."
         },
         {
           "decision": "Proteger",
@@ -1725,7 +1725,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 2,
           "participacion_delta": -3,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Marcar límites protege mejor a los vulnerables cuando hay que seguir viéndose mañana: mejora confianza porque pone límites claros y evita abusos y pluralismo porque evita que la mayoría pase por encima de los más expuestos. El coste está en participación porque reduce el debate abierto para evitar daños."
         },
         {
           "decision": "Actuar ya",
@@ -1733,7 +1733,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": -2,
           "participacion_delta": 2,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: alguien acaba sintiendo que la ciudad no va con él."
+          "explanation": "Una respuesta rápida puede ser útil cuando hay que seguir viéndose mañana: mejora participación porque desbloquea la situación y pone a todos en marcha. El coste está en confianza porque puede sonar a imposición desde arriba y pluralismo porque la solución rápida puede atropellar a quien necesitaba protección."
         }
       ],
       "families": [
@@ -1760,7 +1760,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -2,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Comprobar antes de actuar tiene sentido cuando la institución está bajo sospecha: mejora información porque aclarar qué se sabe y qué no. El coste está en participación porque quien quería acción inmediata siente que no le escuchan."
         },
         {
           "decision": "Escuchar",
@@ -1768,7 +1768,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+          "explanation": "Preguntar a quienes están dentro del problema suma cuando la institución está bajo sospecha: mejora pluralismo porque se escuchan más lados del problema y participación porque abre la puerta a implicarse de verdad. El coste está en confianza porque abre sospechas si luego no se nota lo escuchado."
         },
         {
           "decision": "Proteger",
@@ -1776,7 +1776,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -2,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Marcar límites protege mejor a los vulnerables cuando la institución está bajo sospecha: mejora confianza porque muestra que hay reglas incluso en mitad del lío y pluralismo porque evita que la mayoría pase por encima de los más expuestos. El coste está en participación porque reduce el debate abierto para evitar daños."
         },
         {
           "decision": "Actuar ya",
@@ -1784,7 +1784,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": -1,
           "participacion_delta": 2,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: proteger una salida rápida deja gente en el arcén."
+          "explanation": "Una respuesta rápida puede ser útil cuando la institución está bajo sospecha: mejora participación porque desbloquea la situación y pone a todos en marcha. El coste está en confianza porque deja la sensación de que alguien ha decidido por todos y pluralismo porque la solución rápida puede atropellar a quien necesitaba protección."
         }
       ],
       "families": [
@@ -1811,7 +1811,7 @@
           "informacion_delta": 2,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Aquí mirar los hechos primero funciona cuando la institución está bajo sospecha: mejora confianza porque reduce la sospecha de improvisación y información porque bajar el humo antes de decidir. El coste está en participación porque parte de la gente se enfría y se desconecta."
         },
         {
           "decision": "Escuchar",
@@ -1819,7 +1819,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
+          "explanation": "Abrir la decisión mejora el proceso cuando la institución está bajo sospecha: mejora pluralismo porque evita que solo mande el grupo más ruidoso y participación porque abre la puerta a implicarse de verdad. El coste está en confianza porque puede parecer que se pregunta mucho para no decidir nada y información porque no todo lo que se escucha es necesariamente cierto."
         },
         {
           "decision": "Proteger",
@@ -1827,7 +1827,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -2,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Poner garantías aquí es útil cuando la institución está bajo sospecha: mejora confianza porque pone límites claros y evita abusos y pluralismo porque evita que la mayoría pase por encima de los más expuestos. El coste está en participación porque se prioriza proteger antes que abrir la conversación a todos."
         },
         {
           "decision": "Actuar ya",
@@ -1835,7 +1835,7 @@
           "informacion_delta": -2,
           "pluralismo_delta": 0,
           "participacion_delta": 2,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. Pero ojo: se cuelan versiones cutres con traje de noticia."
+          "explanation": "Decidir ya evita que el problema se descontrole cuando la institución está bajo sospecha: mejora participación porque evita que la gente se queme esperando eternamente. El coste está en confianza porque deja la sensación de que alguien ha decidido por todos y información porque quedan datos importantes fuera de la decisión."
         }
       ],
       "families": [
@@ -1862,7 +1862,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -2,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Parar a verificar ayuda en el barrio: mejora información porque bajar el humo antes de decidir. El coste está en participación porque el debate pierde energía mientras se buscan pruebas."
         },
         {
           "decision": "Escuchar",
@@ -1870,7 +1870,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 2,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+          "explanation": "Preguntar a quienes están dentro del problema suma en el barrio: mejora pluralismo porque evita que solo mande el grupo más ruidoso y participación porque más gente siente que cuenta. El coste está en confianza porque si se alarga, parece postureo participativo."
         },
         {
           "decision": "Proteger",
@@ -1878,7 +1878,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Poner garantías aquí es útil en el barrio: mejora confianza porque muestra que hay reglas incluso en mitad del lío. El coste está en participación porque reduce el debate abierto para evitar daños."
         },
         {
           "decision": "Actuar ya",
@@ -1886,7 +1886,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": -1,
           "participacion_delta": 0,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: alguien acaba sintiendo que la ciudad no va con él."
+          "explanation": "Una respuesta rápida puede ser útil en el barrio, pero aquí casi todo pesa en contra: baja pluralismo porque las voces pequeñas suelen quedarse fuera. Sirve como aviso de que no toda acción rápida arregla el fondo."
         }
       ],
       "families": [
@@ -1913,7 +1913,7 @@
           "informacion_delta": 2,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Parar a verificar ayuda con las redes metidas en medio: mejora información porque aclarar qué se sabe y qué no. El coste está en participación porque el debate pierde energía mientras se buscan pruebas."
         },
         {
           "decision": "Escuchar",
@@ -1921,7 +1921,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+          "explanation": "Preguntar a quienes están dentro del problema suma con las redes metidas en medio: mejora pluralismo porque evita que solo mande el grupo más ruidoso y participación porque más gente siente que cuenta. El coste está en confianza porque puede parecer que se pregunta mucho para no decidir nada y información porque mezcla testimonios, rumores y emociones difíciles de ordenar."
         },
         {
           "decision": "Proteger",
@@ -1929,7 +1929,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Marcar límites protege mejor a los vulnerables con las redes metidas en medio: mejora confianza porque pone límites claros y evita abusos y pluralismo porque cuida a las voces con menos poder. El coste está en información porque puede dejar preguntas sin responder durante un tiempo y participación porque reduce el debate abierto para evitar daños."
         },
         {
           "decision": "Actuar ya",
@@ -1937,7 +1937,7 @@
           "informacion_delta": -2,
           "pluralismo_delta": 0,
           "participacion_delta": 2,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: el salseo tapa lo importante y encima presume."
+          "explanation": "Una respuesta rápida puede ser útil con las redes metidas en medio: mejora participación porque desbloquea la situación y pone a todos en marcha. El coste está en confianza porque si no se explica, parece orden de “porque sí” y información porque la rapidez puede llevarse por delante matices necesarios."
         }
       ],
       "families": [
@@ -1963,7 +1963,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": -1,
           "participacion_delta": -1,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: algunas voces quedan fuera y luego vienen los portazos."
+          "explanation": "Parar a verificar ayuda si hay gente fácil de señalar: mejora información porque aclarar qué se sabe y qué no. El coste está en pluralismo porque el daño puede avanzar antes de que se actúe y participación porque parte de la gente se enfría y se desconecta."
         },
         {
           "decision": "Escuchar",
@@ -1971,7 +1971,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
+          "explanation": "Preguntar a quienes están dentro del problema suma si hay gente fácil de señalar: mejora pluralismo porque evita que solo mande el grupo más ruidoso y participación porque activa a personas que estaban fuera del debate. El coste está en confianza porque abre sospechas si luego no se nota lo escuchado."
         },
         {
           "decision": "Proteger",
@@ -1979,7 +1979,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 2,
           "participacion_delta": -2,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Poner garantías aquí es útil si hay gente fácil de señalar: mejora confianza porque da seguridad a quienes temen salir perjudicados y pluralismo porque protege a quien puede quedar señalado. El coste está en participación porque parte de la gente siente que no puede intervenir."
         },
         {
           "decision": "Actuar ya",
@@ -1987,7 +1987,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": -2,
           "participacion_delta": 2,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. Pero ojo: si no caben matices, el debate se queda en blanco y negro."
+          "explanation": "Actuar rápido puede ordenar el incendio si hay gente fácil de señalar: mejora participación porque convierte el debate en una acción concreta. El coste está en confianza porque deja la sensación de que alguien ha decidido por todos y pluralismo porque la solución rápida puede atropellar a quien necesitaba protección."
         }
       ],
       "families": [
@@ -2014,7 +2014,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Aquí mirar los hechos primero funciona cuando la institución está bajo sospecha: mejora confianza porque reduce la sospecha de improvisación y información porque bajar el humo antes de decidir. El coste está en participación porque quien quería acción inmediata siente que no le escuchan."
         },
         {
           "decision": "Escuchar",
@@ -2022,7 +2022,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+          "explanation": "Abrir la decisión mejora el proceso cuando la institución está bajo sospecha: mejora pluralismo porque evita que solo mande el grupo más ruidoso y participación porque más gente siente que cuenta. El coste está en confianza porque si se alarga, parece postureo participativo."
         },
         {
           "decision": "Proteger",
@@ -2030,7 +2030,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 0,
           "participacion_delta": -2,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Proteger primero reduce daños cuando la institución está bajo sospecha: mejora confianza porque da seguridad a quienes temen salir perjudicados. El coste está en participación porque se prioriza proteger antes que abrir la conversación a todos."
         },
         {
           "decision": "Actuar ya",
@@ -2038,7 +2038,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 0,
           "participacion_delta": 2,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: entre ruido y prisas, los datos salen despeinados."
+          "explanation": "Una respuesta rápida puede ser útil cuando la institución está bajo sospecha: mejora participación porque convierte el debate en una acción concreta. El coste está en confianza porque puede sonar a imposición desde arriba y información porque quedan datos importantes fuera de la decisión."
         }
       ],
       "families": [
@@ -2065,7 +2065,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": -1,
           "participacion_delta": -1,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. El coste: la mayoría pisa fuerte y deja huellas donde no debe."
+          "explanation": "Aquí mirar los hechos primero funciona en el barrio: mejora información porque aclarar qué se sabe y qué no. El coste está en pluralismo porque los más expuestos pueden sentir que se duda de ellos y participación porque quien quería acción inmediata siente que no le escuchan."
         },
         {
           "decision": "Escuchar",
@@ -2073,7 +2073,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 2,
           "participacion_delta": 1,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+          "explanation": "Abrir la decisión mejora el proceso en el barrio: mejora pluralismo porque entran voces que podían quedar tapadas y participación porque abre la puerta a implicarse de verdad. El coste está en confianza porque puede parecer que se pregunta mucho para no decidir nada."
         },
         {
           "decision": "Proteger",
@@ -2081,7 +2081,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -2,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Poner garantías aquí es útil en el barrio: mejora confianza porque pone límites claros y evita abusos y pluralismo porque protege a quien puede quedar señalado. El coste está en participación porque parte de la gente siente que no puede intervenir."
         },
         {
           "decision": "Actuar ya",
@@ -2089,7 +2089,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": -2,
           "participacion_delta": 2,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: proteger una salida rápida deja gente en el arcén."
+          "explanation": "Decidir ya evita que el problema se descontrole en el barrio: mejora participación porque evita que la gente se queme esperando eternamente. El coste está en confianza porque puede sonar a imposición desde arriba y pluralismo porque los matices se pierden y alguien puede salir mal parado."
         }
       ],
       "families": [
@@ -2116,7 +2116,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -2,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Comprobar antes de actuar tiene sentido en el instituto: mejora información porque separar hechos, rumores y pantallazos. El coste está en participación porque el debate pierde energía mientras se buscan pruebas."
         },
         {
           "decision": "Escuchar",
@@ -2124,7 +2124,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
+          "explanation": "Abrir la decisión mejora el proceso en el instituto: mejora pluralismo porque se escuchan más lados del problema y participación porque activa a personas que estaban fuera del debate. El coste está en confianza porque abre sospechas si luego no se nota lo escuchado."
         },
         {
           "decision": "Proteger",
@@ -2132,7 +2132,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Poner garantías aquí es útil en el instituto: mejora confianza porque pone límites claros y evita abusos y pluralismo porque evita que la mayoría pase por encima de los más expuestos. El coste está en participación porque parte de la gente siente que no puede intervenir."
         },
         {
           "decision": "Actuar ya",
@@ -2140,7 +2140,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. Pero ojo: si no caben matices, el debate se queda en blanco y negro."
+          "explanation": "Decidir ya evita que el problema se descontrole en el instituto: mejora participación porque convierte el debate en una acción concreta. El coste está en confianza porque puede sonar a imposición desde arriba y pluralismo porque la solución rápida puede atropellar a quien necesitaba protección."
         }
       ],
       "families": [
@@ -2167,7 +2167,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: la sospecha se queda pegada como chicle bajo la mesa."
+          "explanation": "Comprobar antes de actuar tiene sentido cuando hay prisa real: mejora información porque bajar el humo antes de decidir. El coste está en confianza porque da sensación de frialdad cuando la gente espera una respuesta y participación porque quien quería acción inmediata siente que no le escuchan."
         },
         {
           "decision": "Escuchar",
@@ -2175,7 +2175,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 0,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+          "explanation": "Escuchar a más gente aporta legitimidad cuando hay prisa real: mejora pluralismo porque evita que solo mande el grupo más ruidoso. El coste está en confianza porque abre sospechas si luego no se nota lo escuchado."
         },
         {
           "decision": "Proteger",
@@ -2183,7 +2183,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -2,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Poner garantías aquí es útil cuando hay prisa real: mejora confianza porque da seguridad a quienes temen salir perjudicados y pluralismo porque cuida a las voces con menos poder. El coste está en participación porque se prioriza proteger antes que abrir la conversación a todos."
         },
         {
           "decision": "Actuar ya",
@@ -2191,7 +2191,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: alguien acaba sintiendo que la ciudad no va con él."
+          "explanation": "Decidir ya evita que el problema se descontrole cuando hay prisa real: mejora confianza porque muestra control en una situación urgente y participación porque convierte el debate en una acción concreta. El coste está en información porque la rapidez puede llevarse por delante matices necesarios y pluralismo porque las voces pequeñas suelen quedarse fuera."
         }
       ],
       "families": [
@@ -2217,7 +2217,7 @@
           "informacion_delta": 2,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Aquí mirar los hechos primero funciona cuando hay bulos circulando: mejora información porque bajar el humo antes de decidir. El coste está en participación porque quien quería acción inmediata siente que no le escuchan."
         },
         {
           "decision": "Escuchar",
@@ -2225,7 +2225,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+          "explanation": "Escuchar a más gente aporta legitimidad cuando hay bulos circulando: mejora pluralismo porque evita que solo mande el grupo más ruidoso y participación porque abre la puerta a implicarse de verdad. El coste está en confianza porque abre sospechas si luego no se nota lo escuchado y información porque mezcla testimonios, rumores y emociones difíciles de ordenar."
         },
         {
           "decision": "Proteger",
@@ -2233,7 +2233,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Marcar límites protege mejor a los vulnerables cuando hay bulos circulando: mejora confianza porque pone límites claros y evita abusos y pluralismo porque cuida a las voces con menos poder. El coste está en información porque frena datos que algunos querían ver ya y participación porque se prioriza proteger antes que abrir la conversación a todos."
         },
         {
           "decision": "Actuar ya",
@@ -2241,7 +2241,7 @@
           "informacion_delta": -2,
           "pluralismo_delta": -1,
           "participacion_delta": 3,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: proteger una salida rápida deja gente en el arcén."
+          "explanation": "Una respuesta rápida puede ser útil cuando hay bulos circulando: mejora participación porque evita que la gente se queme esperando eternamente. El coste está en confianza porque puede sonar a imposición desde arriba, información porque la rapidez puede llevarse por delante matices necesarios y pluralismo porque la solución rápida puede atropellar a quien necesitaba protección."
         }
       ],
       "families": [
@@ -2269,7 +2269,7 @@
           "informacion_delta": 2,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Comprobar antes de actuar tiene sentido con las redes metidas en medio: mejora confianza porque reduce la sospecha de improvisación y información porque aclarar qué se sabe y qué no. El coste está en participación porque el debate pierde energía mientras se buscan pruebas."
         },
         {
           "decision": "Escuchar",
@@ -2277,7 +2277,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
+          "explanation": "Abrir la decisión mejora el proceso con las redes metidas en medio: mejora pluralismo porque entran voces que podían quedar tapadas y participación porque más gente siente que cuenta. El coste está en confianza porque puede parecer que se pregunta mucho para no decidir nada y información porque mezcla testimonios, rumores y emociones difíciles de ordenar."
         },
         {
           "decision": "Proteger",
@@ -2285,7 +2285,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Marcar límites protege mejor a los vulnerables con las redes metidas en medio: mejora confianza porque muestra que hay reglas incluso en mitad del lío y pluralismo porque evita que la mayoría pase por encima de los más expuestos. El coste está en información porque puede dejar preguntas sin responder durante un tiempo y participación porque parte de la gente siente que no puede intervenir."
         },
         {
           "decision": "Actuar ya",
@@ -2293,7 +2293,7 @@
           "informacion_delta": -2,
           "pluralismo_delta": 0,
           "participacion_delta": 2,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. Pero ojo: se cuelan versiones cutres con traje de noticia."
+          "explanation": "Actuar rápido puede ordenar el incendio con las redes metidas en medio: mejora participación porque evita que la gente se queme esperando eternamente. El coste está en confianza porque puede sonar a imposición desde arriba y información porque se actúa sin comprobar todos los detalles."
         }
       ],
       "families": [
@@ -2319,7 +2319,7 @@
           "informacion_delta": 2,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Aquí mirar los hechos primero funciona cuando la institución está bajo sospecha: mejora confianza porque muestra que hay un criterio antes de actuar y información porque bajar el humo antes de decidir. El coste está en participación porque el debate pierde energía mientras se buscan pruebas."
         },
         {
           "decision": "Escuchar",
@@ -2327,7 +2327,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+          "explanation": "Preguntar a quienes están dentro del problema suma cuando la institución está bajo sospecha: mejora pluralismo porque entran voces que podían quedar tapadas y participación porque más gente siente que cuenta. El coste está en confianza porque si se alarga, parece postureo participativo y información porque puede aumentar el ruido si no hay filtros claros."
         },
         {
           "decision": "Proteger",
@@ -2335,7 +2335,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Poner garantías aquí es útil cuando la institución está bajo sospecha: mejora confianza porque da seguridad a quienes temen salir perjudicados y pluralismo porque evita que la mayoría pase por encima de los más expuestos. El coste está en información porque puede dejar preguntas sin responder durante un tiempo y participación porque se prioriza proteger antes que abrir la conversación a todos."
         },
         {
           "decision": "Actuar ya",
@@ -2343,7 +2343,7 @@
           "informacion_delta": -2,
           "pluralismo_delta": 0,
           "participacion_delta": 2,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: entre ruido y prisas, los datos salen despeinados."
+          "explanation": "Actuar rápido puede ordenar el incendio cuando la institución está bajo sospecha: mejora participación porque convierte el debate en una acción concreta. El coste está en confianza porque si no se explica, parece orden de “porque sí” y información porque quedan datos importantes fuera de la decisión."
         }
       ],
       "families": [
@@ -2367,7 +2367,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -2,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Parar a verificar ayuda en el instituto: mejora confianza porque da sensación de que no se decide por calentón y información porque aclarar qué se sabe y qué no. El coste está en participación porque el debate pierde energía mientras se buscan pruebas."
         },
         {
           "decision": "Escuchar",
@@ -2375,7 +2375,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 2,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. Pero ojo: se cuelan versiones cutres con traje de noticia."
+          "explanation": "Abrir la decisión mejora el proceso en el instituto: mejora pluralismo porque se escuchan más lados del problema y participación porque abre la puerta a implicarse de verdad. El coste está en información porque puede aumentar el ruido si no hay filtros claros."
         },
         {
           "decision": "Proteger",
@@ -2383,7 +2383,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Proteger primero reduce daños en el instituto: mejora confianza porque da seguridad a quienes temen salir perjudicados y pluralismo porque cuida a las voces con menos poder. El coste está en participación porque reduce el debate abierto para evitar daños."
         },
         {
           "decision": "Actuar ya",
@@ -2391,7 +2391,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: proteger una salida rápida deja gente en el arcén."
+          "explanation": "Decidir ya evita que el problema se descontrole en el instituto: mejora participación porque convierte el debate en una acción concreta. El coste está en confianza porque deja la sensación de que alguien ha decidido por todos y pluralismo porque los matices se pierden y alguien puede salir mal parado."
         }
       ],
       "families": [
@@ -2415,7 +2415,7 @@
           "informacion_delta": 2,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Parar a verificar ayuda con las redes metidas en medio: mejora confianza porque reduce la sospecha de improvisación y información porque separar hechos, rumores y pantallazos. El coste está en participación porque quien quería acción inmediata siente que no le escuchan."
         },
         {
           "decision": "Escuchar",
@@ -2423,7 +2423,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
+          "explanation": "Abrir la decisión mejora el proceso con las redes metidas en medio: mejora pluralismo porque entran voces que podían quedar tapadas y participación porque más gente siente que cuenta. El coste está en confianza porque puede parecer que se pregunta mucho para no decidir nada y información porque no todo lo que se escucha es necesariamente cierto."
         },
         {
           "decision": "Proteger",
@@ -2431,7 +2431,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Marcar límites protege mejor a los vulnerables con las redes metidas en medio: mejora confianza porque da seguridad a quienes temen salir perjudicados y pluralismo porque cuida a las voces con menos poder. El coste está en información porque limita lo que circula mientras se aclara el caso y participación porque se prioriza proteger antes que abrir la conversación a todos."
         },
         {
           "decision": "Actuar ya",
@@ -2439,7 +2439,7 @@
           "informacion_delta": -2,
           "pluralismo_delta": 0,
           "participacion_delta": 2,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. Pero ojo: se cuelan versiones cutres con traje de noticia."
+          "explanation": "Una respuesta rápida puede ser útil con las redes metidas en medio: mejora participación porque convierte el debate en una acción concreta. El coste está en confianza porque si no se explica, parece orden de “porque sí” y información porque la rapidez puede llevarse por delante matices necesarios."
         }
       ],
       "families": [
@@ -2464,7 +2464,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Parar a verificar ayuda cuando la institución está bajo sospecha: mejora confianza porque reduce la sospecha de improvisación y información porque separar hechos, rumores y pantallazos. El coste está en participación porque parte de la gente se enfría y se desconecta."
         },
         {
           "decision": "Escuchar",
@@ -2472,7 +2472,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+          "explanation": "Preguntar a quienes están dentro del problema suma cuando la institución está bajo sospecha: mejora pluralismo porque entran voces que podían quedar tapadas y participación porque más gente siente que cuenta. El coste está en confianza porque abre sospechas si luego no se nota lo escuchado."
         },
         {
           "decision": "Proteger",
@@ -2480,7 +2480,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 0,
           "participacion_delta": -2,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Marcar límites protege mejor a los vulnerables cuando la institución está bajo sospecha: mejora confianza porque pone límites claros y evita abusos. El coste está en participación porque parte de la gente siente que no puede intervenir."
         },
         {
           "decision": "Actuar ya",
@@ -2488,7 +2488,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 0,
           "participacion_delta": 2,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: entre ruido y prisas, los datos salen despeinados."
+          "explanation": "Decidir ya evita que el problema se descontrole cuando la institución está bajo sospecha: mejora participación porque desbloquea la situación y pone a todos en marcha. El coste está en confianza porque si no se explica, parece orden de “porque sí” y información porque se actúa sin comprobar todos los detalles."
         }
       ],
       "families": [
@@ -2513,7 +2513,7 @@
           "informacion_delta": 2,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Comprobar antes de actuar tiene sentido con las redes metidas en medio: mejora confianza porque da sensación de que no se decide por calentón y información porque aclarar qué se sabe y qué no. El coste está en participación porque parte de la gente se enfría y se desconecta."
         },
         {
           "decision": "Escuchar",
@@ -2521,7 +2521,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+          "explanation": "Abrir la decisión mejora el proceso con las redes metidas en medio: mejora pluralismo porque se escuchan más lados del problema y participación porque abre la puerta a implicarse de verdad. El coste está en confianza porque puede parecer que se pregunta mucho para no decidir nada y información porque puede aumentar el ruido si no hay filtros claros."
         },
         {
           "decision": "Proteger",
@@ -2529,7 +2529,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Poner garantías aquí es útil con las redes metidas en medio: mejora confianza porque muestra que hay reglas incluso en mitad del lío y pluralismo porque protege a quien puede quedar señalado. El coste está en información porque frena datos que algunos querían ver ya y participación porque se prioriza proteger antes que abrir la conversación a todos."
         },
         {
           "decision": "Actuar ya",
@@ -2537,7 +2537,7 @@
           "informacion_delta": -2,
           "pluralismo_delta": 0,
           "participacion_delta": 2,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: el salseo tapa lo importante y encima presume."
+          "explanation": "Una respuesta rápida puede ser útil con las redes metidas en medio: mejora participación porque convierte el debate en una acción concreta. El coste está en confianza porque deja la sensación de que alguien ha decidido por todos y información porque quedan datos importantes fuera de la decisión."
         }
       ],
       "families": [
@@ -2562,7 +2562,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -2,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Aquí mirar los hechos primero funciona en el barrio: mejora confianza porque reduce la sospecha de improvisación y información porque separar hechos, rumores y pantallazos. El coste está en participación porque el debate pierde energía mientras se buscan pruebas."
         },
         {
           "decision": "Escuchar",
@@ -2570,7 +2570,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 2,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: entre ruido y prisas, los datos salen despeinados."
+          "explanation": "Escuchar a más gente aporta legitimidad en el barrio: mejora pluralismo porque evita que solo mande el grupo más ruidoso y participación porque abre la puerta a implicarse de verdad. El coste está en información porque mezcla testimonios, rumores y emociones difíciles de ordenar."
         },
         {
           "decision": "Proteger",
@@ -2578,7 +2578,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Marcar límites protege mejor a los vulnerables en el barrio: mejora confianza porque muestra que hay reglas incluso en mitad del lío y pluralismo porque protege a quien puede quedar señalado. El coste está en participación porque parte de la gente siente que no puede intervenir."
         },
         {
           "decision": "Actuar ya",
@@ -2586,7 +2586,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. Pero ojo: si no caben matices, el debate se queda en blanco y negro."
+          "explanation": "Una respuesta rápida puede ser útil en el barrio: mejora participación porque desbloquea la situación y pone a todos en marcha. El coste está en confianza porque deja la sensación de que alguien ha decidido por todos y pluralismo porque la solución rápida puede atropellar a quien necesitaba protección."
         }
       ],
       "families": [
@@ -2610,7 +2610,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": -1,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: los de siempre hablan alto y otros se comen el silencio."
+          "explanation": "Aquí mirar los hechos primero funciona cuando hay que seguir viéndose mañana: mejora información porque aclarar qué se sabe y qué no. El coste está en pluralismo porque los más expuestos pueden sentir que se duda de ellos y participación porque parte de la gente se enfría y se desconecta."
         },
         {
           "decision": "Escuchar",
@@ -2618,7 +2618,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+          "explanation": "Preguntar a quienes están dentro del problema suma cuando hay que seguir viéndose mañana: mejora pluralismo porque entran voces que podían quedar tapadas y participación porque activa a personas que estaban fuera del debate. El coste está en confianza porque si se alarga, parece postureo participativo."
         },
         {
           "decision": "Proteger",
@@ -2626,7 +2626,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 2,
           "participacion_delta": -2,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Poner garantías aquí es útil cuando hay que seguir viéndose mañana: mejora confianza porque muestra que hay reglas incluso en mitad del lío y pluralismo porque evita que la mayoría pase por encima de los más expuestos. El coste está en participación porque reduce el debate abierto para evitar daños."
         },
         {
           "decision": "Actuar ya",
@@ -2634,7 +2634,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": -2,
           "participacion_delta": 2,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: alguien acaba sintiendo que la ciudad no va con él."
+          "explanation": "Actuar rápido puede ordenar el incendio cuando hay que seguir viéndose mañana: mejora participación porque evita que la gente se queme esperando eternamente. El coste está en confianza porque si no se explica, parece orden de “porque sí” y pluralismo porque la solución rápida puede atropellar a quien necesitaba protección."
         }
       ],
       "families": [
@@ -2659,7 +2659,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Parar a verificar ayuda en el instituto: mejora confianza porque muestra que hay un criterio antes de actuar y información porque bajar el humo antes de decidir. El coste está en participación porque el debate pierde energía mientras se buscan pruebas."
         },
         {
           "decision": "Escuchar",
@@ -2667,7 +2667,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+          "explanation": "Escuchar a más gente aporta legitimidad en el instituto: mejora pluralismo porque se escuchan más lados del problema y participación porque activa a personas que estaban fuera del debate. El coste está en confianza porque abre sospechas si luego no se nota lo escuchado."
         },
         {
           "decision": "Proteger",
@@ -2675,7 +2675,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 0,
           "participacion_delta": -2,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Poner garantías aquí es útil en el instituto: mejora confianza porque pone límites claros y evita abusos. El coste está en participación porque se prioriza proteger antes que abrir la conversación a todos."
         },
         {
           "decision": "Actuar ya",
@@ -2683,7 +2683,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 0,
           "participacion_delta": 2,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: el salseo tapa lo importante y encima presume."
+          "explanation": "Decidir ya evita que el problema se descontrole en el instituto: mejora participación porque convierte el debate en una acción concreta. El coste está en confianza porque si no se explica, parece orden de “porque sí” y información porque quedan datos importantes fuera de la decisión."
         }
       ],
       "families": [
@@ -2707,7 +2707,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Aquí mirar los hechos primero funciona con las redes metidas en medio: mejora información porque separar hechos, rumores y pantallazos. El coste está en participación porque quien quería acción inmediata siente que no le escuchan."
         },
         {
           "decision": "Escuchar",
@@ -2715,7 +2715,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
+          "explanation": "Preguntar a quienes están dentro del problema suma con las redes metidas en medio: mejora pluralismo porque evita que solo mande el grupo más ruidoso y participación porque más gente siente que cuenta. El coste está en confianza porque abre sospechas si luego no se nota lo escuchado."
         },
         {
           "decision": "Proteger",
@@ -2723,7 +2723,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Marcar límites protege mejor a los vulnerables con las redes metidas en medio: mejora confianza porque muestra que hay reglas incluso en mitad del lío y pluralismo porque cuida a las voces con menos poder. El coste está en participación porque reduce el debate abierto para evitar daños."
         },
         {
           "decision": "Actuar ya",
@@ -2731,7 +2731,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. Pero ojo: si no caben matices, el debate se queda en blanco y negro."
+          "explanation": "Decidir ya evita que el problema se descontrole con las redes metidas en medio: mejora participación porque desbloquea la situación y pone a todos en marcha. El coste está en información porque se actúa sin comprobar todos los detalles y pluralismo porque los matices se pierden y alguien puede salir mal parado."
         }
       ],
       "families": [
@@ -2756,7 +2756,7 @@
           "informacion_delta": 2,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Parar a verificar ayuda con las redes metidas en medio: mejora confianza porque da sensación de que no se decide por calentón y información porque bajar el humo antes de decidir. El coste está en participación porque el debate pierde energía mientras se buscan pruebas."
         },
         {
           "decision": "Escuchar",
@@ -2764,7 +2764,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+          "explanation": "Escuchar a más gente aporta legitimidad con las redes metidas en medio: mejora pluralismo porque se escuchan más lados del problema y participación porque activa a personas que estaban fuera del debate. El coste está en confianza porque puede parecer que se pregunta mucho para no decidir nada y información porque puede aumentar el ruido si no hay filtros claros."
         },
         {
           "decision": "Proteger",
@@ -2772,7 +2772,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Poner garantías aquí es útil con las redes metidas en medio: mejora confianza porque muestra que hay reglas incluso en mitad del lío y pluralismo porque evita que la mayoría pase por encima de los más expuestos. El coste está en información porque frena datos que algunos querían ver ya y participación porque se prioriza proteger antes que abrir la conversación a todos."
         },
         {
           "decision": "Actuar ya",
@@ -2780,7 +2780,7 @@
           "informacion_delta": -2,
           "pluralismo_delta": 0,
           "participacion_delta": 2,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: entre ruido y prisas, los datos salen despeinados."
+          "explanation": "Una respuesta rápida puede ser útil con las redes metidas en medio: mejora participación porque desbloquea la situación y pone a todos en marcha. El coste está en confianza porque deja la sensación de que alguien ha decidido por todos y información porque la rapidez puede llevarse por delante matices necesarios."
         }
       ],
       "families": [
@@ -2804,7 +2804,7 @@
           "informacion_delta": 2,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Parar a verificar ayuda con las redes metidas en medio: mejora confianza porque reduce la sospecha de improvisación y información porque separar hechos, rumores y pantallazos. El coste está en participación porque el debate pierde energía mientras se buscan pruebas."
         },
         {
           "decision": "Escuchar",
@@ -2812,7 +2812,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+          "explanation": "Abrir la decisión mejora el proceso con las redes metidas en medio: mejora pluralismo porque entran voces que podían quedar tapadas y participación porque activa a personas que estaban fuera del debate. El coste está en confianza porque abre sospechas si luego no se nota lo escuchado y información porque puede aumentar el ruido si no hay filtros claros."
         },
         {
           "decision": "Proteger",
@@ -2820,7 +2820,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Marcar límites protege mejor a los vulnerables con las redes metidas en medio: mejora confianza porque da seguridad a quienes temen salir perjudicados y pluralismo porque cuida a las voces con menos poder. El coste está en información porque limita lo que circula mientras se aclara el caso y participación porque parte de la gente siente que no puede intervenir."
         },
         {
           "decision": "Actuar ya",
@@ -2828,7 +2828,7 @@
           "informacion_delta": -2,
           "pluralismo_delta": 0,
           "participacion_delta": 2,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: el salseo tapa lo importante y encima presume."
+          "explanation": "Decidir ya evita que el problema se descontrole con las redes metidas en medio: mejora participación porque convierte el debate en una acción concreta. El coste está en confianza porque si no se explica, parece orden de “porque sí” y información porque se actúa sin comprobar todos los detalles."
         }
       ],
       "families": [
@@ -2852,7 +2852,7 @@
           "informacion_delta": 2,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Comprobar antes de actuar tiene sentido cuando la institución está bajo sospecha: mejora confianza porque muestra que hay un criterio antes de actuar y información porque separar hechos, rumores y pantallazos. El coste está en participación porque el debate pierde energía mientras se buscan pruebas."
         },
         {
           "decision": "Escuchar",
@@ -2860,7 +2860,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
+          "explanation": "Escuchar a más gente aporta legitimidad cuando la institución está bajo sospecha: mejora pluralismo porque se escuchan más lados del problema y participación porque más gente siente que cuenta. El coste está en confianza porque si se alarga, parece postureo participativo y información porque puede aumentar el ruido si no hay filtros claros."
         },
         {
           "decision": "Proteger",
@@ -2868,7 +2868,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Poner garantías aquí es útil cuando la institución está bajo sospecha: mejora confianza porque muestra que hay reglas incluso en mitad del lío y pluralismo porque protege a quien puede quedar señalado. El coste está en información porque frena datos que algunos querían ver ya y participación porque parte de la gente siente que no puede intervenir."
         },
         {
           "decision": "Actuar ya",
@@ -2876,7 +2876,7 @@
           "informacion_delta": -2,
           "pluralismo_delta": 0,
           "participacion_delta": 2,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. Pero ojo: se cuelan versiones cutres con traje de noticia."
+          "explanation": "Una respuesta rápida puede ser útil cuando la institución está bajo sospecha: mejora participación porque desbloquea la situación y pone a todos en marcha. El coste está en confianza porque puede sonar a imposición desde arriba y información porque quedan datos importantes fuera de la decisión."
         }
       ],
       "families": [
@@ -2901,7 +2901,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Parar a verificar ayuda cuando la institución está bajo sospecha: mejora información porque aclarar qué se sabe y qué no. El coste está en participación porque quien quería acción inmediata siente que no le escuchan."
         },
         {
           "decision": "Escuchar",
@@ -2909,7 +2909,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+          "explanation": "Escuchar a más gente aporta legitimidad cuando la institución está bajo sospecha: mejora pluralismo porque evita que solo mande el grupo más ruidoso y participación porque abre la puerta a implicarse de verdad. El coste está en confianza porque puede parecer que se pregunta mucho para no decidir nada."
         },
         {
           "decision": "Proteger",
@@ -2917,7 +2917,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Poner garantías aquí es útil cuando la institución está bajo sospecha: mejora confianza porque pone límites claros y evita abusos y pluralismo porque evita que la mayoría pase por encima de los más expuestos. El coste está en participación porque parte de la gente siente que no puede intervenir."
         },
         {
           "decision": "Actuar ya",
@@ -2925,7 +2925,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: alguien acaba sintiendo que la ciudad no va con él."
+          "explanation": "Decidir ya evita que el problema se descontrole cuando la institución está bajo sospecha: mejora participación porque evita que la gente se queme esperando eternamente. El coste está en información porque se actúa sin comprobar todos los detalles y pluralismo porque los matices se pierden y alguien puede salir mal parado."
         }
       ],
       "families": [
@@ -2950,7 +2950,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": -1,
           "participacion_delta": -1,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. El coste: la mayoría pisa fuerte y deja huellas donde no debe."
+          "explanation": "Comprobar antes de actuar tiene sentido si falla algo básico: mejora información porque separar hechos, rumores y pantallazos. El coste está en pluralismo porque mientras se verifica, algunas voces quedan sin protección y participación porque parte de la gente se enfría y se desconecta."
         },
         {
           "decision": "Escuchar",
@@ -2958,7 +2958,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+          "explanation": "Abrir la decisión mejora el proceso si falla algo básico: mejora pluralismo porque evita que solo mande el grupo más ruidoso y participación porque más gente siente que cuenta. El coste está en confianza porque abre sospechas si luego no se nota lo escuchado."
         },
         {
           "decision": "Proteger",
@@ -2966,7 +2966,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 2,
           "participacion_delta": -2,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Marcar límites protege mejor a los vulnerables si falla algo básico: mejora confianza porque pone límites claros y evita abusos y pluralismo porque evita que la mayoría pase por encima de los más expuestos. El coste está en participación porque parte de la gente siente que no puede intervenir."
         },
         {
           "decision": "Actuar ya",
@@ -2974,7 +2974,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": -2,
           "participacion_delta": 2,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: proteger una salida rápida deja gente en el arcén."
+          "explanation": "Decidir ya evita que el problema se descontrole si falla algo básico: mejora participación porque evita que la gente se queme esperando eternamente. El coste está en confianza porque si no se explica, parece orden de “porque sí” y pluralismo porque la solución rápida puede atropellar a quien necesitaba protección."
         }
       ],
       "families": [
@@ -2999,7 +2999,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Aquí mirar los hechos primero funciona cuando la institución está bajo sospecha: mejora confianza porque muestra que hay un criterio antes de actuar y información porque aclarar qué se sabe y qué no. El coste está en participación porque parte de la gente se enfría y se desconecta."
         },
         {
           "decision": "Escuchar",
@@ -3007,7 +3007,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
+          "explanation": "Escuchar a más gente aporta legitimidad cuando la institución está bajo sospecha: mejora pluralismo porque se escuchan más lados del problema y participación porque más gente siente que cuenta. El coste está en confianza porque puede parecer que se pregunta mucho para no decidir nada."
         },
         {
           "decision": "Proteger",
@@ -3015,7 +3015,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 0,
           "participacion_delta": -2,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Poner garantías aquí es útil cuando la institución está bajo sospecha: mejora confianza porque muestra que hay reglas incluso en mitad del lío. El coste está en participación porque parte de la gente siente que no puede intervenir."
         },
         {
           "decision": "Actuar ya",
@@ -3023,7 +3023,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 0,
           "participacion_delta": 2,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. Pero ojo: se cuelan versiones cutres con traje de noticia."
+          "explanation": "Decidir ya evita que el problema se descontrole cuando la institución está bajo sospecha: mejora participación porque desbloquea la situación y pone a todos en marcha. El coste está en confianza porque si no se explica, parece orden de “porque sí” y información porque se actúa sin comprobar todos los detalles."
         }
       ],
       "families": [
@@ -3048,7 +3048,7 @@
           "informacion_delta": 2,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Aquí mirar los hechos primero funciona cuando hay bulos circulando: mejora confianza porque da sensación de que no se decide por calentón y información porque separar hechos, rumores y pantallazos. El coste está en participación porque el debate pierde energía mientras se buscan pruebas."
         },
         {
           "decision": "Escuchar",
@@ -3056,7 +3056,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+          "explanation": "Escuchar a más gente aporta legitimidad cuando hay bulos circulando: mejora pluralismo porque se escuchan más lados del problema y participación porque abre la puerta a implicarse de verdad. El coste está en confianza porque puede parecer que se pregunta mucho para no decidir nada y información porque no todo lo que se escucha es necesariamente cierto."
         },
         {
           "decision": "Proteger",
@@ -3064,7 +3064,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Proteger primero reduce daños cuando hay bulos circulando: mejora confianza porque muestra que hay reglas incluso en mitad del lío y pluralismo porque evita que la mayoría pase por encima de los más expuestos. El coste está en información porque puede dejar preguntas sin responder durante un tiempo y participación porque parte de la gente siente que no puede intervenir."
         },
         {
           "decision": "Actuar ya",
@@ -3072,7 +3072,7 @@
           "informacion_delta": -2,
           "pluralismo_delta": 0,
           "participacion_delta": 2,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: entre ruido y prisas, los datos salen despeinados."
+          "explanation": "Actuar rápido puede ordenar el incendio cuando hay bulos circulando: mejora participación porque evita que la gente se queme esperando eternamente. El coste está en confianza porque deja la sensación de que alguien ha decidido por todos y información porque la rapidez puede llevarse por delante matices necesarios."
         }
       ],
       "families": [
@@ -3096,7 +3096,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. El coste: algunos sienten que les han vendido la moto sin casco."
+          "explanation": "Aquí mirar los hechos primero funciona si la tensión puede escalar: mejora información porque aclarar qué se sabe y qué no. El coste está en confianza porque puede sonar a excusa para no mojarse y participación porque parte de la gente se enfría y se desconecta."
         },
         {
           "decision": "Escuchar",
@@ -3104,7 +3104,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 0,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+          "explanation": "Abrir la decisión mejora el proceso si la tensión puede escalar: mejora pluralismo porque se escuchan más lados del problema. El coste está en confianza porque si se alarga, parece postureo participativo."
         },
         {
           "decision": "Proteger",
@@ -3112,7 +3112,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -2,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Proteger primero reduce daños si la tensión puede escalar: mejora confianza porque da seguridad a quienes temen salir perjudicados y pluralismo porque evita que la mayoría pase por encima de los más expuestos. El coste está en participación porque se prioriza proteger antes que abrir la conversación a todos."
         },
         {
           "decision": "Actuar ya",
@@ -3120,7 +3120,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: proteger una salida rápida deja gente en el arcén."
+          "explanation": "Actuar rápido puede ordenar el incendio si la tensión puede escalar: mejora confianza porque evita que la sensación de abandono crezca y participación porque desbloquea la situación y pone a todos en marcha. El coste está en información porque se actúa sin comprobar todos los detalles y pluralismo porque la solución rápida puede atropellar a quien necesitaba protección."
         }
       ],
       "families": [
@@ -3145,7 +3145,7 @@
           "informacion_delta": 2,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Parar a verificar ayuda con las redes metidas en medio: mejora confianza porque da sensación de que no se decide por calentón y información porque aclarar qué se sabe y qué no. El coste está en participación porque quien quería acción inmediata siente que no le escuchan."
         },
         {
           "decision": "Escuchar",
@@ -3153,7 +3153,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
+          "explanation": "Preguntar a quienes están dentro del problema suma con las redes metidas en medio: mejora pluralismo porque evita que solo mande el grupo más ruidoso y participación porque más gente siente que cuenta. El coste está en confianza porque si se alarga, parece postureo participativo y información porque puede aumentar el ruido si no hay filtros claros."
         },
         {
           "decision": "Proteger",
@@ -3161,7 +3161,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Poner garantías aquí es útil con las redes metidas en medio: mejora confianza porque pone límites claros y evita abusos y pluralismo porque cuida a las voces con menos poder. El coste está en información porque limita lo que circula mientras se aclara el caso y participación porque parte de la gente siente que no puede intervenir."
         },
         {
           "decision": "Actuar ya",
@@ -3169,7 +3169,7 @@
           "informacion_delta": -2,
           "pluralismo_delta": 0,
           "participacion_delta": 2,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. Pero ojo: se cuelan versiones cutres con traje de noticia."
+          "explanation": "Una respuesta rápida puede ser útil con las redes metidas en medio: mejora participación porque convierte el debate en una acción concreta. El coste está en confianza porque si no se explica, parece orden de “porque sí” y información porque quedan datos importantes fuera de la decisión."
         }
       ],
       "families": [
@@ -3194,7 +3194,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -2,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Aquí mirar los hechos primero funciona en el barrio: mejora confianza porque muestra que hay un criterio antes de actuar y información porque separar hechos, rumores y pantallazos. El coste está en participación porque el debate pierde energía mientras se buscan pruebas."
         },
         {
           "decision": "Escuchar",
@@ -3202,7 +3202,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 2,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: el salseo tapa lo importante y encima presume."
+          "explanation": "Escuchar a más gente aporta legitimidad en el barrio: mejora pluralismo porque entran voces que podían quedar tapadas y participación porque abre la puerta a implicarse de verdad. El coste está en información porque puede aumentar el ruido si no hay filtros claros."
         },
         {
           "decision": "Proteger",
@@ -3210,7 +3210,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Marcar límites protege mejor a los vulnerables en el barrio: mejora confianza porque pone límites claros y evita abusos y pluralismo porque evita que la mayoría pase por encima de los más expuestos. El coste está en participación porque se prioriza proteger antes que abrir la conversación a todos."
         },
         {
           "decision": "Actuar ya",
@@ -3218,7 +3218,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: alguien acaba sintiendo que la ciudad no va con él."
+          "explanation": "Decidir ya evita que el problema se descontrole en el barrio: mejora participación porque evita que la gente se queme esperando eternamente. El coste está en confianza porque deja la sensación de que alguien ha decidido por todos y pluralismo porque las voces pequeñas suelen quedarse fuera."
         }
       ],
       "families": [
@@ -3243,7 +3243,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": -1,
           "participacion_delta": -1,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. El coste: la mayoría pisa fuerte y deja huellas donde no debe."
+          "explanation": "Comprobar antes de actuar tiene sentido cuando la institución está bajo sospecha: mejora información porque bajar el humo antes de decidir. El coste está en pluralismo porque el daño puede avanzar antes de que se actúe y participación porque el debate pierde energía mientras se buscan pruebas."
         },
         {
           "decision": "Escuchar",
@@ -3251,7 +3251,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+          "explanation": "Preguntar a quienes están dentro del problema suma cuando la institución está bajo sospecha: mejora pluralismo porque entran voces que podían quedar tapadas y participación porque activa a personas que estaban fuera del debate. El coste está en confianza porque puede parecer que se pregunta mucho para no decidir nada."
         },
         {
           "decision": "Proteger",
@@ -3259,7 +3259,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 2,
           "participacion_delta": -2,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Poner garantías aquí es útil cuando la institución está bajo sospecha: mejora confianza porque da seguridad a quienes temen salir perjudicados y pluralismo porque cuida a las voces con menos poder. El coste está en participación porque parte de la gente siente que no puede intervenir."
         },
         {
           "decision": "Actuar ya",
@@ -3267,7 +3267,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": -2,
           "participacion_delta": 2,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: proteger una salida rápida deja gente en el arcén."
+          "explanation": "Actuar rápido puede ordenar el incendio cuando la institución está bajo sospecha: mejora participación porque evita que la gente se queme esperando eternamente. El coste está en confianza porque si no se explica, parece orden de “porque sí” y pluralismo porque los matices se pierden y alguien puede salir mal parado."
         }
       ],
       "families": [
@@ -3292,7 +3292,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Parar a verificar ayuda cuando la institución está bajo sospecha: mejora confianza porque reduce la sospecha de improvisación y información porque aclarar qué se sabe y qué no. El coste está en participación porque parte de la gente se enfría y se desconecta."
         },
         {
           "decision": "Escuchar",
@@ -3300,7 +3300,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. La pega: si parece truco, la gente empieza a mirar mal hasta las farolas."
+          "explanation": "Escuchar a más gente aporta legitimidad cuando la institución está bajo sospecha: mejora pluralismo porque entran voces que podían quedar tapadas y participación porque abre la puerta a implicarse de verdad. El coste está en confianza porque abre sospechas si luego no se nota lo escuchado."
         },
         {
           "decision": "Proteger",
@@ -3308,7 +3308,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 0,
           "participacion_delta": -2,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Poner garantías aquí es útil cuando la institución está bajo sospecha: mejora confianza porque pone límites claros y evita abusos. El coste está en participación porque se prioriza proteger antes que abrir la conversación a todos."
         },
         {
           "decision": "Actuar ya",
@@ -3316,7 +3316,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 0,
           "participacion_delta": 2,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. Pero ojo: se cuelan versiones cutres con traje de noticia."
+          "explanation": "Actuar rápido puede ordenar el incendio cuando la institución está bajo sospecha: mejora participación porque evita que la gente se queme esperando eternamente. El coste está en confianza porque si no se explica, parece orden de “porque sí” y información porque la rapidez puede llevarse por delante matices necesarios."
         }
       ],
       "families": [
@@ -3340,7 +3340,7 @@
           "informacion_delta": 1,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Lo bueno: se saca la linterna antes de comprar el drama completo. La factura: la sospecha se queda pegada como chicle bajo la mesa."
+          "explanation": "Aquí mirar los hechos primero funciona si la tensión puede escalar: mejora información porque bajar el humo antes de decidir. El coste está en confianza porque puede sonar a excusa para no mojarse y participación porque quien quería acción inmediata siente que no le escuchan."
         },
         {
           "decision": "Escuchar",
@@ -3348,7 +3348,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": 0,
-          "explanation": "Punto a favor: entran más voces y baja el olor a despacho cerrado. La pega: si suena opaco, medio barrio activa modo conspiranoia suave."
+          "explanation": "Preguntar a quienes están dentro del problema suma si la tensión puede escalar: mejora pluralismo porque se escuchan más lados del problema. El coste está en confianza porque si se alarga, parece postureo participativo."
         },
         {
           "decision": "Proteger",
@@ -3356,7 +3356,7 @@
           "informacion_delta": 0,
           "pluralismo_delta": 1,
           "participacion_delta": -2,
-          "explanation": "Bien: se protege al débil antes de que lo usen de saco de boxeo. La factura: tanta vuelta enfría a la gente y se bajan del carro."
+          "explanation": "Poner garantías aquí es útil si la tensión puede escalar: mejora confianza porque muestra que hay reglas incluso en mitad del lío y pluralismo porque protege a quien puede quedar señalado. El coste está en participación porque parte de la gente siente que no puede intervenir."
         },
         {
           "decision": "Actuar ya",
@@ -3364,7 +3364,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": -1,
           "participacion_delta": 1,
-          "explanation": "Lo positivo: se evita la parálisis modo “mañana lo vemos”. La pega: alguien acaba sintiendo que la ciudad no va con él."
+          "explanation": "Una respuesta rápida puede ser útil si la tensión puede escalar: mejora confianza porque muestra control en una situación urgente y participación porque desbloquea la situación y pone a todos en marcha. El coste está en información porque se actúa sin comprobar todos los detalles y pluralismo porque la solución rápida puede atropellar a quien necesitaba protección."
         }
       ],
       "families": [
@@ -3389,7 +3389,7 @@
           "informacion_delta": 2,
           "pluralismo_delta": 0,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: menos “me lo ha dicho mi primo” y más pruebas. El coste: algunos sienten que esto no va con ellos y desaparecen."
+          "explanation": "Comprobar antes de actuar tiene sentido cuando hay bulos circulando: mejora confianza porque reduce la sospecha de improvisación y información porque separar hechos, rumores y pantallazos. El coste está en participación porque el debate pierde energía mientras se buscan pruebas."
         },
         {
           "decision": "Escuchar",
@@ -3397,7 +3397,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": 1,
-          "explanation": "Lo bueno: escuchar evita que la solución nazca coja. Pero ojo: cuando no se entiende el proceso, nace el “aquí hay gato”."
+          "explanation": "Preguntar a quienes están dentro del problema suma cuando hay bulos circulando: mejora pluralismo porque entran voces que podían quedar tapadas y participación porque abre la puerta a implicarse de verdad. El coste está en confianza porque puede parecer que se pregunta mucho para no decidir nada y información porque puede aumentar el ruido si no hay filtros claros."
         },
         {
           "decision": "Proteger",
@@ -3405,7 +3405,7 @@
           "informacion_delta": -1,
           "pluralismo_delta": 1,
           "participacion_delta": -1,
-          "explanation": "Bien jugado: se evita que el más expuesto pague la fiesta. La factura: menos manos levantadas y más “paso, haced lo que queráis”."
+          "explanation": "Proteger primero reduce daños cuando hay bulos circulando: mejora confianza porque muestra que hay reglas incluso en mitad del lío y pluralismo porque protege a quien puede quedar señalado. El coste está en información porque puede dejar preguntas sin responder durante un tiempo y participación porque parte de la gente siente que no puede intervenir."
         },
         {
           "decision": "Actuar ya",
@@ -3413,7 +3413,7 @@
           "informacion_delta": -2,
           "pluralismo_delta": 0,
           "participacion_delta": 2,
-          "explanation": "Lo bueno: el caos recibe un “hasta aquí” bastante claro. La pega: el salseo tapa lo importante y encima presume."
+          "explanation": "Decidir ya evita que el problema se descontrole cuando hay bulos circulando: mejora participación porque evita que la gente se queme esperando eternamente. El coste está en confianza porque deja la sensación de que alguien ha decidido por todos y información porque quedan datos importantes fuera de la decisión."
         }
       ],
       "families": [
