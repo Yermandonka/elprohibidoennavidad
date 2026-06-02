@@ -18,7 +18,8 @@
       "Bash(git push *)",
       "Bash(git remote *)",
       "Bash(python3 *)",
-      "Bash(node --check assets/js/app.js)"
+      "Bash(node --check assets/js/app.js)",
+      "Bash(git rm *)"
     ]
   }
 }

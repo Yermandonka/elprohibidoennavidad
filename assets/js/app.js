@@ -341,9 +341,9 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: 'Roro La Carnicera', indicator: 'pluralismo', label: 'Pluralismo',
           image: 'roro.png',
           description: 'Treinta años detrás del mostrador. Le entran clientes de todos los colores y de todos los humores, y todos tienen que seguir entrando mañana. Quiere que en el barrio sigan cabiendo todos, su indicador es <span class="kw-pluralismo">Pluralismo</span>.' },
-        { name: 'Martín Presidente del Gobierno', indicator: 'participacion', label: 'Participación',
-          image: 'martin.png',
-          description: 'Agenda partida en bloques de quince minutos y la certeza de que cualquier decisión saldrá mal en algún titular. Su empeño: que las reglas se cumplan y el país mejore paso a paso, su indicador es <span class="kw-participacion">Participación</span>.' },
+        { name: 'Lola Líos La Presidenta', indicator: 'participacion', label: 'Participación',
+          image: 'lola.png',
+          description: 'Agenda partida en bloques de quince minutos y la certeza de que cualquier decisión saldrá mal en algún titular. Su empeño: que las reglas se cumplan y las cosas mejoren paso a paso, su indicador es <span class="kw-participacion">Participación</span>.' },
         { name: 'Belén La Redactora', indicator: 'informacion', label: 'Información',
           image: 'belen.png',
           description: 'Poco presupuesto, mucho trabajo. Pelea a diario contra bulos, fuentes interesadas y la tentación del titular fácil. Quiere proteger la labor periodística, su indicador es <span class="kw-info">Información</span>.' },
@@ -1105,7 +1105,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         await flashTurn('Decisión común', TIMINGS.DECISION_LABEL,
-            'Como presidente, resume las 4 posturas, di dónde hay acuerdo y dónde no, y guía al grupo hacia una decisión común. Cuando estéis listos, tú abres la votación.');
+            'Como presidenta, resume las 4 posturas, di dónde hay acuerdo y dónde no, y guía al grupo hacia una decisión común. Cuando estéis listos, tú abres la votación.');
         if (stale(mySession)) return;
         turnPhaseActive = false;
 
