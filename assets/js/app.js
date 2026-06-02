@@ -893,7 +893,6 @@ document.addEventListener('DOMContentLoaded', () => {
         revealingEffects = false;
         selectedDecision = null;
         document.querySelectorAll('.action-btn').forEach(b => b.classList.remove('selected'));
-        assignRoles();
         await loadCards();
         if (stale(mySession)) return;
         await runRoundTurns();
