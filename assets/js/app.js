@@ -23,6 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function stale(s) { return s !== gameSessionId; }
 
     document.getElementById('btn-new-game').addEventListener('click', (e) => {
+        // La partida solo está disponible en pantallas anchas (apaisadas, tipo ordenador).
+        if (window.matchMedia('(max-width: 1024px), (orientation: portrait), (max-aspect-ratio: 13/10)').matches) return;
         startGame(e.currentTarget.getBoundingClientRect());
     });
 

@@ -21,7 +21,8 @@
       "Bash(node --check assets/js/app.js)",
       "Bash(git rm *)",
       "Bash(git rev-list *)",
-      "Bash(gh api *)"
+      "Bash(gh api *)",
+      "Bash(grep *)"
     ]
   }
 }

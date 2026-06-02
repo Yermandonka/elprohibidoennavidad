@@ -556,6 +556,32 @@ body::before {
 .kw-peligro      { color: #dc2626; }   /* rojo */
 .kw-bonus        { color: #16a34a; }   /* verde */
 
+/* Aviso de "solo en ordenador": oculto por defecto (visible en pantallas no anchas) */
+#mobile-block-msg { display: none; }
+
+/* La partida solo se puede jugar en pantallas anchas (apaisadas, tipo ordenador).
+   En pantallas estrechas, verticales o poco anchas el botón queda bloqueado. */
+@media (max-width: 1024px), (orientation: portrait), (max-aspect-ratio: 13/10) {
+    #btn-new-game {
+        opacity: 0.5;
+        pointer-events: none;
+        cursor: not-allowed;
+        filter: grayscale(0.6);
+    }
+    #mobile-block-msg {
+        display: block;
+        max-width: 80%;
+        margin: 4px auto 18px;
+        font-family: 'Inter', sans-serif;
+        font-size: 0.95rem;
+        line-height: 1.45;
+        color: var(--ink-blue);
+        background: rgba(255, 43, 143, 0.12);
+        border-radius: 12px;
+        padding: 12px 16px;
+    }
+}
+
 @media (max-width: 720px) {
     /* En móvil la imagen de fondo no se estira — mantiene proporciones */
     body, html {
