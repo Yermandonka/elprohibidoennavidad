@@ -9,7 +9,13 @@
       "Bash(gh --version)",
       "Bash(gh auth *)",
       "Bash(git init *)",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit -m ' *)",
+      "Bash(node --check /home/yermandonka/Projects/elprohibidoennavidad/assets/js/app.js)",
+      "Bash(command *)",
+      "Bash(mv /home/yermandonka/Projects/sintomas /home/yermandonka/Projects/elprohibidoennavidad)",
+      "Read(//home/yermandonka/Projects/**)",
+      "Bash(git add *)",
+      "Bash(git push *)"
     ]
   }
 }
