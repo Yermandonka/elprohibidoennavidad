@@ -19,7 +19,9 @@
       "Bash(git remote *)",
       "Bash(python3 *)",
       "Bash(node --check assets/js/app.js)",
-      "Bash(git rm *)"
+      "Bash(git rm *)",
+      "Bash(git rev-list *)",
+      "Bash(gh api *)"
     ]
   }
 }
