@@ -618,6 +618,82 @@ body::before {
     #screen-start .btn-secondary {
         box-shadow: 4px 4px 0 var(--ink-yellow);
     }
+
+    /* === Partida en móvil: tablero y cartas muy compactos === */
+    #screen-game { padding: 6px; height: 100svh; overflow: hidden; }
+
+    /* Stands de jugador en las esquinas, mínimos */
+    .player-corner {
+        width: 33vw;
+        max-width: 116px;
+        padding: 5px;
+        gap: 1px;
+        border-radius: 10px;
+    }
+    #player-1 { top: 6px; left: 6px; }
+    #player-2 { top: 6px; right: 6px; }
+    #player-3 { bottom: 6px; left: 6px; }
+    #player-4 { bottom: 6px; right: 6px; }
+
+    .player-portrait { width: 40px; height: 40px; margin-bottom: 2px; }
+    .player-portrait.placeholder::before { font-size: 1.1rem; }
+    .player-num { font-size: 0.46rem; letter-spacing: 0.06em; }
+    .role-name { font-size: 0.62rem; margin: 1px 0; }
+    .indicator-name { font-size: 0.48rem; }
+    .player-corner .bar { gap: 1px; padding: 2px; margin-top: 3px; box-shadow: 2px 2px 0 var(--ink-black); }
+    .player-corner .bar .pip { height: 8px; }
+
+    /* Zona central (temporizador, cartas, decisiones) */
+    .timer-container { font-size: 1.25rem; margin: 4px 0; }
+    .cards-area { gap: 7px; max-width: 100%; }
+    .card.pokecard { border-width: 4px; }
+    #screen-game .card.pokecard { border-radius: 9px; }
+    .pokecard-header { padding: 3px 7px; }
+    .pokecard-name { font-size: 0.56rem; }
+    .pokecard-hp { font-size: 0.52rem; }
+    .pokecard-art { min-height: 48px; margin: 4px 6px 0; padding: 6px 7px; }
+    .pokecard-text { font-size: 0.82rem; line-height: 1.15; }
+
+    .actions-area { gap: 6px; padding: 12px 7px 7px; max-width: 100%; }
+    .actions-area::before { font-size: 0.85rem; left: 12px; }
+    #screen-game .action-btn {
+        font-size: 0.7rem;
+        padding: 7px 6px;
+        flex: 1 1 42%;
+        margin: 0;
+    }
+    .action-info-btn { width: 20px; height: 20px; top: -8px; left: -8px; font-size: 0.7rem; }
+
+    /* Overlay de turno / consignas */
+    .turn-card { padding: 14px 18px; max-width: 90vw; }
+    .turn-player { font-size: 0.68rem; margin-bottom: 6px; }
+    .turn-role { font-size: 1.5rem; margin-bottom: 10px; }
+    .turn-time { font-size: 1.4rem; }
+    .turn-consigna,
+    .turn-subtext { font-size: 0.98rem; max-width: 84vw; padding: 10px 14px; margin-top: 14px; }
+    .turn-consigna::before,
+    .turn-subtext::before { font-size: 0.78rem; }
+    .start-btn { font-size: 1rem; padding: 10px 26px; margin-top: 14px; }
+
+    /* Cartas de reparto de roles (al dar "Nueva Partida") */
+    .deal-card { width: 52vw; max-width: 180px; padding: 8px 10px 10px; }
+    .deal-role-portrait { height: 92px; margin: 2px 0 6px; }
+    .deal-player { font-size: 0.6rem; margin-bottom: 4px; }
+    .deal-role { font-size: 0.85rem; margin-bottom: 6px; text-shadow: 2px 2px 0 var(--ink-red); }
+    .deal-desc { font-size: 0.7rem; line-height: 1.35; }
+
+    /* Abanico inicial más estrecho para que quepa en pantalla */
+    .deal-card[data-player="1"] { transform: translate(-50%, -50%) translateX(-96px) rotate(-10deg); }
+    .deal-card[data-player="2"] { transform: translate(-50%, -50%) translateX(-34px) rotate(-3deg); }
+    .deal-card[data-player="3"] { transform: translate(-50%, -50%) translateX(34px)  rotate(3deg); }
+    .deal-card[data-player="4"] { transform: translate(-50%, -50%) translateX(96px)  rotate(10deg); }
+
+    /* Al repartir, las cartas vuelan a las esquinas a tamaño de stand */
+    .role-deal-overlay.dealt .deal-card { transform: translate(0, 0) rotate(0) scale(0.62); }
+    .role-deal-overlay.dealt .deal-card[data-player="1"] { top: 6px; left: 6px; }
+    .role-deal-overlay.dealt .deal-card[data-player="2"] { top: 6px; left: auto; right: 6px; }
+    .role-deal-overlay.dealt .deal-card[data-player="3"] { top: auto; bottom: 6px; left: 6px; }
+    .role-deal-overlay.dealt .deal-card[data-player="4"] { top: auto; bottom: 6px; left: auto; right: 6px; }
 }
 
 h1 {
