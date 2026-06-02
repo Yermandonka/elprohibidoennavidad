@@ -28,6 +28,7 @@
                     <h1>Reglas del juego</h1>
                     <p>La <span class="kw-democracia">democracia</span> está enferma, pero nadie sabe exactamente por qué. Vuestra misión es mantener viva la ciudad antes de que la <span class="kw-info">desinformación</span>, la apatía, la polarización y la desconfianza la dejen en urgencias.</p>
                     <p>Aquí no gana quien grita más. Gana quien consigue que el sistema no reviente por su indicador.</p>
+                    <p class="rules-disclaimer">⚠️ <strong>Aviso para la mesa:</strong> esto se cura hablando <span class="kw-accion">efectiva</span> (que se te entienda) y <span class="kw-accion">afectivamente</span> (sin dejar a nadie enfurruñado entre los turrones). Podéis debatir con pasión… pero prohibido el portazo y el clásico «contigo no se puede hablar». 🎄</p>
                 </div>
                 <div class="rules-card" data-card="1">
                     <div class="rules-card-step">Carta 2 · 1. Objetivo</div>
@@ -61,7 +62,7 @@
                     <p><strong>1º</strong> En cada ronda se sacan <strong>2 cartas</strong>: un <span class="kw-mazo">escenario (A)</span> y un <span class="kw-mazo">síntoma democrático (B)</span>.</p>
                     <p><strong class="kw-mazo">A</strong> → "En la universidad, un grupo de estudiantes empieza a movilizarse por una decisión que consideran injusta…</p>
                     <p><strong class="kw-mazo">B</strong> → …pero empieza a circular un bulo que cambia la percepción de muchas personas."</p>
-                    <p><strong>2º</strong> Cada jugador tiene <strong>30 segundos</strong> para hablar desde su rol y luego <strong>2 minutos</strong> para tomar una decisión común. Hay <strong>4 decisiones posibles</strong>:</p>
+                    <p><strong>2º</strong> Cada jugador tiene <strong>40 segundos</strong> para hablar desde su rol. En cada turno aparece una <span class="kw-accion">consigna de comunicación</span> que os ayuda a hablar de forma afectiva y efectiva (por ejemplo: «escucha para entender, no para responder»). Después hay <strong>2 minutos</strong> para tomar una decisión común. Hay <strong>4 decisiones posibles</strong>:</p>
                     <ul>
                         <li><span class="kw-accion">Comprobar</span>: El grupo decide comprobar mejor los hechos antes de actuar. Es una respuesta prudente frente al ruido, los bulos y las versiones interesadas. Puede evitar errores graves, pero también hacer que la ciudad reaccione demasiado tarde.</li>
                         <li><span class="kw-accion">Escuchar</span>: El grupo decide escuchar a más personas antes de cerrar una decisión. Da importancia a las voces afectadas y evita decidir solo desde arriba. Puede hacer que la decisión sea más legítima, pero también que el acuerdo sea más difícil.</li>
@@ -73,14 +74,15 @@
                 <div class="rules-card" data-card="4">
                     <div class="rules-card-step">Carta 5 · 4. Decisión</div>
                     <h2>Decisión</h2>
+                    <p>Al empezar los <strong>2 minutos</strong> de deliberación, el <span class="kw-rol">presidente</span> (Martín, cuyo stand aparece resaltado en <strong class="kw-bonus">dorado</strong>) toma la palabra: resume las 4 posturas, señala dónde hay acuerdo y dónde no, y guía al grupo hacia una decisión común.</p>
                     <p>Después del debate, el grupo elige una sola decisión común entre las <strong>4 posibles</strong> por votación.</p>
                     <p>Si hay empate, la decisión se retrasa y la ciudad pierde <strong class="kw-peligro">1 punto</strong> de un indicador aleatorio. Después del desempate fallido, el grupo debe repetir la votación y elegir una decisión.</p>
                 </div>
                 <div class="rules-card" data-card="5">
                     <div class="rules-card-step">Carta 6 · 5. Consecuencias</div>
                     <h2>Consecuencias</h2>
-                    <p>Primero se aplica la <span class="kw-mazo">carta A</span>. Cada carta A tiene en la parte superior un <strong class="kw-bonus">+1</strong> a un indicador concreto. Ese punto se suma antes de aplicar la consecuencia de <span class="kw-mazo">B</span>.</p>
-                    <p>Después se gira la <span class="kw-mazo">carta B</span>. En el reverso aparece qué ocurre según la decisión que haya tomado el grupo. Ese efecto representa el síntoma democrático principal y modifica los indicadores correspondientes.</p>
+                    <p>Una vez tomada la decisión, se giran las dos cartas y se aplican sus efectos: primero la <span class="kw-mazo">carta A</span> (el escenario) y después la <span class="kw-mazo">carta B</span> (el síntoma democrático).</p>
+                    <p>Cada carta muestra, <strong>según la decisión que haya elegido el grupo</strong>, cómo suben o bajan los cuatro indicadores. La misma decisión mejora unos y empeora otros.</p>
                 </div>
                 <div class="rules-card" data-card="6">
                     <div class="rules-card-step">Carta 7 · 6. Fin de ronda</div>
@@ -197,6 +199,8 @@
                     <div class="turn-player">JUGADOR 1</div>
                     <div class="turn-role">—</div>
                     <div class="turn-time">0:10</div>
+                    <div class="turn-subtext"></div>
+                    <div class="turn-consigna"></div>
                     <button id="btn-start-reading" class="start-btn" style="display:none;">START</button>
                 </div>
             </div>

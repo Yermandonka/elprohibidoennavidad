@@ -378,6 +378,17 @@ body::before {
     font-family: 'Inter', sans-serif;
 }
 
+.rules-card p.rules-disclaimer {
+    margin-top: 18px;
+    padding: 14px 18px;
+    background: rgba(255, 43, 143, 0.12);
+    border-left: 4px solid #06b6a4;
+    border-radius: 10px;
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.55;
+}
+
 .rules-card ul {
     margin: 12px 0 18px 0;
     padding-left: 22px;
@@ -1112,6 +1123,42 @@ button {
     font-family: 'Inter', sans-serif;
 }
 
+.turn-consigna,
+.turn-subtext {
+    margin: 20px auto 0;
+    max-width: 480px;
+    font-family: 'Iowan Old Style', 'Georgia', serif;
+    font-size: 1.65rem;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #06b6a4;
+    background: rgba(255, 43, 143, 0.14);
+    border: none;
+    box-shadow: none;
+    border-radius: 14px;
+    padding: 14px 24px;
+}
+
+.turn-consigna:empty,
+.turn-subtext:empty {
+    display: none;
+}
+
+.turn-consigna::before,
+.turn-subtext::before {
+    content: "💬 Consigna de comunicación";
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.92rem;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #ff2b8f;
+    margin-bottom: 8px;
+}
+
 .start-btn {
     margin-top: 24px;
     padding: 16px 48px;
@@ -1844,6 +1891,11 @@ button {
 .action-info-overlay.visible {
     opacity: 1;
     pointer-events: all;
+}
+
+/* === Stand del jugador presidente: sombra dorada + leve iluminación === */
+#screen-game .player-corner.president {
+    box-shadow: 5px 5px 0 #c79a1e, 0 0 10px 2px rgba(214, 168, 41, 0.4);
 }
 
 .action-info-card {

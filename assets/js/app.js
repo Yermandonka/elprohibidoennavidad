@@ -236,7 +236,9 @@ document.addEventListener('DOMContentLoaded', () => {
         screens.game.classList.remove('reading-mode');
 
         const startBtn = document.getElementById('btn-start-reading');
-        if (startBtn) startBtn.style.display = 'none';
+        if (startBtn) { startBtn.style.display = 'none'; startBtn.textContent = 'START'; }
+        const consignaEl = document.querySelector('#turn-overlay .turn-consigna');
+        if (consignaEl) consignaEl.textContent = '';
         document.querySelectorAll('.action-btn').forEach(b => b.classList.remove('selected'));
 
         const exitBtn = document.getElementById('btn-exit-game');
@@ -352,6 +354,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let playerRoles = [];
 
+    // Consignas de comunicación afectiva y efectiva que aparecen en cada turno.
+    const COMM_CONSIGNAS = [
+        'Habla en primera persona: "yo creo", "a mí me preocupa" — no "tú siempre".',
+        'Antes de dar tu opinión, resume en una frase lo que dijo quien habló antes.',
+        'Defiende tu indicador sin descalificar a los demás roles.',
+        'Pregunta antes de afirmar: ¿por qué le importa esto al otro?',
+        'Escucha para entender, no para responder.',
+        'Reconoce algo válido en la postura contraria antes de exponer la tuya.',
+        'Habla del problema, no de la persona.',
+        'Propón, no impongas: ofrece una salida que también sume a otro indicador.',
+        'Baja el volumen y el ritmo: hablar con calma convence más que gritar.',
+        'Sé concreto: pon un ejemplo real en vez de una acusación general.',
+        'Nombra lo que sientes sin culpar: "me frustra esto", no "tú me frustras".',
+        'Pide aclaración si no entiendes: "¿quieres decir que…?" antes de juzgar.',
+        'Cede en lo pequeño para avanzar en lo importante.',
+        'Valida la emoción del otro aunque no compartas su idea.',
+        'Cuida el lenguaje no verbal: mira a quien habla y no interrumpas.',
+        'Busca el interés común detrás de las posturas, no solo quién gana.'
+    ];
+
+    function pickConsignas(n) {
+        const shuffled = [...COMM_CONSIGNAS].sort(() => Math.random() - 0.5);
+        return Array.from({ length: n }, (_, i) => shuffled[i % shuffled.length]);
+    }
+
     function setRolePortrait(portraitEl, imgEl, role) {
         if (!portraitEl || !imgEl) return;
         if (role.image) {
@@ -375,6 +402,7 @@ document.addEventListener('DOMContentLoaded', () => {
         for (let i = 0; i < 4; i++) {
             const role = shuffled[i];
             const slot = document.getElementById(`player-${i + 1}`);
+            slot.classList.toggle('president', role.indicator === 'participacion');
             slot.querySelector('.role-name').textContent = role.name;
             slot.querySelector('.indicator-name').textContent = role.label;
             slot.querySelector('.bar').dataset.indicator = role.indicator;
@@ -965,26 +993,34 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    async function flashTurn(playerLabel, bigText) {
+    async function flashTurn(playerLabel, bigText, subText = '') {
         const overlay = document.getElementById('turn-overlay');
         overlay.querySelector('.turn-player').textContent = playerLabel;
         overlay.querySelector('.turn-role').textContent = bigText;
         overlay.querySelector('.turn-time').textContent = '';
+        const consignaEl = overlay.querySelector('.turn-consigna');
+        if (consignaEl) consignaEl.textContent = '';
+        const subEl = overlay.querySelector('.turn-subtext');
+        if (subEl) subEl.textContent = subText;
         overlay.classList.add('visible');
-        await wait(1700);
+        await wait(subText ? 15200 : 1700);
         overlay.classList.remove('visible');
+        if (subEl) subEl.textContent = '';
         await wait(380);
     }
 
-    async function playerTurn(label, roleName, seconds) {
+    async function playerTurn(label, roleName, seconds, consigna = '') {
         const overlay = document.getElementById('turn-overlay');
         const timeEl = overlay.querySelector('.turn-time');
+        const consignaEl = overlay.querySelector('.turn-consigna');
         overlay.querySelector('.turn-player').textContent = label;
         overlay.querySelector('.turn-role').textContent = roleName;
+        if (consignaEl) consignaEl.textContent = consigna;
         timeEl.textContent = formatTime(seconds);
         overlay.classList.add('visible');
         await runCountdown(seconds, timeEl);
         overlay.classList.remove('visible');
+        if (consignaEl) consignaEl.textContent = '';
         await wait(380);
     }
 
@@ -995,7 +1031,10 @@ document.addEventListener('DOMContentLoaded', () => {
             overlay.querySelector('.turn-player').textContent = 'Lectura inicial';
             overlay.querySelector('.turn-role').textContent = 'Leed el escenario';
             overlay.querySelector('.turn-time').textContent = '';
+            const consignaEl = overlay.querySelector('.turn-consigna');
+            if (consignaEl) consignaEl.textContent = '';
             const btn = document.getElementById('btn-start-reading');
+            btn.textContent = 'START';
             btn.style.display = 'inline-block';
             overlay.classList.add('visible', 'reading');
             screens.game.classList.add('reading-mode');
@@ -1058,15 +1097,18 @@ document.addEventListener('DOMContentLoaded', () => {
         await waitForStart();
         if (stale(mySession)) return;
 
+        const consignas = pickConsignas(4);
         for (let i = 0; i < 4; i++) {
             const role = playerRoles[i];
-            await playerTurn(`Jugador ${i + 1}`, role.name, TIMINGS.PLAYER_TURN_SEC);
+            await playerTurn(`Jugador ${i + 1}`, role.name, TIMINGS.PLAYER_TURN_SEC, consignas[i]);
             if (stale(mySession)) return;
         }
+
+        await flashTurn('Decisión común', TIMINGS.DECISION_LABEL,
+            'Como presidente, resume las 4 posturas, di dónde hay acuerdo y dónde no, y guía al grupo hacia una decisión común. Cuando estéis listos, tú abres la votación.');
+        if (stale(mySession)) return;
         turnPhaseActive = false;
 
-        await flashTurn('Decisión común', TIMINGS.DECISION_LABEL);
-        if (stale(mySession)) return;
         const result = await startDecisionTimer(TIMINGS.DECISION_SEC);
         if (stale(mySession)) return;
         if (result === 'timeout' && !revealingEffects) {

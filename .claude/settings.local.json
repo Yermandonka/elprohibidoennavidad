@@ -15,7 +15,10 @@
       "Bash(mv /home/yermandonka/Projects/sintomas /home/yermandonka/Projects/elprohibidoennavidad)",
       "Read(//home/yermandonka/Projects/**)",
       "Bash(git add *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(git remote *)",
+      "Bash(python3 *)",
+      "Bash(node --check assets/js/app.js)"
     ]
   }
 }
