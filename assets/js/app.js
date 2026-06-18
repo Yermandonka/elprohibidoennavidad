@@ -87,6 +87,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         skipBtn.addEventListener('click', finishIntro);
+        // El botón de saltar solo está disponible durante 1 s
+        timers.push(setTimeout(() => { skipBtn.classList.add('intro-skip--gone'); }, 1000));
         run();
     })();
 
@@ -217,7 +219,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.getElementById('screen-rules').addEventListener('click', (e) => {
-        if (e.target.closest('.rules-card, .rules-nav-btn, .btn-close, .rules-scroll-down, .rules-counter')) return;
+        // Solo cerrar al tocar el fondo real: cualquier toque dentro del escenario
+        // (cartas, peeks laterales, navegación) navega o no hace nada, nunca cierra.
+        // Evita que un toque fallido al pasar de carta en móvil salga de las reglas.
+        if (e.target.closest('.rules-stage, .rules-nav, .btn-close')) return;
         collapseRulesToButton();
     });
 
