@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 addMessage(msg.side, msg.text);   // los mensajes se acumulan
                 await wait(750);
             }
-            await wait(1400);                      // se mantiene la conversación
+            await wait(2900);                      // se mantiene la conversación (+1,5 s tras el último mensaje)
             finishIntro();                         // y desaparece toda al terminar
         }
 
