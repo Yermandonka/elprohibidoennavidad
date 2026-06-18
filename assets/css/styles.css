@@ -122,6 +122,10 @@ body::before {
     animation: start-exit-btn 0.42s cubic-bezier(0.18, 0.85, 0.42, 1) 0.16s forwards;
 }
 
+#screen-start.leaving #mobile-block-msg {
+    animation: start-exit-subtitle 0.4s cubic-bezier(0.18, 0.85, 0.42, 1) 0.13s forwards;
+}
+
 @keyframes start-exit-h1 {
     to { opacity: 0; transform: translateY(-40px) scale(0.94); }
 }
@@ -151,6 +155,10 @@ body::before {
     animation: start-enter-btn 0.42s cubic-bezier(0.18, 0.85, 0.42, 1) 0.16s both;
 }
 
+#screen-start.entering #mobile-block-msg {
+    animation: start-enter-subtitle 0.4s cubic-bezier(0.18, 0.85, 0.42, 1) 0.13s both;
+}
+
 /* Variante más lenta para la entrada tras la intro del chat */
 #screen-start.intro-entering h1 {
     animation: start-enter-h1 1s cubic-bezier(0.18, 0.85, 0.42, 1) 0.1s both;
@@ -166,6 +174,10 @@ body::before {
 
 #screen-start.intro-entering .btn-secondary {
     animation: start-enter-btn 0.9s cubic-bezier(0.18, 0.85, 0.42, 1) 0.8s both;
+}
+
+#screen-start.intro-entering #mobile-block-msg {
+    animation: start-enter-subtitle 0.9s cubic-bezier(0.18, 0.85, 0.42, 1) 0.7s both;
 }
 
 #screen-start.intro-entering {
