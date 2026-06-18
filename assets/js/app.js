@@ -87,8 +87,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         skipBtn.addEventListener('click', finishIntro);
-        // El botón de saltar solo está disponible durante 3 s
-        timers.push(setTimeout(() => { skipBtn.classList.add('intro-skip--gone'); }, 3000));
+        // El botón de saltar solo está disponible durante 4 s
+        timers.push(setTimeout(() => { skipBtn.classList.add('intro-skip--gone'); }, 4000));
         run();
     })();
 
