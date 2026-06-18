@@ -630,7 +630,7 @@ body::before {
         cursor: not-allowed;
         filter: grayscale(0.6);
     }
-    .btn-settings {
+    body .btn-settings {
         display: none;
     }
     #mobile-block-msg {
