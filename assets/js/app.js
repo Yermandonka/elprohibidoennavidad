@@ -1,4 +1,95 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // === Intro: conversación estilo WhatsApp antes de la pantalla principal ===
+    (function initIntroChat() {
+        const overlay = document.getElementById('intro-chat');
+        const body = document.getElementById('intro-chat-body');
+        const skipBtn = document.getElementById('intro-skip');
+        const startScreen = document.getElementById('screen-start');
+        if (!overlay || !body || !startScreen) return;
+
+        document.body.classList.add('intro-running');
+
+        const messages = [
+            { side: 'in',  text: 'eyy tío ya sabes que vas a votar?' },
+            { side: 'out', text: 'queva creo que no voy a las urnas...' },
+            { side: 'out', text: 'soy apolítico', typingSeq: [1800, 1000, 1800] },
+            { side: 'in',  text: 'tío necesitas hacer click' }
+        ];
+
+        let finished = false;
+        const timers = [];
+        const wait = (ms) => new Promise(res => timers.push(setTimeout(res, ms)));
+
+        function escapeHtml(s) {
+            return s.replace(/[&<>"']/g, c => (
+                { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]
+            ));
+        }
+
+        function clockLabel() {
+            const d = new Date();
+            return d.getHours() + ':' + String(d.getMinutes()).padStart(2, '0');
+        }
+
+        function addTyping(side) {
+            const el = document.createElement('div');
+            el.className = `intro-msg intro-msg--${side} intro-typing`;
+            el.innerHTML = '<span class="intro-bubble"><span class="intro-dots"><i></i><i></i><i></i></span></span>';
+            body.appendChild(el);
+            return el;
+        }
+
+        function addMessage(side, text) {
+            const el = document.createElement('div');
+            el.className = `intro-msg intro-msg--${side}`;
+            const ticks = side === 'out' ? '<span class="intro-ticks">✓✓</span>' : '';
+            el.innerHTML = `<span class="intro-bubble">${escapeHtml(text)}` +
+                `<span class="intro-meta">${clockLabel()}${ticks}</span></span>`;
+            body.appendChild(el);
+            return el;
+        }
+
+        function finishIntro() {
+            if (finished) return;
+            finished = true;
+            timers.forEach(clearTimeout);
+            overlay.classList.add('intro-chat--leaving');
+            // Revelar y reproducir la animación de entrada (lenta) de la pantalla principal
+            document.body.classList.remove('intro-running');
+            startScreen.classList.remove('entering', 'intro-entering');
+            void startScreen.offsetWidth;
+            startScreen.classList.add('intro-entering');
+            setTimeout(() => { overlay.remove(); }, 520);
+            setTimeout(() => { startScreen.classList.remove('intro-entering'); }, 1900);
+        }
+
+        async function run() {
+            await wait(650);
+            for (const msg of messages) {
+                if (finished) return;
+                // Secuencia de "escribiendo…": alterna mostrar (par) y ocultar (impar)
+                const seq = msg.typingSeq || [Math.min(1700, 550 + msg.text.length * 32)];
+                for (let i = 0; i < seq.length; i++) {
+                    if (i % 2 === 0) {
+                        const typing = addTyping(msg.side);
+                        await wait(seq[i]);
+                        typing.remove();
+                    } else {
+                        await wait(seq[i]);
+                    }
+                    if (finished) return;
+                }
+                addMessage(msg.side, msg.text);   // los mensajes se acumulan
+                await wait(750);
+            }
+            await wait(1400);                      // se mantiene la conversación
+            finishIntro();                         // y desaparece toda al terminar
+        }
+
+        skipBtn.addEventListener('click', finishIntro);
+        run();
+    })();
+
     // === Tiempos del juego (ajustar aquí para pruebas) ===
     const TIMINGS = {
         PLAYER_TURN_SEC:     40,     // segundos por turno de cada jugador
@@ -441,10 +532,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (promises.length) await Promise.all(promises);
     }
 
-    const DEAL_TO_PLAYER_DUR_MS     = 820;
-    const DEAL_TO_PLAYER_STAGGER_MS = 90;
-    const DEAL_TO_PLAYER_EASE       = 'cubic-bezier(0.22, 0.61, 0.36, 1)';
-    const DEAL_TO_PLAYER_ORDER      = [0, 1, 2, 3];
+    const DEAL_TO_PLAYER_DUR_MS     = 700;
+    const DEAL_TO_PLAYER_STAGGER_MS = 78;
+    const DEAL_TO_PLAYER_POS_EASE   = 'cubic-bezier(0.45, 0, 0.15, 1)';   // arranque rápido
+    const DEAL_TO_PLAYER_SPIN_EASE  = 'cubic-bezier(0.34, 1.5, 0.5, 1)';  // aterrizaje con rebote
+    const DEAL_TO_PLAYER_ORDER      = [0, 3, 1, 2];                        // reparto en cruz
 
     async function dealRolesWaitAndHide() {
         const mySession = gameSessionId;
@@ -458,11 +550,12 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!card) return;
             const delay = dealIdx * DEAL_TO_PLAYER_STAGGER_MS;
             card.style.transition =
-                `top ${DEAL_TO_PLAYER_DUR_MS}ms ${DEAL_TO_PLAYER_EASE} ${delay}ms, ` +
-                `left ${DEAL_TO_PLAYER_DUR_MS}ms ${DEAL_TO_PLAYER_EASE} ${delay}ms, ` +
-                `right ${DEAL_TO_PLAYER_DUR_MS}ms ${DEAL_TO_PLAYER_EASE} ${delay}ms, ` +
-                `bottom ${DEAL_TO_PLAYER_DUR_MS}ms ${DEAL_TO_PLAYER_EASE} ${delay}ms, ` +
-                `transform ${DEAL_TO_PLAYER_DUR_MS}ms ${DEAL_TO_PLAYER_EASE} ${delay}ms`;
+                `top ${DEAL_TO_PLAYER_DUR_MS}ms ${DEAL_TO_PLAYER_POS_EASE} ${delay}ms, ` +
+                `left ${DEAL_TO_PLAYER_DUR_MS}ms ${DEAL_TO_PLAYER_POS_EASE} ${delay}ms, ` +
+                `right ${DEAL_TO_PLAYER_DUR_MS}ms ${DEAL_TO_PLAYER_POS_EASE} ${delay}ms, ` +
+                `bottom ${DEAL_TO_PLAYER_DUR_MS}ms ${DEAL_TO_PLAYER_POS_EASE} ${delay}ms, ` +
+                `transform ${DEAL_TO_PLAYER_DUR_MS}ms ${DEAL_TO_PLAYER_SPIN_EASE} ${delay}ms, ` +
+                `box-shadow ${DEAL_TO_PLAYER_DUR_MS}ms ease ${delay}ms`;
         });
 
         overlay.classList.add('dealt');
