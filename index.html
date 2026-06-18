@@ -40,11 +40,34 @@
     <div id="app" class="screen-container">
         <!-- Pantalla de Inicio -->
         <div id="screen-start" class="screen active">
+            <button id="btn-settings" class="btn-settings" type="button" aria-label="Ajustes">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                </svg>
+            </button>
             <h1>El Prohibido en Navidad</h1>
             <p class="subtitle">El juego de la salud democrática.</p>
             <button id="btn-new-game" class="btn-primary">Nueva Partida</button>
             <p id="mobile-block-msg">🖥️ La partida solo está disponible en <strong>pantallas anchas</strong> (ordenador, en horizontal). Aquí puedes leer las reglas mientras tanto.</p>
             <button id="btn-rules" class="btn-secondary">Ver Reglas</button>
+        </div>
+
+        <!-- Modal de Ajustes -->
+        <div id="settings-overlay" class="settings-overlay">
+            <div class="settings-card">
+                <button id="btn-close-settings" class="btn-close" aria-label="Cerrar">&times;</button>
+                <h2>Ajustes</h2>
+                <div class="settings-field">
+                    <label for="setting-turn-time">Tiempo de turno por jugador</label>
+                    <div class="settings-stepper">
+                        <button id="turn-time-minus" class="stepper-btn" type="button" aria-label="Menos tiempo">−</button>
+                        <span id="turn-time-value" class="stepper-value">40 s</span>
+                        <button id="turn-time-plus" class="stepper-btn" type="button" aria-label="Más tiempo">+</button>
+                    </div>
+                    <p class="settings-hint">Entre 10 y 120 segundos.</p>
+                </div>
+            </div>
         </div>
 
         <!-- Pantalla de Reglas (mazo de cartas) -->
@@ -60,6 +83,7 @@
                     <p>Aquí no gana quien grita más. Gana quien consigue que el sistema no reviente por su indicador.</p>
                     <p class="rules-disclaimer">⚠️ <strong>Aviso para la mesa:</strong> esto se cura hablando <span class="kw-accion">efectiva</span> (que se te entienda) y <span class="kw-accion">afectivamente</span> (sin dejar a nadie enfurruñado entre los turrones). Podéis debatir con pasión… pero prohibido el portazo y el clásico «contigo no se puede hablar». 🎄</p>
                     <p>En cada turno aparece una <span class="kw-accion">consigna de comunicación</span>. <strong>Leedla y hacedle caso</strong>: por respeto a quien tiene la palabra y porque comunicarse bien es, literalmente, lo que mantiene viva la ciudad. Ignorarlas no solo es de mala educación: es la vía rápida a que un indicador reviente y alguien acabe haciendo el <span class="kw-fantasy">Reto Fantasy</span>.</p>
+                    <p>Al empezar cada turno tenéis <strong>3 segundos</strong> antes de que arranque el cronómetro para leer la <span class="kw-accion">consigna</span> con calma.</p>
                 </div>
                 <div class="rules-card" data-card="1">
                     <div class="rules-card-step">Carta 2 · 1. Objetivo</div>

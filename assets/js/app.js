@@ -95,6 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // === Tiempos del juego (ajustar aquí para pruebas) ===
     const TIMINGS = {
         PLAYER_TURN_SEC:     40,     // segundos por turno de cada jugador
+        TURN_READ_MS:        3000,   // pausa (ms) para leer la consigna antes de arrancar el turno
         DECISION_SEC:        120,    // segundos de deliberación común tras los 4 turnos
         BETWEEN_ROUNDS_MS:   10000,  // pausa (ms) entre revelar efectos e iniciar la siguiente ronda
         DECISION_LABEL:      '2 min' // texto del cartel "Decisión común" (solo visual)
@@ -127,6 +128,48 @@ document.addEventListener('DOMContentLoaded', () => {
         lastRulesButtonRect = e.currentTarget.getBoundingClientRect();
         emergeRulesFromButton(lastRulesButtonRect);
     });
+
+    // === Ajustes: tiempo de turno por jugador ===
+    (function initSettings() {
+        const TURN_MIN = 10, TURN_MAX = 120, TURN_STEP = 5, STORAGE_KEY = 'turnTimeSec';
+        const overlay = document.getElementById('settings-overlay');
+        const openBtn = document.getElementById('btn-settings');
+        const closeBtn = document.getElementById('btn-close-settings');
+        const minusBtn = document.getElementById('turn-time-minus');
+        const plusBtn = document.getElementById('turn-time-plus');
+        const valueEl = document.getElementById('turn-time-value');
+        if (!overlay || !openBtn) return;
+
+        // Cargar valor guardado (si existe y es válido)
+        const saved = parseInt(localStorage.getItem(STORAGE_KEY), 10);
+        if (!isNaN(saved) && saved >= TURN_MIN && saved <= TURN_MAX) {
+            TIMINGS.PLAYER_TURN_SEC = saved;
+        }
+
+        function render() {
+            valueEl.textContent = `${TIMINGS.PLAYER_TURN_SEC} s`;
+            minusBtn.disabled = TIMINGS.PLAYER_TURN_SEC <= TURN_MIN;
+            plusBtn.disabled = TIMINGS.PLAYER_TURN_SEC >= TURN_MAX;
+        }
+        function setTurnTime(sec) {
+            TIMINGS.PLAYER_TURN_SEC = Math.max(TURN_MIN, Math.min(TURN_MAX, sec));
+            localStorage.setItem(STORAGE_KEY, String(TIMINGS.PLAYER_TURN_SEC));
+            render();
+        }
+        function openSettings() { render(); overlay.classList.add('visible'); }
+        function closeSettings() { overlay.classList.remove('visible'); }
+
+        openBtn.addEventListener('click', openSettings);
+        closeBtn.addEventListener('click', closeSettings);
+        overlay.addEventListener('click', (e) => { if (e.target === overlay) closeSettings(); });
+        minusBtn.addEventListener('click', () => setTurnTime(TIMINGS.PLAYER_TURN_SEC - TURN_STEP));
+        plusBtn.addEventListener('click', () => setTurnTime(TIMINGS.PLAYER_TURN_SEC + TURN_STEP));
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && overlay.classList.contains('visible')) closeSettings();
+        });
+
+        render();
+    })();
 
     function emergeRulesFromButton(btnRect) {
         const btnCx = btnRect.left + btnRect.width / 2;
@@ -437,18 +480,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const ROLES = [
         { name: 'Roro La Carnicera', indicator: 'pluralismo', label: 'Pluralismo',
-          image: 'roro.png',
+          image: 'assets/img/roro.webp',
           description: 'Treinta años detrás del mostrador. Le entran clientes de todos los colores y de todos los humores, y todos tienen que seguir entrando mañana. Quiere que en el barrio sigan cabiendo todos, su indicador es <span class="kw-pluralismo">Pluralismo</span>.' },
         { name: 'Lola Líos La Presidenta', indicator: 'participacion', label: 'Participación',
-          image: 'lola.png',
+          image: 'assets/img/lola.webp',
           description: 'Agenda partida en bloques de quince minutos y la certeza de que cualquier decisión saldrá mal en algún titular. Su empeño: que las reglas se cumplan y las cosas mejoren paso a paso, su indicador es <span class="kw-participacion">Participación</span>.' },
         { name: 'Belén La Redactora', indicator: 'informacion', label: 'Información',
-          image: 'belen.png',
+          image: 'assets/img/belen.webp',
           description: 'Poco presupuesto, mucho trabajo. Pelea a diario contra bulos, fuentes interesadas y la tentación del titular fácil. Quiere proteger la labor periodística, su indicador es <span class="kw-info">Información</span>.' },
         { name: 'Florentino El Empresario', indicator: 'confianza', label: 'Confianza',
-          image: 'florentino.png',
+          image: 'assets/img/florentino.webp',
           description: 'Empresa heredada, doce empleados, nóminas que pagar el día 30. Sin reglas estables, se le caen los planes a tres meses vista. Quiere que las reglas no cambien con el viento, su indicador es <span class="kw-confianza">Confianza</span>.' }
     ];
+
+    // Precargar los retratos de los roles para que estén en caché antes de mostrarse
+    ROLES.forEach(role => { const img = new Image(); img.src = role.image; });
 
     let playerRoles = [];
 
@@ -1118,6 +1164,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (consignaEl) consignaEl.textContent = consigna;
         timeEl.textContent = formatTime(seconds);
         overlay.classList.add('visible');
+        // Pausa para leer la consigna de comunicación antes de arrancar la cuenta atrás
+        await wait(TIMINGS.TURN_READ_MS);
         await runCountdown(seconds, timeEl);
         overlay.classList.remove('visible');
         if (consignaEl) consignaEl.textContent = '';

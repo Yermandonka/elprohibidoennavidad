@@ -199,6 +199,26 @@ body::before {
     to   { opacity: 1; transform: translateY(0) scale(1); }
 }
 
+/* El botón de ajustes acompaña la salida/entrada del resto de la pantalla */
+#screen-start.leaving .btn-settings {
+    animation: start-exit-settings 0.42s cubic-bezier(0.18, 0.85, 0.42, 1) forwards;
+}
+#screen-start.entering .btn-settings {
+    animation: start-enter-settings 0.42s cubic-bezier(0.18, 0.85, 0.42, 1) 0.1s both;
+}
+#screen-start.intro-entering .btn-settings {
+    animation: start-enter-settings 0.9s cubic-bezier(0.18, 0.85, 0.42, 1) 0.6s both;
+}
+
+@keyframes start-exit-settings {
+    to { opacity: 0; transform: translateY(-24px) scale(0.8) rotate(-30deg); }
+}
+
+@keyframes start-enter-settings {
+    from { opacity: 0; transform: translateY(-24px) scale(0.8) rotate(-30deg); }
+    to   { opacity: 1; transform: translateY(0) scale(1) rotate(0deg); }
+}
+
 /* === Animaciones de los controles de la pantalla de reglas === */
 #screen-rules.entering .btn-close {
     animation: rules-ui-enter-down 0.42s cubic-bezier(0.18, 0.85, 0.42, 1) 0.05s both;
@@ -609,6 +629,9 @@ body::before {
         pointer-events: none;
         cursor: not-allowed;
         filter: grayscale(0.6);
+    }
+    .btn-settings {
+        display: none;
     }
     #mobile-block-msg {
         display: block;
@@ -1467,6 +1490,152 @@ button {
     color: var(--ink-black);
     transform: translate(-1px, -1px);
     box-shadow: 4px 4px 0 var(--ink-blue);
+}
+
+/* === Botón de ajustes (engranaje) === */
+.btn-settings {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    background: var(--ink-yellow);
+    color: var(--ink-blue-deep);
+    width: 46px;
+    height: 46px;
+    padding: 0;
+    margin: 0;
+    border: 2px solid var(--ink-black);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 var(--ink-red);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    z-index: 50;
+}
+.btn-settings:hover {
+    background: var(--ink-red);
+    color: var(--paper);
+    transform: translate(-1px, -1px) rotate(40deg);
+    box-shadow: 4px 4px 0 var(--ink-blue);
+}
+
+/* === Modal de ajustes === */
+.settings-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(26, 26, 26, 0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    z-index: 1100;
+}
+.settings-overlay.visible {
+    opacity: 1;
+    visibility: visible;
+}
+.settings-card {
+    position: relative;
+    background: var(--paper);
+    border: 3px solid var(--ink-black);
+    box-shadow: 10px 10px 0 var(--ink-red), 18px 18px 0 var(--ink-blue);
+    padding: 0 0 32px;
+    width: min(90vw, 420px);
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Inter', 'Helvetica Neue', sans-serif;
+    transform: translateY(12px) scale(0.97);
+    transition: transform 0.2s ease;
+}
+.settings-overlay.visible .settings-card {
+    transform: translateY(0) scale(1);
+}
+.settings-card h2 {
+    margin: 0 0 28px;
+    padding: 22px 32px;
+    color: var(--paper);
+    background: var(--ink-blue);
+    border-bottom: 3px solid var(--ink-black);
+    font-family: 'Inter', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.015em;
+    line-height: 1;
+}
+.settings-card .btn-close {
+    background: var(--ink-yellow);
+    color: var(--ink-blue-deep);
+}
+.settings-card .btn-close:hover {
+    background: var(--paper);
+    color: var(--ink-red);
+}
+.settings-field {
+    text-align: center;
+    padding: 0 32px;
+}
+.settings-field label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: var(--ink-red);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.18em;
+}
+.settings-stepper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.stepper-btn {
+    width: 48px;
+    height: 48px;
+    font-size: 1.8rem;
+    line-height: 1;
+    background: var(--ink-blue);
+    color: var(--paper);
+    border: 2px solid var(--ink-black);
+    box-shadow: 3px 3px 0 var(--ink-red);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+}
+.stepper-btn:hover {
+    background: var(--ink-red);
+    transform: translate(-1px, -1px);
+    box-shadow: 4px 4px 0 var(--ink-yellow-deep);
+}
+.stepper-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    box-shadow: 2px 2px 0 var(--ink-black);
+    transform: none;
+    background: var(--secondary-color);
+}
+.stepper-value {
+    min-width: 100px;
+    padding: 8px 12px;
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: var(--ink-blue-deep);
+    background: var(--ink-yellow);
+    border: 2px solid var(--ink-black);
+    box-shadow: 3px 3px 0 var(--ink-blue);
+}
+.settings-hint {
+    margin: 18px 0 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: var(--ink-black);
 }
 
 .btn-close--game {
