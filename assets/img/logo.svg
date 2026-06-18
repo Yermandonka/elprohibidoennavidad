@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="El Prohibido en Navidad">
+  <!-- Fondo papel tipo pegatina (estilo carta) -->
+  <rect x="6" y="6" width="244" height="244" fill="#F4EAD5" stroke="#1A1A1A" stroke-width="6"/>
+
+  <!-- Sombra offset risograph de la urna -->
+  <rect x="60" y="156" width="148" height="74" fill="#C8312D"/>
+  <rect x="52" y="130" width="164" height="30" fill="#C8312D"/>
+
+  <!-- Cuerpo de la urna -->
+  <rect x="52" y="148" width="148" height="74" fill="#1F3A93" stroke="#1A1A1A" stroke-width="6"/>
+
+  <!-- Papeleta entrando (detrás de la tapa) -->
+  <g transform="rotate(-14 128 104)">
+    <rect x="104" y="52" width="48" height="84" fill="#F4EAD5" stroke="#1A1A1A" stroke-width="5"/>
+    <polyline points="115,96 125,108 143,80" fill="none" stroke="#C8312D" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Tapa de la urna -->
+  <rect x="44" y="122" width="164" height="30" fill="#2A4BB0" stroke="#1A1A1A" stroke-width="6"/>
+  <!-- Ranura -->
+  <rect x="104" y="132" width="48" height="9" fill="#1A1A1A"/>
+
+  <!-- Estrella de Navidad -->
+  <path d="M178,20 L184.5,37.1 L202.7,38 L188.5,49.4 L193.3,67 L178,57 L162.7,67 L167.5,49.4 L153.3,38 L171.5,37.1 Z"
+        fill="#F2C84B" stroke="#1A1A1A" stroke-width="5" stroke-linejoin="round"/>
+</svg>
