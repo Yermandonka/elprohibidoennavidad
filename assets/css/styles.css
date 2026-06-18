@@ -106,12 +106,8 @@ body::before {
     pointer-events: none;
 }
 
-#screen-start.leaving .start-logo {
-    animation: start-exit-h1 0.45s cubic-bezier(0.18, 0.85, 0.42, 1) forwards;
-}
-
 #screen-start.leaving h1 {
-    animation: start-exit-h1 0.45s cubic-bezier(0.18, 0.85, 0.42, 1) 0.04s forwards;
+    animation: start-exit-h1 0.45s cubic-bezier(0.18, 0.85, 0.42, 1) forwards;
 }
 
 #screen-start.leaving .subtitle {
@@ -143,12 +139,8 @@ body::before {
 }
 
 /* === Entrada animada (inversa) al cerrar reglas === */
-#screen-start.entering .start-logo {
-    animation: start-enter-h1 0.45s cubic-bezier(0.18, 0.85, 0.42, 1) both;
-}
-
 #screen-start.entering h1 {
-    animation: start-enter-h1 0.45s cubic-bezier(0.18, 0.85, 0.42, 1) 0.04s both;
+    animation: start-enter-h1 0.45s cubic-bezier(0.18, 0.85, 0.42, 1) both;
 }
 
 #screen-start.entering .subtitle {
@@ -168,10 +160,6 @@ body::before {
 }
 
 /* Variante más lenta para la entrada tras la intro del chat */
-#screen-start.intro-entering .start-logo {
-    animation: start-enter-h1 1s cubic-bezier(0.18, 0.85, 0.42, 1) both;
-}
-
 #screen-start.intro-entering h1 {
     animation: start-enter-h1 1s cubic-bezier(0.18, 0.85, 0.42, 1) 0.1s both;
 }
@@ -679,11 +667,6 @@ body::before {
     .rules-card p, .rules-card li { font-size: 0.95rem; }
 
     /* Pantalla principal: elementos reducidos en móvil */
-    .start-logo {
-        width: 88px;
-        height: 88px;
-        margin-bottom: 12px;
-    }
     #screen-start h1 {
         font-size: 3rem;
         text-shadow:
@@ -782,14 +765,6 @@ body::before {
     .role-deal-overlay.dealt .deal-card[data-player="2"] { top: 6px; left: auto; right: 6px; }
     .role-deal-overlay.dealt .deal-card[data-player="3"] { top: auto; bottom: 6px; left: 6px; }
     .role-deal-overlay.dealt .deal-card[data-player="4"] { top: auto; bottom: 6px; left: auto; right: 6px; }
-}
-
-.start-logo {
-    width: 128px;
-    height: 128px;
-    margin: 0 0 18px;
-    display: block;
-    filter: drop-shadow(4px 4px 0 rgba(26, 26, 26, 0.18));
 }
 
 h1 {
