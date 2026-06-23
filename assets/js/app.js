@@ -830,7 +830,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function loadCardsPool() {
         if (cardsPool) return cardsPool;
-        const res = await fetch(`assets/data/cards.json?v=${Date.now()}`, { cache: 'no-store' });
+        // Versión fija: el navegador cachea el JSON. Sube el número al editar cards.json.
+        const res = await fetch('assets/data/cards.json?v=1');
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         cardsPool = await res.json();
         return cardsPool;
