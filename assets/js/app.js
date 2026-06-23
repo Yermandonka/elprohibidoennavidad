@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // === Ajustes: tiempo de turno por jugador ===
     (function initSettings() {
-        const TURN_MIN = 10, TURN_MAX = 120, TURN_STEP = 5, STORAGE_KEY = 'turnTimeSec';
+        const TURN_MIN = 5, TURN_MAX = 120, TURN_STEP = 5, STORAGE_KEY = 'turnTimeSec';
         const overlay = document.getElementById('settings-overlay');
         const openBtn = document.getElementById('btn-settings');
         const closeBtn = document.getElementById('btn-close-settings');
@@ -716,6 +716,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const mySession = ++gameSessionId;
 
         gameState = { confianza: 4, informacion: 4, pluralismo: 4, participacion: 4 };
+        firstRoundPending = true;
         revealingEffects = false;
         selectedDecision = null;
         document.querySelectorAll('.action-btn').forEach(b => b.classList.remove('selected'));
@@ -805,6 +806,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let cardsPool = null;
 
+    // La primera ronda de cada partida usa siempre estas dos cartas (si existen en
+    // el mazo); a partir de la 2ª ronda, vuelven a salir de forma aleatoria.
+    const FIRST_SCENARIO_TEXT = 'Un vídeo editado con IA deja fatal a un concejal…';
+    const FIRST_SYMPTOM_TEXT = '…y nadie sabe si el vídeo es real, IA o el primo de alguien.';
+    let firstRoundPending = false;
+
     async function loadCardsPool() {
         if (cardsPool) return cardsPool;
         const res = await fetch(`assets/data/cards.json?v=${Date.now()}`, { cache: 'no-store' });
@@ -815,6 +822,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function drawRandom(pool) {
         return pool[Math.floor(Math.random() * pool.length)];
+    }
+
+    // Escenario (A) de la ronda: en la 1ª ronda fuerza el escenario fijo si está
+    // disponible; si no lo encuentra (o ya no es la 1ª ronda), cae a aleatorio.
+    function pickScenarioA(deckA, isFirstRound) {
+        if (isFirstRound) {
+            const opener = deckA.find(c => c && c.text === FIRST_SCENARIO_TEXT);
+            if (opener) return opener;
+        }
+        return drawRandom(deckA);
+    }
+
+    // Segunda carta (B) del escenario: en la 1ª ronda fuerza la carta fija si está
+    // disponible; si no, cae a la selección compatible con A de siempre.
+    function pickSymptomB(cardA, deckB, isFirstRound) {
+        if (isFirstRound) {
+            const opener = deckB.find(c => c && c.text === FIRST_SYMPTOM_TEXT);
+            if (opener) return opener;
+        }
+        return drawCardBForA(cardA, deckB);
     }
 
     // === Selección compatible A → B ===========================================
@@ -866,8 +893,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!pool || !Array.isArray(pool.A) || !Array.isArray(pool.B) || !pool.A.length || !pool.B.length) {
                 throw new Error('Pool de cartas vacío o inválido');
             }
-            const cardA = drawRandom(pool.A);
-            const cardB = drawCardBForA(cardA, pool.B);
+            const isFirstRound = firstRoundPending;
+            firstRoundPending = false;
+            const cardA = pickScenarioA(pool.A, isFirstRound);
+            const cardB = pickSymptomB(cardA, pool.B, isFirstRound);
             if (DEV_LOG_CARDS) console.log('[cards] B elegida:', cardB && cardB.text);
             renderCards({ A: cardA, B: cardB });
         } catch (err) {
@@ -947,7 +976,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const area = document.getElementById('cards-area');
         area.innerHTML = ['A', 'B'].map(deck => {
             const type = randomPokeType();
-            const name = deck === 'A' ? 'Escenario' : 'Síntoma';
+            const name = 'Escenario';
             const hp = (Math.floor(Math.random() * 7) + 4) * 10;
             const tiltMag = randInRange(5, 9);
             const rot = (Math.random() < 0.5 ? -tiltMag : tiltMag).toFixed(2);
@@ -977,7 +1006,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="effects-table">
                 ${effects.map(e => `
                     <div class="effect-row${e.decision === selectedDecision ? ' chosen' : ''}">
-                        <span class="effect-decision">${e.decision}</span>
+                        <span class="effect-decision">${escapeHtml(e.decision)}</span>
                         <span class="effect-chips">${formatDeltaChips(e)}</span>
                     </div>
                 `).join('')}
@@ -1253,7 +1282,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         await flashTurn('Decisión común', TIMINGS.DECISION_LABEL,
-            'Como presidenta, resume las 4 posturas, di dónde hay acuerdo y dónde no, y guía al grupo hacia una decisión común. Cuando estéis listos, tú abres la votación.');
+            'Como presidenta, resume las 4 posturas, di dónde hay acuerdo y dónde no, y guía al grupo hacia una decisión común. Cuando estéis listos, pulsad la decisión acordada.');
         if (stale(mySession)) return;
         turnPhaseActive = false;
 

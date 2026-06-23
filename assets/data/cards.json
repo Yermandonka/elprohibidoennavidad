@@ -2,7 +2,6 @@
   "A": [
     {
       "text": "El instituto anuncia una norma nueva a mitad de curso…",
-      "bonus_indicator": "participacion",
       "effects": [
         {
           "decision": "Comprobar",
@@ -49,7 +48,6 @@
     },
     {
       "text": "Un vídeo editado con IA deja fatal a un concejal…",
-      "bonus_indicator": "informacion",
       "effects": [
         {
           "decision": "Comprobar",
@@ -96,7 +94,6 @@
     },
     {
       "text": "El ayuntamiento recorta las fiestas del barrio…",
-      "bonus_indicator": "confianza",
       "effects": [
         {
           "decision": "Comprobar",
@@ -143,7 +140,6 @@
     },
     {
       "text": "La app del transporte se cae justo en hora punta…",
-      "bonus_indicator": "confianza",
       "effects": [
         {
           "decision": "Comprobar",
@@ -189,7 +185,6 @@
     },
     {
       "text": "Una cuenta famosa acusa a un profesor sin pruebas claras…",
-      "bonus_indicator": "informacion",
       "effects": [
         {
           "decision": "Comprobar",
@@ -236,7 +231,6 @@
     },
     {
       "text": "Se abre un centro para gente migrante en el barrio…",
-      "bonus_indicator": "pluralismo",
       "effects": [
         {
           "decision": "Comprobar",
@@ -282,7 +276,6 @@
     },
     {
       "text": "Tras un partido, dos grupos se encaran en la plaza…",
-      "bonus_indicator": "confianza",
       "effects": [
         {
           "decision": "Comprobar",
@@ -329,7 +322,6 @@
     },
     {
       "text": "Los alquileres suben y medio barrio está quemadísimo…",
-      "bonus_indicator": "participacion",
       "effects": [
         {
           "decision": "Comprobar",
@@ -375,7 +367,6 @@
     },
     {
       "text": "Quieren poner cámaras en una zona con muchos robos…",
-      "bonus_indicator": "confianza",
       "effects": [
         {
           "decision": "Comprobar",
@@ -421,7 +412,6 @@
     },
     {
       "text": "Los repartidores anuncian huelga en plena semana de exámenes…",
-      "bonus_indicator": "participacion",
       "effects": [
         {
           "decision": "Comprobar",
@@ -468,7 +458,6 @@
     },
     {
       "text": "Una obra deja sin plaza a niños, mayores y skaters…",
-      "bonus_indicator": "pluralismo",
       "effects": [
         {
           "decision": "Comprobar",
@@ -516,7 +505,6 @@
     },
     {
       "text": "Se filtran notas privadas de un chat de clase…",
-      "bonus_indicator": "informacion",
       "effects": [
         {
           "decision": "Comprobar",
@@ -563,7 +551,6 @@
     },
     {
       "text": "El instituto prohíbe móviles en el recreo porque dice que “se nos va de las manos”…",
-      "bonus_indicator": "participacion",
       "effects": [
         {
           "decision": "Comprobar",
@@ -609,7 +596,6 @@
     },
     {
       "text": "Un alumno sube una lista de profes favoritos y profes cancelados…",
-      "bonus_indicator": "informacion",
       "effects": [
         {
           "decision": "Comprobar",
@@ -655,7 +641,6 @@
     },
     {
       "text": "La dirección mueve un examen importante a última hora…",
-      "bonus_indicator": "confianza",
       "effects": [
         {
           "decision": "Comprobar",
@@ -700,7 +685,6 @@
     },
     {
       "text": "Un grupo pide baños neutros y el debate se pone intensito…",
-      "bonus_indicator": "pluralismo",
       "effects": [
         {
           "decision": "Comprobar",
@@ -746,7 +730,6 @@
     },
     {
       "text": "El centro cultural invita a un streamer polémico a dar una charla…",
-      "bonus_indicator": "pluralismo",
       "effects": [
         {
           "decision": "Comprobar",
@@ -791,7 +774,6 @@
     },
     {
       "text": "El ayuntamiento peatonaliza una calle llena de tiendas…",
-      "bonus_indicator": "pluralismo",
       "effects": [
         {
           "decision": "Comprobar",
@@ -836,7 +818,6 @@
     },
     {
       "text": "Vecinos piden cerrar una cancha porque hay ruido por las noches…",
-      "bonus_indicator": "pluralismo",
       "effects": [
         {
           "decision": "Comprobar",
@@ -881,7 +862,6 @@
     },
     {
       "text": "El mercadillo de siempre se cambia por un evento patrocinado…",
-      "bonus_indicator": "confianza",
       "effects": [
         {
           "decision": "Comprobar",
@@ -926,7 +906,6 @@
     },
     {
       "text": "La policía hace controles cerca del instituto después de varias peleas…",
-      "bonus_indicator": "confianza",
       "effects": [
         {
           "decision": "Comprobar",
@@ -971,7 +950,6 @@
     },
     {
       "text": "La biblioteca recorta horario justo en época de exámenes…",
-      "bonus_indicator": "participacion",
       "effects": [
         {
           "decision": "Comprobar",
@@ -1016,7 +994,6 @@
     },
     {
       "text": "Una influencer local denuncia acoso en el barrio y todo el mundo opina…",
-      "bonus_indicator": "informacion",
       "effects": [
         {
           "decision": "Comprobar",
@@ -1061,7 +1038,6 @@
     },
     {
       "text": "El ayuntamiento propone limitar los pisos turísticos del centro…",
-      "bonus_indicator": "pluralismo",
       "effects": [
         {
           "decision": "Comprobar",
@@ -1106,7 +1082,6 @@
     },
     {
       "text": "La fiesta del barrio presenta un cartel que muchos ven machista…",
-      "bonus_indicator": "pluralismo",
       "effects": [
         {
           "decision": "Comprobar",
@@ -1151,7 +1126,6 @@
     },
     {
       "text": "El ayuntamiento promete becas, pero nadie entiende los criterios…",
-      "bonus_indicator": "informacion",
       "effects": [
         {
           "decision": "Comprobar",
@@ -1196,7 +1170,6 @@
     },
     {
       "text": "Una empresa de reparto cambia condiciones y los riders estallan…",
-      "bonus_indicator": "participacion",
       "effects": [
         {
           "decision": "Comprobar",
@@ -1241,7 +1214,6 @@
     },
     {
       "text": "Un sindicato estudiantil convoca paro el día antes de una prueba importante…",
-      "bonus_indicator": "participacion",
       "effects": [
         {
           "decision": "Comprobar",
@@ -1286,7 +1258,6 @@
     },
     {
       "text": "Hackean la web municipal y se filtran datos personales…",
-      "bonus_indicator": "confianza",
       "effects": [
         {
           "decision": "Comprobar",
@@ -1331,7 +1302,6 @@
     },
     {
       "text": "El periódico escolar publica una investigación que deja mal a dirección…",
-      "bonus_indicator": "informacion",
       "effects": [
         {
           "decision": "Comprobar",
@@ -1376,7 +1346,6 @@
     },
     {
       "text": "Instalan un refugio climático en una plaza y quitan media zona de bancos…",
-      "bonus_indicator": "pluralismo",
       "effects": [
         {
           "decision": "Comprobar",
@@ -1421,7 +1390,6 @@
     },
     {
       "text": "El equipo femenino pide el mismo horario de entreno que el masculino…",
-      "bonus_indicator": "pluralismo",
       "effects": [
         {
           "decision": "Comprobar",
@@ -1466,7 +1434,6 @@
     },
     {
       "text": "El centro juvenil cierra por falta de presupuesto…",
-      "bonus_indicator": "confianza",
       "effects": [
         {
           "decision": "Comprobar",
@@ -1511,7 +1478,6 @@
     },
     {
       "text": "La asociación vecinal veta a un partido en un debate público…",
-      "bonus_indicator": "pluralismo",
       "effects": [
         {
           "decision": "Comprobar",
@@ -1556,7 +1522,6 @@
     },
     {
       "text": "Se viraliza un audio del alcalde insultando a jóvenes…",
-      "bonus_indicator": "informacion",
       "effects": [
         {
           "decision": "Comprobar",
@@ -1602,7 +1567,6 @@
     },
     {
       "text": "Un corte de agua afecta sobre todo al bloque más viejo del barrio…",
-      "bonus_indicator": "confianza",
       "effects": [
         {
           "decision": "Comprobar",
@@ -1649,7 +1613,6 @@
   "B": [
     {
       "text": "…pero TikTok ya ha decidido quién es el villano.",
-      "bonus_indicator": "informacion",
       "effects": [
         {
           "decision": "Comprobar",
@@ -1701,7 +1664,6 @@
     },
     {
       "text": "…y los afectados sienten que otra vez hablan por ellos.",
-      "bonus_indicator": "pluralismo",
       "effects": [
         {
           "decision": "Comprobar",
@@ -1752,7 +1714,6 @@
     },
     {
       "text": "…y la conversación se convierte en Madrid-Barça político.",
-      "bonus_indicator": "confianza",
       "effects": [
         {
           "decision": "Comprobar",
@@ -1803,7 +1764,6 @@
     },
     {
       "text": "…y nadie entiende quién manda ni por qué.",
-      "bonus_indicator": "informacion",
       "effects": [
         {
           "decision": "Comprobar",
@@ -1854,7 +1814,6 @@
     },
     {
       "text": "…y cuando toca participar aparecen tres personas y un bot.",
-      "bonus_indicator": "participacion",
       "effects": [
         {
           "decision": "Comprobar",
@@ -1905,7 +1864,6 @@
     },
     {
       "text": "…pero cada captura de pantalla cuenta una película distinta.",
-      "bonus_indicator": "informacion",
       "effects": [
         {
           "decision": "Comprobar",
@@ -1955,7 +1913,6 @@
     },
     {
       "text": "…y los que más pierden no tienen altavoz.",
-      "bonus_indicator": "pluralismo",
       "effects": [
         {
           "decision": "Comprobar",
@@ -2006,7 +1963,6 @@
     },
     {
       "text": "…y empieza el clásico: ‘esto estaba pactado desde el minuto uno’.",
-      "bonus_indicator": "confianza",
       "effects": [
         {
           "decision": "Comprobar",
@@ -2057,7 +2013,6 @@
     },
     {
       "text": "…pero solo se oye al que grita como si estuviera en Twitch.",
-      "bonus_indicator": "pluralismo",
       "effects": [
         {
           "decision": "Comprobar",
@@ -2108,7 +2063,6 @@
     },
     {
       "text": "…y mucha gente calla para no comerse el marrón.",
-      "bonus_indicator": "participacion",
       "effects": [
         {
           "decision": "Comprobar",
@@ -2159,7 +2113,6 @@
     },
     {
       "text": "…y hay que hacer algo ya o la cosa se lía de verdad.",
-      "bonus_indicator": "confianza",
       "effects": [
         {
           "decision": "Comprobar",
@@ -2209,7 +2162,6 @@
     },
     {
       "text": "…y el algoritmo empuja justo lo que más incendia el ambiente.",
-      "bonus_indicator": "informacion",
       "effects": [
         {
           "decision": "Comprobar",
@@ -2261,7 +2213,6 @@
     },
     {
       "text": "…y alguien filtra un pantallazo sin contexto, el deporte municipal favorito.",
-      "bonus_indicator": "informacion",
       "effects": [
         {
           "decision": "Comprobar",
@@ -2311,7 +2262,6 @@
     },
     {
       "text": "…y un hilo de X lo resume mal, pero con mucha seguridad.",
-      "bonus_indicator": "informacion",
       "effects": [
         {
           "decision": "Comprobar",
@@ -2359,7 +2309,6 @@
     },
     {
       "text": "…y el grupo de padres empieza a escribir TODO EN MAYÚSCULAS.",
-      "bonus_indicator": "participacion",
       "effects": [
         {
           "decision": "Comprobar",
@@ -2407,7 +2356,6 @@
     },
     {
       "text": "…y una encuesta de Instagram decide la verdad en diez minutos.",
-      "bonus_indicator": "informacion",
       "effects": [
         {
           "decision": "Comprobar",
@@ -2456,7 +2404,6 @@
     },
     {
       "text": "…y los afectados se enteran por un meme antes que por el ayuntamiento.",
-      "bonus_indicator": "confianza",
       "effects": [
         {
           "decision": "Comprobar",
@@ -2505,7 +2452,6 @@
     },
     {
       "text": "…y aparece un experto de sofá con gráficos más falsos que una moneda de tres euros.",
-      "bonus_indicator": "informacion",
       "effects": [
         {
           "decision": "Comprobar",
@@ -2554,7 +2500,6 @@
     },
     {
       "text": "…y la reunión se llena de gente que no pisa el barrio ni en Google Maps.",
-      "bonus_indicator": "participacion",
       "effects": [
         {
           "decision": "Comprobar",
@@ -2602,7 +2547,6 @@
     },
     {
       "text": "…y una minoría acaba convertida en saco de boxeo público.",
-      "bonus_indicator": "pluralismo",
       "effects": [
         {
           "decision": "Comprobar",
@@ -2651,7 +2595,6 @@
     },
     {
       "text": "…y las normas cambian tres veces en una tarde, nivel partida bugueada.",
-      "bonus_indicator": "confianza",
       "effects": [
         {
           "decision": "Comprobar",
@@ -2699,7 +2642,6 @@
     },
     {
       "text": "…y quien pide calma queda como el aguafiestas oficial.",
-      "bonus_indicator": "pluralismo",
       "effects": [
         {
           "decision": "Comprobar",
@@ -2748,7 +2690,6 @@
     },
     {
       "text": "…y los comentarios se llenan de “yo solo hago preguntas”.",
-      "bonus_indicator": "informacion",
       "effects": [
         {
           "decision": "Comprobar",
@@ -2796,7 +2737,6 @@
     },
     {
       "text": "…y una cuenta anónima amenaza con sacar más cosas.",
-      "bonus_indicator": "informacion",
       "effects": [
         {
           "decision": "Comprobar",
@@ -2844,7 +2784,6 @@
     },
     {
       "text": "…y los medios llegan tarde, pero con cámara enorme y cara seria.",
-      "bonus_indicator": "informacion",
       "effects": [
         {
           "decision": "Comprobar",
@@ -2893,7 +2832,6 @@
     },
     {
       "text": "…y el debate se convierte en concurso nacional de zascas.",
-      "bonus_indicator": "pluralismo",
       "effects": [
         {
           "decision": "Comprobar",
@@ -2942,7 +2880,6 @@
     },
     {
       "text": "…y los que necesitan ayuda pasan vergüenza en público.",
-      "bonus_indicator": "pluralismo",
       "effects": [
         {
           "decision": "Comprobar",
@@ -2991,7 +2928,6 @@
     },
     {
       "text": "…y un rumor sobre dinero prende como gasolina barata.",
-      "bonus_indicator": "confianza",
       "effects": [
         {
           "decision": "Comprobar",
@@ -3040,7 +2976,6 @@
     },
     {
       "text": "…y nadie sabe si el vídeo es real, IA o el primo de alguien.",
-      "bonus_indicator": "informacion",
       "effects": [
         {
           "decision": "Comprobar",
@@ -3088,7 +3023,6 @@
     },
     {
       "text": "…y dos grupos montan quedada para “hablarlo”, demasiado fuerte.",
-      "bonus_indicator": "confianza",
       "effects": [
         {
           "decision": "Comprobar",
@@ -3137,7 +3071,6 @@
     },
     {
       "text": "…y el algoritmo solo enseña la parte más fea, qué sorpresa.",
-      "bonus_indicator": "informacion",
       "effects": [
         {
           "decision": "Comprobar",
@@ -3186,7 +3119,6 @@
     },
     {
       "text": "…y se monta una petición online con título de incendio forestal.",
-      "bonus_indicator": "participacion",
       "effects": [
         {
           "decision": "Comprobar",
@@ -3235,7 +3167,6 @@
     },
     {
       "text": "…y los moderados desaparecen como calcetines en la lavadora.",
-      "bonus_indicator": "pluralismo",
       "effects": [
         {
           "decision": "Comprobar",
@@ -3284,7 +3215,6 @@
     },
     {
       "text": "…y alguien usa la crisis para hacerse campaña, discretísimo todo.",
-      "bonus_indicator": "confianza",
       "effects": [
         {
           "decision": "Comprobar",
@@ -3332,7 +3262,6 @@
     },
     {
       "text": "…y la solución rápida deja un fleco feo que nadie quiere mirar.",
-      "bonus_indicator": "confianza",
       "effects": [
         {
           "decision": "Comprobar",
@@ -3381,7 +3310,6 @@
     },
     {
       "text": "…y cuando por fin hay datos, ya todo el mundo está enfadado.",
-      "bonus_indicator": "informacion",
       "effects": [
         {
           "decision": "Comprobar",

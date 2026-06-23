@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'">
     <title>El Prohibido en Navidad</title>
     <meta name="description" content="El juego de la salud democrática. Mantened viva la ciudad antes de que la desinformación, la apatía y la desconfianza la dejen en urgencias.">
     <link rel="icon" type="image/png" href="assets/img/favicon.png?v=4">
@@ -25,8 +26,8 @@
     <meta name="twitter:description" content="El juego de la salud democrática.">
     <meta name="twitter:image" content="https://elprohibidoennavidad.com/assets/img/og-image.jpg?v=2">
 
+    <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body class="intro-running">
     <!-- intro-running ya en el HTML: oculta la pantalla principal desde el primer
@@ -65,7 +66,7 @@
                         <span id="turn-time-value" class="stepper-value">40 s</span>
                         <button id="turn-time-plus" class="stepper-btn" type="button" aria-label="Más tiempo">+</button>
                     </div>
-                    <p class="settings-hint">Entre 10 y 120 segundos.</p>
+                    <p class="settings-hint">Entre 5 y 120 segundos.</p>
                 </div>
             </div>
         </div>
@@ -114,10 +115,10 @@
                 <div class="rules-card" data-card="3">
                     <div class="rules-card-step">Carta 4 · 3. Cómo se juega una ronda</div>
                     <h2>Cómo se juega una ronda</h2>
-                    <p><strong>1º</strong> En cada ronda se sacan <strong>2 cartas</strong>: un <span class="kw-mazo">escenario (A)</span> y un <span class="kw-mazo">síntoma democrático (B)</span>.</p>
-                    <p><strong class="kw-mazo">A</strong> → "En la universidad, un grupo de estudiantes empieza a movilizarse por una decisión que consideran injusta…</p>
-                    <p><strong class="kw-mazo">B</strong> → …pero empieza a circular un bulo que cambia la percepción de muchas personas."</p>
-                    <p><strong>2º</strong> Cada jugador tiene <strong>40 segundos</strong> para hablar desde su rol. En cada turno aparece una <span class="kw-accion">consigna de comunicación</span> que os ayuda a hablar de forma afectiva y efectiva (por ejemplo: «escucha para entender, no para responder»). Después hay <strong>2 minutos</strong> para tomar una decisión común. Hay <strong>4 decisiones posibles</strong>:</p>
+                    <p><strong>1º</strong> En cada ronda se sacan <strong>2 cartas</strong> que, juntas, forman un mismo <span class="kw-mazo">escenario</span>: la <span class="kw-mazo">carta A</span> plantea la situación y la <span class="kw-mazo">carta B</span> la completa.</p>
+                    <p><strong class="kw-mazo">A</strong> → "Un vídeo editado con IA deja fatal a un concejal…</p>
+                    <p><strong class="kw-mazo">B</strong> → …y nadie sabe si el vídeo es real, IA o el primo de alguien."</p>
+                    <p><strong>2º</strong> Cada jugador tiene <strong>40 segundos</strong> (por defecto, ajustables en <span class="kw-accion">Ajustes</span>) para hablar desde su rol. En cada turno aparece una <span class="kw-accion">consigna de comunicación</span> que os ayuda a hablar de forma afectiva y efectiva (por ejemplo: «escucha para entender, no para responder»). Después hay <strong>2 minutos</strong> para tomar una decisión común. Hay <strong>4 decisiones posibles</strong>:</p>
                     <ul>
                         <li><span class="kw-accion">Comprobar</span>: El grupo decide comprobar mejor los hechos antes de actuar. Es una respuesta prudente frente al ruido, los bulos y las versiones interesadas. Puede evitar errores graves, pero también hacer que la ciudad reaccione demasiado tarde.</li>
                         <li><span class="kw-accion">Escuchar</span>: El grupo decide escuchar a más personas antes de cerrar una decisión. Da importancia a las voces afectadas y evita decidir solo desde arriba. Puede hacer que la decisión sea más legítima, pero también que el acuerdo sea más difícil.</li>
@@ -130,13 +131,13 @@
                     <div class="rules-card-step">Carta 5 · 4. Decisión</div>
                     <h2>Decisión</h2>
                     <p>Al empezar los <strong>2 minutos</strong> de deliberación, la <span class="kw-rol">presidenta</span> (Lola Líos, cuyo stand aparece resaltado en <strong class="kw-bonus">dorado</strong>) toma la palabra: resume las 4 posturas, señala dónde hay acuerdo y dónde no, y guía al grupo hacia una decisión común.</p>
-                    <p>Después del debate, el grupo elige una sola decisión común entre las <strong>4 posibles</strong> por votación.</p>
-                    <p>Si hay empate, la decisión se retrasa y la ciudad pierde <strong class="kw-peligro">1 punto</strong> de un indicador aleatorio. Después del desempate fallido, el grupo debe repetir la votación y elegir una decisión.</p>
+                    <p>Después del debate, el grupo acuerda una sola decisión común entre las <strong>4 posibles</strong>. Cuando hay acuerdo, un jugador la pulsa en la pantalla y se aplican sus efectos.</p>
+                    <p>Si no conseguís poneros de acuerdo antes de que se agoten los <strong>2 minutos</strong>, la deliberación fracasa: la ciudad se bloquea y <strong class="kw-peligro">perdéis todos</strong>.</p>
                 </div>
                 <div class="rules-card" data-card="5">
                     <div class="rules-card-step">Carta 6 · 5. Consecuencias</div>
                     <h2>Consecuencias</h2>
-                    <p>Una vez tomada la decisión, se giran las dos cartas y se aplican sus efectos: primero la <span class="kw-mazo">carta A</span> (el escenario) y después la <span class="kw-mazo">carta B</span> (el síntoma democrático).</p>
+                    <p>Una vez tomada la decisión, se giran las dos cartas del escenario y se aplican sus efectos: primero la <span class="kw-mazo">carta A</span> y después la <span class="kw-mazo">carta B</span>.</p>
                     <p>Cada carta muestra, <strong>según la decisión que haya elegido el grupo</strong>, cómo suben o bajan los cuatro indicadores. La misma decisión mejora unos y empeora otros.</p>
                 </div>
                 <div class="rules-card" data-card="6">
@@ -147,14 +148,14 @@
                     <p>Respiráis, fingís que tenéis todo bajo control y robáis otras dos cartas.</p>
                     <p>Si un indicador llega a <strong class="kw-peligro">0</strong>, la ciudad entra en crisis democrática y termina la partida.</p>
                     <p>Pierde el jugador asociado a ese indicador.</p>
-                    <p>Si dos o más indicadores llegan a <strong class="kw-peligro">0</strong> en la misma ronda, pierde quien tenga el indicador más bajo. Si hay empate, los jugadores empatados comparten derrota y hacen juntos el <span class="kw-fantasy">Reto Fantasy</span>.</p>
+                    <p>Si dos o más indicadores llegan a <strong class="kw-peligro">0</strong> en la misma ronda, esos jugadores comparten derrota y hacen juntos el <span class="kw-fantasy">Reto Fantasy</span>.</p>
                 </div>
                 <div class="rules-card" data-card="7">
                     <div class="rules-card-step">Carta 8 · 7. Cómo se gana</div>
                     <h2>Cómo se gana</h2>
                     <p>En este juego se <strong>gana siempre que no se haya perdido</strong>.</p>
                     <p>Si la ciudad colapsa, todos habéis contribuido un poco al desastre, pero solo pierde el jugador cuyo indicador ha reventado.</p>
-                    <p>Si jugáis con límite de rondas y la ciudad sobrevive, gana quien haya mantenido más fuerte su indicador.</p>
+                    <p>El objetivo es aguantar el mayor número de rondas posible: mientras ningún indicador llegue a 0, la ciudad sigue viva y seguís todos en juego.</p>
                 </div>
                 <div class="rules-card" data-card="8">
                     <div class="rules-card-step">Carta 9 · 8. Regla de oro</div>
@@ -176,7 +177,7 @@
                     <div class="rules-card-step">Carta 11 · 10. Ajustes</div>
                     <h2>Ajustes</h2>
                     <p>En la esquina superior derecha de la pantalla de inicio hay un botón con forma de <strong>engranaje ⚙️</strong>. Desde ahí podéis adaptar la partida a vuestra mesa.</p>
-                    <p>De momento permite ajustar el <strong>tiempo de turno de cada jugador</strong>, entre <strong>10 y 120 segundos</strong> (por defecto, 40). Subidlo si os gusta deliberar con calma o bajadlo si queréis partidas más ágiles.</p>
+                    <p>De momento permite ajustar el <strong>tiempo de turno de cada jugador</strong>, entre <strong>5 y 120 segundos</strong> (por defecto, 40). Subidlo si os gusta deliberar con calma o bajadlo si queréis partidas más ágiles.</p>
                     <p>El valor que elijáis <strong>se guarda automáticamente</strong> y se mantiene para las siguientes partidas. Recordad que, al empezar cada turno, siempre hay <strong>3 segundos</strong> extra para leer la <span class="kw-accion">consigna</span> antes de que arranque el cronómetro.</p>
                     <p>El botón de ajustes solo aparece en <strong>pantallas anchas</strong> (ordenador), porque es donde se juega la partida.</p>
                 </div>
@@ -306,7 +307,7 @@
                             <p class="round-summary-text">—</p>
                         </div>
                         <div class="round-summary-section" data-deck="B">
-                            <div class="round-summary-deck-label">Síntoma · B</div>
+                            <div class="round-summary-deck-label">Escenario · B</div>
                             <p class="round-summary-text">—</p>
                         </div>
                     </div>
