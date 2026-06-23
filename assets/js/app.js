@@ -391,9 +391,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const startBtn = document.getElementById('btn-start-reading');
         if (startBtn) { startBtn.style.display = 'none'; startBtn.textContent = 'START'; }
         const consignaEl = document.querySelector('#turn-overlay .turn-consigna');
-        if (consignaEl) consignaEl.textContent = '';
+        if (consignaEl) { consignaEl.textContent = ''; consignaEl.classList.remove('is-leaving'); }
         const turnCard = document.querySelector('#turn-overlay .turn-card');
-        if (turnCard) turnCard.classList.remove('consigna-only');
+        if (turnCard) turnCard.classList.remove('consigna-only', 'info-entering');
+        const dashTimer = document.getElementById('timer');
+        if (dashTimer) dashTimer.classList.remove('counting');
         document.querySelectorAll('.action-btn').forEach(b => b.classList.remove('selected'));
 
         const exitBtn = document.getElementById('btn-exit-game');
@@ -736,7 +738,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.action-btn').forEach(b => b.classList.remove('selected'));
         assignRoles();
         updateIndicators(gameState);
-        document.getElementById('timer').textContent = formatTime(TIMINGS.PLAYER_TURN_SEC);
 
         if (originRect) {
             screens.start.classList.add('leaving');
@@ -1125,6 +1126,7 @@ document.addEventListener('DOMContentLoaded', () => {
             clearInterval(timerInterval);
             let time = seconds;
             const timerEl = document.getElementById('timer');
+            timerEl.classList.add('counting');
             const update = () => {
                 const t = formatTime(Math.max(0, time));
                 timerEl.textContent = t;
@@ -1136,6 +1138,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 update();
                 if (time <= 0) {
                     clearInterval(timerInterval);
+                    timerEl.classList.remove('counting');
                     resolve();
                 }
             }, 1000);
@@ -1149,11 +1152,13 @@ document.addEventListener('DOMContentLoaded', () => {
             let time = seconds;
             const timerEl = document.getElementById('timer');
             timerEl.textContent = formatTime(time);
+            timerEl.classList.add('counting');
             timerInterval = setInterval(() => {
                 time--;
                 timerEl.textContent = formatTime(Math.max(0, time));
                 if (time <= 0) {
                     clearInterval(timerInterval);
+                    timerEl.classList.remove('counting');
                     if (decisionTimerResolve) {
                         decisionTimerResolve('timeout');
                         decisionTimerResolve = null;
@@ -1165,6 +1170,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function cancelDecisionTimer() {
         clearInterval(timerInterval);
+        const timerEl = document.getElementById('timer');
+        if (timerEl) timerEl.classList.remove('counting');
         if (decisionTimerResolve) {
             decisionTimerResolve('decided');
             decisionTimerResolve = null;
@@ -1196,14 +1203,16 @@ document.addEventListener('DOMContentLoaded', () => {
         overlay.querySelector('.turn-role').textContent = roleName;
         if (consignaEl) consignaEl.textContent = consigna;
         timeEl.textContent = formatTime(seconds);
-        document.getElementById('timer').textContent = formatTime(seconds);
         // Fase de lectura: durante TURN_READ_MS solo se ve la consigna
         if (card) card.classList.add('consigna-only');
         overlay.classList.add('visible');
         await wait(TIMINGS.TURN_READ_MS);
-        // Desaparece la consigna y aparecen el nombre y el tiempo; arranca la cuenta atrás
-        if (card) card.classList.remove('consigna-only');
-        if (consignaEl) consignaEl.textContent = '';
+        // La consigna se desvanece suavemente; después aparecen el nombre y el tiempo
+        if (consignaEl) consignaEl.classList.add('is-leaving');
+        await wait(360);
+        if (card) { card.classList.remove('consigna-only'); card.classList.add('info-entering'); }
+        if (consignaEl) { consignaEl.textContent = ''; consignaEl.classList.remove('is-leaving'); }
+        setTimeout(() => { if (card) card.classList.remove('info-entering'); }, 420);
         await runCountdown(seconds, timeEl);
         overlay.classList.remove('visible');
         await wait(380);
@@ -1216,7 +1225,6 @@ document.addEventListener('DOMContentLoaded', () => {
             overlay.querySelector('.turn-player').textContent = 'Lectura inicial';
             overlay.querySelector('.turn-role').textContent = 'Leed el escenario';
             overlay.querySelector('.turn-time').textContent = '';
-            document.getElementById('timer').textContent = formatTime(TIMINGS.PLAYER_TURN_SEC);
             const consignaEl = overlay.querySelector('.turn-consigna');
             if (consignaEl) consignaEl.textContent = '';
             const btn = document.getElementById('btn-start-reading');
@@ -1289,7 +1297,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (stale(mySession)) return;
         }
 
-        document.getElementById('timer').textContent = formatTime(TIMINGS.DECISION_SEC);
         await flashTurn('Decisión común', TIMINGS.DECISION_LABEL,
             'Como presidenta, resume las 4 posturas, di dónde hay acuerdo y dónde no, y guía al grupo hacia una decisión común. Cuando estéis listos, pulsad la decisión acordada.');
         if (stale(mySession)) return;
@@ -1407,8 +1414,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const actionInfoOv = document.getElementById('action-info-overlay');
     if (actionInfoOv) {
-        actionInfoOv.addEventListener('click', (e) => {
-            if (e.target === actionInfoOv) hideActionInfo();
-        });
+        // Pulsar en cualquier punto (tarjeta o fondo) cierra la info de la acción
+        actionInfoOv.addEventListener('click', () => hideActionInfo());
     }
 });

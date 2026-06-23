@@ -1324,6 +1324,22 @@ button {
 .turn-card.consigna-only .turn-consigna {
     margin-top: 0;
 }
+/* La consigna se desvanece suavemente al dar paso al nombre + temporizador */
+.turn-consigna {
+    transition: opacity 0.35s ease;
+}
+.turn-consigna.is-leaving {
+    opacity: 0;
+}
+.turn-card.info-entering .turn-player,
+.turn-card.info-entering .turn-role,
+.turn-card.info-entering .turn-time {
+    animation: turn-info-in 0.4s ease both;
+}
+@keyframes turn-info-in {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
 
 .turn-consigna::before,
 .turn-subtext::before {
@@ -1474,6 +1490,15 @@ button {
     margin: 20px 0;
     color: var(--ink-blue);
     font-family: 'Inter', sans-serif;
+}
+/* El reloj sobre las cartas solo es visible mientras corre una cuenta atrás
+   (se mantiene el hueco con opacidad para no descuadrar el dashboard). */
+#timer {
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+#timer.counting {
+    opacity: 1;
 }
 
 .btn-close {
@@ -2118,6 +2143,10 @@ button {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.25s ease;
+}
+/* Fondo oscuro: el hint necesita color claro para leerse */
+.action-info-overlay .deal-hint {
+    color: var(--paper);
 }
 
 /* === Overlay "¿Qué ha pasado?" tras revelar efectos === */
