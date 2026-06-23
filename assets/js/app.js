@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const messages = [
             { side: 'in',  text: 'eyy tío ya sabes que vas a votar?' },
-            { side: 'out', text: 'queva creo que no voy a las urnas...' },
+            { side: 'out', text: 'que va creo que no voy a las urnas...' },
             { side: 'out', text: 'soy apolítico', typingSeq: [1800, 1000, 1800] },
             { side: 'in',  text: 'tío necesitas hacer click' }
         ];
@@ -95,7 +95,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // === Tiempos del juego (ajustar aquí para pruebas) ===
     const TIMINGS = {
         PLAYER_TURN_SEC:     40,     // segundos por turno de cada jugador
-        TURN_READ_MS:        3000,   // pausa (ms) para leer la consigna antes de arrancar el turno
+        TURN_READ_MS:        5000,   // pausa (ms) en la que solo se ve la consigna antes de arrancar el turno
+        REVEAL_VIEW_MS:      5000,   // pausa (ms) para ver el reverso de las cartas tras la decisión
         DECISION_SEC:        120,    // segundos de deliberación común tras los 4 turnos
         BETWEEN_ROUNDS_MS:   10000,  // pausa (ms) entre revelar efectos e iniciar la siguiente ronda
         DECISION_LABEL:      '2 min' // texto del cartel "Decisión común" (solo visual)
@@ -131,39 +132,50 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // === Ajustes: tiempo de turno por jugador ===
     (function initSettings() {
-        const TURN_MIN = 5, TURN_MAX = 120, TURN_STEP = 5, STORAGE_KEY = 'turnTimeSec';
+        const TURN_MIN = 5, TURN_MAX = 120, TURN_STEP = 5, TURN_DEFAULT = 40, STORAGE_KEY = 'turnTimeSec';
         const overlay = document.getElementById('settings-overlay');
         const openBtn = document.getElementById('btn-settings');
         const closeBtn = document.getElementById('btn-close-settings');
+        const saveBtn = document.getElementById('btn-save-settings');
         const minusBtn = document.getElementById('turn-time-minus');
         const plusBtn = document.getElementById('turn-time-plus');
         const valueEl = document.getElementById('turn-time-value');
         if (!overlay || !openBtn) return;
 
-        // Cargar valor guardado (si existe y es válido)
+        // Cargar valor guardado (si existe y es válido); si no, 40 por defecto
         const saved = parseInt(localStorage.getItem(STORAGE_KEY), 10);
-        if (!isNaN(saved) && saved >= TURN_MIN && saved <= TURN_MAX) {
-            TIMINGS.PLAYER_TURN_SEC = saved;
-        }
+        TIMINGS.PLAYER_TURN_SEC =
+            (!isNaN(saved) && saved >= TURN_MIN && saved <= TURN_MAX) ? saved : TURN_DEFAULT;
+
+        // Valor en edición: no se aplica ni se guarda hasta pulsar "Guardar"
+        let draft = TIMINGS.PLAYER_TURN_SEC;
 
         function render() {
-            valueEl.textContent = `${TIMINGS.PLAYER_TURN_SEC} s`;
-            minusBtn.disabled = TIMINGS.PLAYER_TURN_SEC <= TURN_MIN;
-            plusBtn.disabled = TIMINGS.PLAYER_TURN_SEC >= TURN_MAX;
+            valueEl.textContent = `${draft} s`;
+            minusBtn.disabled = draft <= TURN_MIN;
+            plusBtn.disabled = draft >= TURN_MAX;
+            if (saveBtn) saveBtn.disabled = draft === TIMINGS.PLAYER_TURN_SEC;
         }
-        function setTurnTime(sec) {
-            TIMINGS.PLAYER_TURN_SEC = Math.max(TURN_MIN, Math.min(TURN_MAX, sec));
-            localStorage.setItem(STORAGE_KEY, String(TIMINGS.PLAYER_TURN_SEC));
+        function setDraft(sec) {
+            draft = Math.max(TURN_MIN, Math.min(TURN_MAX, sec));
             render();
         }
-        function openSettings() { render(); overlay.classList.add('visible'); }
-        function closeSettings() { overlay.classList.remove('visible'); }
+        function saveSettings() {
+            TIMINGS.PLAYER_TURN_SEC = draft;
+            localStorage.setItem(STORAGE_KEY, String(draft));
+            render();
+            closeSettings();
+        }
+        // Al abrir/cerrar sin guardar, el borrador vuelve al valor aplicado
+        function openSettings() { draft = TIMINGS.PLAYER_TURN_SEC; render(); overlay.classList.add('visible'); }
+        function closeSettings() { overlay.classList.remove('visible'); draft = TIMINGS.PLAYER_TURN_SEC; render(); }
 
         openBtn.addEventListener('click', openSettings);
         closeBtn.addEventListener('click', closeSettings);
+        if (saveBtn) saveBtn.addEventListener('click', saveSettings);
         overlay.addEventListener('click', (e) => { if (e.target === overlay) closeSettings(); });
-        minusBtn.addEventListener('click', () => setTurnTime(TIMINGS.PLAYER_TURN_SEC - TURN_STEP));
-        plusBtn.addEventListener('click', () => setTurnTime(TIMINGS.PLAYER_TURN_SEC + TURN_STEP));
+        minusBtn.addEventListener('click', () => setDraft(draft - TURN_STEP));
+        plusBtn.addEventListener('click', () => setDraft(draft + TURN_STEP));
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape' && overlay.classList.contains('visible')) closeSettings();
         });
@@ -380,6 +392,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (startBtn) { startBtn.style.display = 'none'; startBtn.textContent = 'START'; }
         const consignaEl = document.querySelector('#turn-overlay .turn-consigna');
         if (consignaEl) consignaEl.textContent = '';
+        const turnCard = document.querySelector('#turn-overlay .turn-card');
+        if (turnCard) turnCard.classList.remove('consigna-only');
         document.querySelectorAll('.action-btn').forEach(b => b.classList.remove('selected'));
 
         const exitBtn = document.getElementById('btn-exit-game');
@@ -722,6 +736,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.action-btn').forEach(b => b.classList.remove('selected'));
         assignRoles();
         updateIndicators(gameState);
+        document.getElementById('timer').textContent = formatTime(TIMINGS.PLAYER_TURN_SEC);
 
         if (originRect) {
             screens.start.classList.add('leaving');
@@ -1031,9 +1046,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cancelDecisionTimer();
         await wait(400);
         await flipAndApply('A');
-        if (await maybeEndGame()) return;
         await flipAndApply('B');
-        await maybeEndGame();
     }
 
     async function flipAndApply(deck) {
@@ -1060,16 +1073,6 @@ document.addEventListener('DOMContentLoaded', () => {
             .map((role, i) => ({ playerNum: i + 1, role, value: gameState[role.indicator] }))
             .filter(p => p.value <= 0);
         return losers.length > 0 ? losers : null;
-    }
-
-    async function maybeEndGame() {
-        const losers = checkGameOver();
-        if (!losers) return false;
-        const mySession = gameSessionId;
-        await wait(1200);
-        if (stale(mySession)) return true;
-        showEndScreen(losers);
-        return true;
     }
 
     function showEndScreen(losers) {
@@ -1186,18 +1189,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function playerTurn(label, roleName, seconds, consigna = '') {
         const overlay = document.getElementById('turn-overlay');
+        const card = overlay.querySelector('.turn-card');
         const timeEl = overlay.querySelector('.turn-time');
         const consignaEl = overlay.querySelector('.turn-consigna');
         overlay.querySelector('.turn-player').textContent = label;
         overlay.querySelector('.turn-role').textContent = roleName;
         if (consignaEl) consignaEl.textContent = consigna;
         timeEl.textContent = formatTime(seconds);
+        document.getElementById('timer').textContent = formatTime(seconds);
+        // Fase de lectura: durante TURN_READ_MS solo se ve la consigna
+        if (card) card.classList.add('consigna-only');
         overlay.classList.add('visible');
-        // Pausa para leer la consigna de comunicación antes de arrancar la cuenta atrás
         await wait(TIMINGS.TURN_READ_MS);
+        // Desaparece la consigna y aparecen el nombre y el tiempo; arranca la cuenta atrás
+        if (card) card.classList.remove('consigna-only');
+        if (consignaEl) consignaEl.textContent = '';
         await runCountdown(seconds, timeEl);
         overlay.classList.remove('visible');
-        if (consignaEl) consignaEl.textContent = '';
         await wait(380);
     }
 
@@ -1208,6 +1216,7 @@ document.addEventListener('DOMContentLoaded', () => {
             overlay.querySelector('.turn-player').textContent = 'Lectura inicial';
             overlay.querySelector('.turn-role').textContent = 'Leed el escenario';
             overlay.querySelector('.turn-time').textContent = '';
+            document.getElementById('timer').textContent = formatTime(TIMINGS.PLAYER_TURN_SEC);
             const consignaEl = overlay.querySelector('.turn-consigna');
             if (consignaEl) consignaEl.textContent = '';
             const btn = document.getElementById('btn-start-reading');
@@ -1263,9 +1272,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const roleInfoOv = document.getElementById('role-info-overlay');
     if (roleInfoOv) {
-        roleInfoOv.addEventListener('click', (e) => {
-            if (e.target === roleInfoOv) hideRoleInfo();
-        });
+        // Pulsar en cualquier punto (tarjeta o fondo) cierra la info del rol
+        roleInfoOv.addEventListener('click', () => hideRoleInfo());
     }
 
     async function runRoundTurns() {
@@ -1281,6 +1289,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (stale(mySession)) return;
         }
 
+        document.getElementById('timer').textContent = formatTime(TIMINGS.DECISION_SEC);
         await flashTurn('Decisión común', TIMINGS.DECISION_LABEL,
             'Como presidenta, resume las 4 posturas, di dónde hay acuerdo y dónde no, y guía al grupo hacia una decisión común. Cuando estéis listos, pulsad la decisión acordada.');
         if (stale(mySession)) return;
@@ -1313,9 +1322,17 @@ document.addEventListener('DOMContentLoaded', () => {
             revealingEffects = true;
             await revealEffects();
             if (stale(mySession) || !screens.game.classList.contains('active')) return;
+            // Pausa para ver el reverso de las cartas con el resultado de la decisión
+            await wait(TIMINGS.REVEAL_VIEW_MS);
+            if (stale(mySession) || !screens.game.classList.contains('active')) return;
             await showRoundSummary(currentHand, selectedDecision);
             if (stale(mySession) || !screens.game.classList.contains('active')) return;
-            nextRound();
+            const losers = checkGameOver();
+            if (losers) {
+                showEndScreen(losers);
+            } else {
+                nextRound();
+            }
         });
     });
 

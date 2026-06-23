@@ -1315,6 +1315,16 @@ button {
     display: none;
 }
 
+/* Fase de lectura del turno: durante los primeros segundos solo se ve la consigna */
+.turn-card.consigna-only .turn-player,
+.turn-card.consigna-only .turn-role,
+.turn-card.consigna-only .turn-time {
+    display: none;
+}
+.turn-card.consigna-only .turn-consigna {
+    margin-top: 0;
+}
+
 .turn-consigna::before,
 .turn-subtext::before {
     content: "💬 Consigna de comunicación";
@@ -1636,6 +1646,33 @@ button {
     line-height: 1.6;
     font-weight: 400;
     color: var(--ink-black);
+}
+.btn-save-settings {
+    margin-top: 26px;
+    padding: 13px 44px;
+    font-family: 'Inter', 'Helvetica Neue', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--paper);
+    background: var(--ink-blue);
+    border: 2px solid var(--ink-black);
+    box-shadow: 4px 4px 0 var(--ink-red);
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+}
+.btn-save-settings:hover {
+    background: var(--ink-red);
+    transform: translate(-1px, -1px);
+    box-shadow: 5px 5px 0 var(--ink-yellow-deep);
+}
+.btn-save-settings:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: 3px 3px 0 var(--ink-black);
+    background: var(--secondary-color);
 }
 
 .btn-close--game {
