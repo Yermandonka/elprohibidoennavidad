@@ -516,22 +516,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Consignas de comunicación afectiva y efectiva que aparecen en cada turno.
     const COMM_CONSIGNAS = [
-        'Habla en primera persona: "yo creo", "a mí me preocupa" — no "tú siempre".',
-        'Antes de dar tu opinión, resume en una frase lo que dijo quien habló antes.',
+        'Habla en primera persona: "yo creo", no "tú siempre".',
+        'Antes de opinar, resume en una frase lo que dijo el anterior.',
         'Defiende tu indicador sin descalificar a los demás roles.',
         'Pregunta antes de afirmar: ¿por qué le importa esto al otro?',
         'Escucha para entender, no para responder.',
-        'Reconoce algo válido en la postura contraria antes de exponer la tuya.',
+        'Reconoce algo válido en la postura contraria antes que la tuya.',
         'Habla del problema, no de la persona.',
-        'Propón, no impongas: ofrece una salida que también sume a otro indicador.',
-        'Baja el volumen y el ritmo: hablar con calma convence más que gritar.',
-        'Sé concreto: pon un ejemplo real en vez de una acusación general.',
-        'Nombra lo que sientes sin culpar: "me frustra esto", no "tú me frustras".',
-        'Pide aclaración si no entiendes: "¿quieres decir que…?" antes de juzgar.',
+        'Propón, no impongas: busca una salida que sume a otro indicador.',
+        'Baja el volumen: hablar con calma convence más que gritar.',
+        'Sé concreto: pon un ejemplo real, no una acusación general.',
+        'Nombra lo que sientes sin culpar: "me frustra", no "tú me frustras".',
+        'Pide aclaración antes de juzgar: "¿quieres decir que…?".',
         'Cede en lo pequeño para avanzar en lo importante.',
         'Valida la emoción del otro aunque no compartas su idea.',
-        'Cuida el lenguaje no verbal: mira a quien habla y no interrumpas.',
-        'Busca el interés común detrás de las posturas, no solo quién gana.'
+        'Cuida lo no verbal: mira a quien habla y no interrumpas.',
+        'Busca el interés común, no solo quién gana.'
     ];
 
     function pickConsignas(n) {
