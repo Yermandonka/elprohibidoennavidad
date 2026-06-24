@@ -733,6 +733,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         gameState = { confianza: 4, informacion: 4, pluralismo: 4, participacion: 4 };
         firstRoundPending = true;
+        roundNumber = 1;
+        updateRoundCounter();
         revealingEffects = false;
         selectedDecision = null;
         document.querySelectorAll('.action-btn').forEach(b => b.classList.remove('selected'));
@@ -827,6 +829,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const FIRST_SCENARIO_TEXT = 'Un vídeo editado con IA deja fatal a un concejal…';
     const FIRST_SYMPTOM_TEXT = '…y nadie sabe si el vídeo es real, IA o el primo de alguien.';
     let firstRoundPending = false;
+    let roundNumber = 1;
+
+    function updateRoundCounter() {
+        const el = document.getElementById('round-counter');
+        if (el) el.textContent = `RONDA ${roundNumber}`;
+    }
 
     async function loadCardsPool() {
         if (cardsPool) return cardsPool;
@@ -1098,6 +1106,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function nextRound() {
         const mySession = gameSessionId;
+        roundNumber++;
+        updateRoundCounter();
         revealingEffects = false;
         selectedDecision = null;
         document.querySelectorAll('.action-btn').forEach(b => b.classList.remove('selected'));
