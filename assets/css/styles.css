@@ -1726,7 +1726,8 @@ button {
 /* === Emerge desde el botón "Nueva Partida" === */
 #screen-game.emerging .player-corner,
 #screen-game.emerging .dashboard,
-#screen-game.emerging #btn-exit-game {
+#screen-game.emerging #btn-exit-game,
+#screen-game.emerging #round-counter {
     will-change: transform, opacity;
     transform-origin: center center;
 }

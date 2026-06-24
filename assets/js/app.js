@@ -419,7 +419,7 @@ document.addEventListener('DOMContentLoaded', () => {
         screens.game.classList.remove('emerging');
         if (dealOverlay) dealOverlay.classList.remove('visible', 'dealt');
 
-        document.querySelectorAll('#screen-game .player-corner, #screen-game .dashboard, #btn-exit-game, .deal-card').forEach(el => {
+        document.querySelectorAll('#screen-game .player-corner, #screen-game .dashboard, #btn-exit-game, #round-counter, .deal-card').forEach(el => {
             el.style.transition = '';
             el.style.transform = '';
             el.style.opacity = '';
@@ -435,7 +435,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const elements = [
                 ...document.querySelectorAll('#screen-game .player-corner'),
                 document.querySelector('#screen-game .dashboard'),
-                document.getElementById('btn-exit-game')
+                document.getElementById('btn-exit-game'),
+                document.getElementById('round-counter')
             ].filter(Boolean);
             if (!elements.length) { resolve(); return; }
 
@@ -783,7 +784,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const elements = [
                 ...document.querySelectorAll('#screen-game .player-corner'),
                 document.querySelector('#screen-game .dashboard'),
-                document.getElementById('btn-exit-game')
+                document.getElementById('btn-exit-game'),
+                document.getElementById('round-counter')
             ].filter(Boolean);
             if (!elements.length) { resolve(); return; }
 
