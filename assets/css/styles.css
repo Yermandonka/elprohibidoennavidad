@@ -933,10 +933,6 @@ button {
     top: 38px;
     left: 258px;
     z-index: 4;
-    background: var(--paper);
-    padding: 6px 14px;
-    border: 2px solid var(--ink-black);
-    box-shadow: 4px 4px 0 var(--ink-blue);
     font-family: 'Inter', 'Helvetica Neue', sans-serif;
     font-weight: 900;
     font-size: 1.55rem;
