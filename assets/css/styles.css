@@ -2249,6 +2249,59 @@ button {
     color: rgba(0, 0, 0, 0.55);
 }
 
+.round-summary-deltas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.round-summary-delta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 2px solid var(--ink-black);
+    font-family: 'Inter', sans-serif;
+    background: var(--paper);
+}
+
+.round-summary-delta-label {
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-black);
+}
+
+.round-summary-delta-value {
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+.round-summary-delta.positive {
+    border-color: #2E9B30;
+}
+.round-summary-delta.positive .round-summary-delta-value {
+    color: #2E9B30;
+}
+
+.round-summary-delta.negative {
+    border-color: #C8312D;
+}
+.round-summary-delta.negative .round-summary-delta-value {
+    color: #C8312D;
+}
+
+.round-summary-delta.zero {
+    border-color: rgba(0, 0, 0, 0.25);
+    opacity: 0.7;
+}
+.round-summary-delta.zero .round-summary-delta-value {
+    color: rgba(0, 0, 0, 0.5);
+}
+
 .round-summary-continue {
     align-self: center;
     background: var(--paper);

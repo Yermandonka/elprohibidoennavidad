@@ -1366,6 +1366,23 @@ document.addEventListener('DOMContentLoaded', () => {
                     txtEl.textContent = '(Sin explicación añadida todavía.)';
                     txtEl.classList.add('empty');
                 }
+
+                const deltasEl = section.querySelector('.round-summary-deltas');
+                if (deltasEl) {
+                    if (eff) {
+                        deltasEl.innerHTML = Object.keys(INDICATOR_LABELS).map(ind => {
+                            const v = Number(eff[`${ind}_delta`]) || 0;
+                            const sign = v > 0 ? '+' : '';
+                            const cls = v > 0 ? 'positive' : (v < 0 ? 'negative' : 'zero');
+                            return `<div class="round-summary-delta ${cls}">`
+                                + `<span class="round-summary-delta-label">${INDICATOR_LABELS[ind]}</span>`
+                                + `<span class="round-summary-delta-value">${sign}${v}</span>`
+                                + `</div>`;
+                        }).join('');
+                    } else {
+                        deltasEl.innerHTML = '';
+                    }
+                }
             });
 
             overlay.classList.add('visible');
