@@ -531,7 +531,22 @@ document.addEventListener('DOMContentLoaded', () => {
         'Cede en lo pequeño para avanzar en lo importante.',
         'Valida la emoción del otro aunque no compartas su idea.',
         'Cuida lo no verbal: mira a quien habla y no interrumpas.',
-        'Busca el interés común, no solo quién gana.'
+        'Busca el interés común, no solo quién gana.',
+        'Haz una pregunta antes de defender tu postura.',
+        'Di "sí, y…" en vez de "sí, pero…".',
+        'Pon límites sin levantar la voz.',
+        'Acepta que puedes estar equivocado en algo.',
+        'Resume el acuerdo antes de seguir discutiendo.',
+        'Da tiempo a quien habla: no llenes cada silencio.',
+        'Critica la idea, nunca la intención del otro.',
+        'Pregunta "¿qué propones tú?" en vez de bloquear.',
+        'Reconoce el esfuerzo del otro, no solo el error.',
+        'Habla de datos, no de rumores ni suposiciones.',
+        'Cede el turno a quien aún no ha hablado.',
+        'Separa el problema de hoy de los rencores de ayer.',
+        'Repite con tus palabras lo que entendiste del otro.',
+        'Ofrece una alternativa, no solo un "no".',
+        'Agradece una idea buena aunque no sea la tuya.'
     ];
 
     function pickConsignas(n) {
